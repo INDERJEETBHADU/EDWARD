@@ -20,6 +20,13 @@
     --color-grey: #ededed;
     --color-blue: #1839eb;
 }
+/* -------Common---Things------ */
+.common_button {
+    min-height: 56px;
+    padding: 16px 32px;
+    border-radius: 100px;
+    background: var(--color-yellow);
+}
 
 .text_yellow {
     color: var(--color-yellow);
@@ -52,8 +59,6 @@
 .text_blue {
     color: var(--color-blue);
 }
-
-
 
 .opacity_70 {
     opacity: 70%;
@@ -155,7 +160,6 @@
 .text_6xl {
     font-size: var(--font-6xl);
 }
-
 .font_montserrat{
     font-family: "Montserrat", sans-serif;
 }
