@@ -96,6 +96,127 @@
 .review_txt {
   padding-top: 10.39px;
 }
+
+/* =========================== clients section start here ================================ */
+
 .clients_section {
   padding-top: 150px;
+}
+.trust_star_img {
+  max-width: 156px;
+}
+.edward_card {
+  padding: 12px;
+  padding-top: 41px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 4px 4px 65.5px 0px #0000000d;
+}
+.edward1_img {
+  width: 107px;
+}
+.common_comma {
+  width: 32px;
+}
+.comma_2 {
+  transform: rotate(180deg);
+}
+.gap_40 {
+  gap: 40px;
+}
+.edward_images {
+  top: 41px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.edward_txt {
+  background-color: #f7f7f7;
+  margin-top: 54px;
+  padding: 0 10px;
+  padding-top: 69px;
+  padding-bottom: 44px;
+  border-radius: 12px;
+}
+.p_color {
+  color: #4b4b4b;
+}
+.slick-dots li.slick-active button:before p {
+  margin: 0 !important;
+}
+
+/* =========================== clients slider code here ================================ */
+
+/* the slides */
+.clients_slider .slick-slide {
+  margin: 0 11px;
+}
+
+/* the parent */
+.clients_slider .slick-list {
+  margin: 0 -6px;
+}
+
+.clients_slider.slick-slider .slick-list {
+  box-shadow: 4px 4px 65.5px 0px #00000014;
+  border-radius: 20px;
+}
+.clients_slider .slick-dots li.slick-active button:before {
+  width: 40px;
+  height: 8px;
+  border-radius: 14px;
+  background-color: #f1c045;
+  opacity: 100% !important;
+  color: unset !important;
+  font-size: 0 !important;
+}
+
+.clients_slider .slick-dots li {
+  width: 28px;
+  height: 8px;
+  border-radius: 14px;
+  background-color: #fbf1d7;
+  margin: 0 10px;
+}
+.slick-dots li button:before {
+  content: "" !important;
+}
+
+.clients_slider .slick-dots {
+  width: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 13px 53px;
+  border: 0.3px solid #f1c045;
+  border-radius: 100px;
+  height: unset !important;
+  bottom: -60px !important;
+}
+.clients_section .prev,
+.next {
+  outline: none !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.clients_section .next {
+  left: 59.5%;
+  bottom: -21px;
+}
+
+.clients_section .prev {
+  right: 59.5%;
+  bottom: -21px;
+}
+
+@media (min-width: 1400px) {
+  .clients_section .next {
+    left: 58%;
+    bottom: -21px;
+  }
+
+  .clients_section .prev {
+    right: 58%;
+    bottom: -21px;
+  }
 }
