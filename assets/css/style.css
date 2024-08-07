@@ -1,1 +1,73 @@
-@import url(./root.css);
+
+dl,
+ol,
+ul {
+    margin-bottom: 0 !important;
+}
+
+ol,
+ul {
+    padding-left: 0 !important;
+}
+
+@media (max-width: 1199.9px) {
+    .mobile_view {
+        position: absolute;
+        backdrop-filter: blur(60px);
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 300ms linear;
+        z-index: 3;
+    }
+
+    .overflow_hidden {
+        overflow: hidden !important;
+    }
+
+    .menu span:nth-child(1) {
+        height: 2px;
+        width: 30px;
+        background-color: white;
+        display: block;
+    }
+
+    .menu span:nth-child(2) {
+        height: 2px;
+        width: 30px;
+        background-color: white;
+        display: block;
+    }
+
+    .menu span:nth-child(3) {
+        height: 2px;
+        width: 30px;
+        background-color: white;
+        display: block;
+    }
+
+    .menu span {
+        transition: 300ms linear;
+    }
+
+    .cross span:nth-child(1) {
+        transform: rotate(42deg) translateY(13px);
+        transition: 300ms linear;
+    }
+
+    .cross span:nth-child(2) {
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: 300ms linear;
+    }
+
+    .cross span:nth-child(3) {
+        transform: rotate(-43deg) translateY(-13px);
+        transition: 300ms linear;
+    }
+}

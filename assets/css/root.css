@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
 
 :root {
     --font-sm: 16px;
@@ -20,6 +28,7 @@
     --color-grey: #ededed;
     --color-blue: #1839eb;
     --color-cream: #EEE9D2;
+    --color-lite-cream:#D6D2BD;
 }
 
 /* -------Common---Things------ */
@@ -49,6 +58,9 @@
 
 .text_green {
     color: var(--color-green);
+}
+.lite_cream{
+    background: var(--color-lite-cream);
 }
 
 .secondary_green {
