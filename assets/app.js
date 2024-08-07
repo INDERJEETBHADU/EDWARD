@@ -1,3 +1,5 @@
+// ===================================== ClIENT SLIDER ========================================//
+
 $(".clients_slider").slick({
   dots: true,
   infinite: true,
@@ -14,6 +16,8 @@ $(".clients_slider").slick({
         slidesToScroll: 1,
         infinite: true,
         dots: true,
+        prevArrow: false,
+        nextArrow: false,
       },
     },
     {
@@ -24,4 +28,13 @@ $(".clients_slider").slick({
       },
     },
   ],
+});
+
+// ===================================== CHECKBOX ========================================//
+
+const check = document.querySelector(".checkbox_part");
+const check_img = document.querySelector(".check-img");
+
+check.addEventListener("click", () => {
+  check_img.classList.toggle("d-none");
 });
