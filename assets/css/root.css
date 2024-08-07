@@ -11,6 +11,7 @@
     /* ----color- */
     --color-yellow: #f1c045;
     --color-lite-black: #010101;
+    --color-secondary-green:#214635;
     --color-green: #9bc2a0;
     --color-orange: #df8b42;
     --color-lite-blue: #62aaa7;
@@ -29,7 +30,9 @@
 .text_green {
     color: var(--color-green);
 }
-
+.secondary_green{
+    background-color: var(--color-secondary-green);
+}
 .text_orange {
     color: var(--color-orange);
 }
