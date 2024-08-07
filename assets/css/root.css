@@ -19,7 +19,9 @@
     --color-lite-blue: #62aaa7;
     --color-grey: #ededed;
     --color-blue: #1839eb;
+    --color-cream: #EEE9D2;
 }
+
 /* -------Common---Things------ */
 .common_button {
     min-height: 56px;
@@ -34,6 +36,7 @@
     line-height: 46.8px;
     color: var(--color-lite-black);
 }
+
 /* -------Common---Things------ */
 
 .text_yellow {
@@ -168,6 +171,7 @@
 .text_6xl {
     font-size: var(--font-6xl);
 }
-.font_montserrat{
+
+.font_montserrat {
     font-family: "Montserrat", sans-serif;
 }

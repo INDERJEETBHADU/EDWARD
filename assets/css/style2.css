@@ -1,1 +1,13 @@
 @import url(./root.css);
+
+.choose_yellow_box {
+    max-width: 1308px;
+    min-height: 825px;
+    background: var(--color-cream);
+    border-radius: 36px;
+    padding: 109px 84px;
+}
+.choose_sub_heading{
+
+}
+
