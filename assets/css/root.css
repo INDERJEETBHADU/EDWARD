@@ -28,6 +28,14 @@
     background: var(--color-yellow);
 }
 
+.common_heading {
+    font-weight: 700;
+    font-size: var(--font-5xl);
+    line-height: 46.8px;
+    color: var(--color-lite-black);
+}
+/* -------Common---Things------ */
+
 .text_yellow {
     color: var(--color-yellow);
 }
