@@ -1,0 +1,87 @@
+@import url(./root.css);
+.max_width_1308{
+    max-width: 1308px;
+    background: #62AAA733;
+    border-radius: 36px;
+    margin: 0 auto;
+    padding: 110px 0;
+}
+.py_60{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.custom_container{
+    max-width: 1164px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+.customers_img{
+    max-width: 557px;
+}
+
+
+
+.slider_image_one{
+    max-width: 89px;
+}
+.slider_image_two{
+    max-width: 164px;
+}
+
+.slider_container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.slider_parent {
+  display: flex;
+  gap: 24px;
+  width: auto;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.slider_parent {
+  animation-name: slide;
+}
+
+/* Combined hover effects */
+.slider_parent:hover,
+.slider_container:hover .slider_parent {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.slide_image_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid var(--color-lite-blue);
+    width: 209px;
+    background: #62AAA70A;
+    border-radius: 12px;
+    min-height: 108px;
+}
+
+
+
+
+.review_box{
+    max-width: 267px;
+    min-height: 211px;
+    border-radius: 20px;
+}
