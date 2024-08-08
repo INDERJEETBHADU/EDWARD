@@ -13,40 +13,41 @@
 </head>
 
 <body>
-    <header class="secondary_green">
-        <nav class="py-2">
+    <header class="">
+        <nav class="py-2 secondary_green">
             <div class="container">
-                <div class="d-flex justify-content-between">
-                    <a href="/" class="font_montserrat font-normal text-white text_6xl lh_64">LOGO</a>
-                    <ul id="navbar" class="d-flex align-items-center gap-30 mobile_view">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="/" class="font_montserrat mb-0 fw-bold text-white text_6xl lh_64">LOGO</a>
+                    <ul id="navbar" class="d-flex fw-normal  text_sm lh_24 align-items-center  gap_22 mobile_view">
                         <li>
-                            <a class=" home fs-sm color-purple ftw-400 ff-poopins mb-0" onclick="openNav()" href="home">Home</a>
+                            <a class=" home position-relative text-white opacity_70 mb-0" onclick="openNav()"
+                                href="home">Home</a>
                         </li>
                         <li>
-                            <a class="home  fs-sm color-purple ftw-400 ff-poopins mb-0" onclick="openNav()" href="#about_us">Overview</a>
+                            <a class="home position-relative text-white opacity_70 mb-0" onclick="openNav()"
+                                href="#about_us">About Us</a>
                         </li>
                         <li>
-                            <a class="home fs-sm color-purple ftw-400 ff-poopins mb-0" onclick="openNav()" href="#service">Why
-                                Choose Us?</a>
+                            <a class="home position-relative text-white opacity_70 mb-0" onclick="openNav()"
+                                href="#service">Why
+                                How it Works
                         </li>
                         <li>
-                            <a class="home fs-sm color-purple ftw-400 ff-poopins mb-0" onclick="openNav()" href="#our_plans">Our Plans</a>
+                            <a class="home position-relative text-white opacity_70 mb-0" onclick="openNav()"
+                                href="#our_plans">Contact
+                                Us</a>
                         </li>
-                        <li>
-                            <a class="home fs-sm color-purple ftw-400 ff-poopins mb-0" onclick="openNav()" href="#work">How
-                                It
-                                Works</a>
-                        </li>
-                        <li>
-                            <a class="home fs-sm color-purple ftw-400 ff-poopins mb-0" onclick="openNav()" href="#FAQ">FAQs</a>
-                        </li>
-                    
+                        <li><button
+                                class="common_button d-sm-none border-0 fw-semibold text_sm lh_24 text_lite_black">Get
+                                Started</button></li>
                     </ul>
-                    <button class="common_button border-0">Get Connected</button>
+                    <button
+                        class="common_button d-none d-sm-block border-0 fw-semibold text_sm lh_24 text_lite_black">Get
+                        Started</button>
                     <div onclick="openNav()" class="menu d-block d-lg-none z-3">
                         <span></span>
                         <span class="my-2"></span>
-                    
+
                         <span></span>
                     </div>
                 </div>
@@ -54,7 +55,10 @@
             </div>
         </nav>
     </header>
-  
+    <script src="./assets/app.js">
+
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
