@@ -1,16 +1,16 @@
 @import url(./root.css);
 
 /* ========================================== Address Section Start Here ===================================================== */
-.address_section {
-  padding-bottom: 75px !important;
-}
-
 .address_section .nav-tabs {
   border: 0.5px solid var(--color-lite-blue);
   background-color: var(--color-grey);
   border-radius: 100px;
   width: fit-content !important;
   margin: 0 auto !important;
+}
+
+.address_section{
+  padding-bottom: 150px !important;
 }
 
 .nav-tabs .nav-link {
