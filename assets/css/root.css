@@ -29,15 +29,19 @@
     --color-grey: #ededed;
     --color-blue: #1839eb;
     --color-cream: #EEE9D2;
-    --color-lite-cream:#D6D2BD;
+    --color-lite-cream: #D6D2BD;
 }
 
 /* -------Common---Things------ */
 .common_button {
+    border: 1px solid transparent;
     min-height: 56px;
     padding: 16px 32px;
     border-radius: 100px;
     background: var(--color-yellow);
+    font-size: var(--font-sm);
+    line-height: 24px;
+    color: var(--color-lite-black);
 }
 
 .common_heading {
@@ -60,7 +64,8 @@
 .text_green {
     color: var(--color-green);
 }
-.lite_cream{
+
+.lite_cream {
     background: var(--color-lite-cream);
 }
 

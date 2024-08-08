@@ -47,6 +47,11 @@ ul {
     gap: 20px;
 }
 
+.hero_section_padding {
+    padding-top: 127px;
+    padding-bottom: 139px;
+}
+
 .hero_sub_heading {
     max-width: 188px;
     width: 100%;
@@ -69,6 +74,13 @@ ul {
 
 .hero_btn_margin {
     margin-top: 54px;
+}
+
+.hero_learn_more_btn {
+    border: 1px solid #000000;
+    padding: 16px 32px;
+    border-radius: 100px;
+    background-color: transparent;
 }
 
 
