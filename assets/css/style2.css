@@ -167,7 +167,11 @@
     background: white;
     border-radius: 20px;
     padding: 16px 40px;
+    height: 100%;
+}
 
+.services_card_padding {
+    padding: 16px 29px;
 }
 
 .services_card_sub_heading {
@@ -211,12 +215,15 @@
 .newsletter_input_top_spacing {
     margin-top: 30px;
 }
-.services_card_top_padding{
+
+.services_card_top_padding {
     padding-top: 60px;
 }
-.services_btn_top_padding{
+
+.services_btn_top_padding {
     padding-top: 48px;
 }
+
 .choose_icon_gap {
     gap: 10px;
 }
@@ -321,6 +328,10 @@ ul {
     .choose_yellow_box {
         padding: 70px 30px;
     }
+
+    .services_box {
+        padding: 80px 30px;
+    }
 }
 
 @media (max-width:992px) {
@@ -343,11 +354,16 @@ ul {
     .footer_parent_radius {
         padding-bottom: 50px;
     }
+    .services_card_top_padding {
+        padding-top: 30px;
+    }
+    .services_box{
+        padding: 30px;
+    }
 }
 
 @media (min-width:1200px) {
     .footer_custom_container {
-        max-width: 1188px !important;
+        max-width: 1164px !important;
     }
-
 }
