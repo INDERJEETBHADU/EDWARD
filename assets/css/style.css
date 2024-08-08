@@ -47,6 +47,19 @@ ul {
     gap: 20px;
 }
 
+.mt_20 {
+    margin-top: 20px;
+}
+
+.hero_bg {
+    border-radius: 0px 0px 36px 36px;
+}
+
+.hero_section_padding {
+    padding-top: 127px;
+    padding-bottom: 139px;
+}
+
 .hero_sub_heading {
     max-width: 188px;
     width: 100%;
@@ -67,10 +80,177 @@ ul {
     border-radius: 20px;
 }
 
+.image-container {
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 120.24%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    align-items: end;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+
+.image-container:hover .overlay,
+.image-container:hover .overlay-text {
+    opacity: 1;
+}
+
 .hero_btn_margin {
     margin-top: 54px;
 }
 
+.hero_learn_more_btn {
+    border: 1px solid #000000;
+    padding: 16px 32px;
+    border-radius: 100px;
+    background-color: transparent;
+}
+
+.hero_main_img {
+    max-width: 493px;
+    border-radius: 36px;
+    margin-top: 30px;
+}
+
+.comma_lady_position {
+    top: -37%;
+    left: 1%;
+
+}
+
+.hero_main_img_layer {
+    right: 0%;
+    top: 15%;
+}
+
+.edward_box {
+    max-width: 161.92px;
+    width: 100%;
+    height: 159px;
+    border-radius: 8.86px;
+    box-shadow: 1.77px 1.77px 29.01px 0px #00000014;
+    bottom: 10%;
+    right: -17%;
+    padding: 10px 6px;
+    background-color: white;
+    z-index: 2;
+}
+
+.rating_box {
+    width: 18.34px;
+    height: 18.34px;
+    background-color: #00B67A;
+    font-size: 7.86px;
+    line-height: 9.58px;
+    letter-spacing: -0.18px;
+}
+
+.review_text {
+    font-size: 7.86px;
+    line-height: 9.58px;
+    letter-spacing: -0.18px;
+}
+
+.edward_sub_box {
+    background: #F7F7F7;
+    width: 142px;
+    border-radius: 12px;
+    height: 83px;
+    margin-top: 36px;
+    padding: 46px 13px 17px 12px;
+}
+
+.Edward_Nguyen_text {
+    font-size: 14px;
+    line-height: 20.3px;
+}
+
+/* --------------WORK----SECTION---CSS */
+.work_sec_padding {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.step_box {
+    border-bottom: 0.5px solid #62AAA7;
+    background: #62AAA70A;
+    padding: 10px 40px;
+    border-radius: 36px;
+}
+
+.step_heading {
+    font-size: var(--font-3xl);
+    line-height: 33.6px;
+    font-weight: 500;
+    color: var(--color-lite-black);
+}
+
+.step_icon_box {
+    width: 28px;
+    height: 28px;
+    background: #E3EAE7;
+    border-radius: 50%;
+}
+
+.mt_12 {
+    margin-top: 12px;
+}
+
+.gap_10 {
+    gap: 10px;
+}
+
+.step_sub_heading {
+    font-weight: 600;
+    font-size: var(--font-sm);
+    line-height: 24px;
+    color: var(--color-lite-black);
+}
+
+.step_paragraph {
+    font-weight: 400;
+    font-size: var(--font-sm);
+    line-height: 24px;
+    color: var(--color-lite-black);
+    opacity: 70%;
+}
+
+.work_sec_lady_call_img {
+    max-width: 275px;
+    width: 100%;
+    border-radius: 36px;
+}
+
+.work_sec_family_img {
+    max-width: 275px;
+    width: 100%;
+    border-radius: 36px;
+}
+
+.Satisfied_Customers_box {
+    max-width: 275px;
+    width: 100%;
+    height: 266px;
+    border-radius: 36px;
+    background: #62AAA7;
+}
+
+@media (min-width:1200px) {
+    .custom_container {
+        max-width: 1140px !important;
+    }
+
+}
 
 @media (max-width: 992.9px) {
     .mobile_view {
@@ -85,7 +265,11 @@ ul {
         align-items: center;
         justify-content: center;
         transition: 300ms linear;
-        z-index: 3;
+        z-index: 4;
+    }
+
+    .z_index_4 {
+        z-index: 4;
     }
 
     .overflow_hidden {
@@ -131,5 +315,39 @@ ul {
     .cross span:nth-child(3) {
         transform: rotate(-43deg) translateY(-13px);
         transition: 300ms linear;
+    }
+}
+
+@media (max-width:576px) {
+
+    .step_icon_box {
+        min-width: 28px;
+    }
+
+    .hero_section_padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .hero_main_img {
+        max-width: 360px;
+        margin-top: 0px;
+    }
+
+    .hero_btn_margin {
+        margin-top: 24px;
+    }
+
+    .work_sec_padding {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .step_box {
+        max-width: 506px;
+    }
+
+    .mt_20 {
+        margin-top: 10px;
     }
 }

@@ -10,6 +10,7 @@
 }
 
 :root {
+<<<<<<< HEAD
   --font-sm: 16px;
   --font-md: 18px;
   --font-lg: 19.3px;
@@ -30,14 +31,78 @@
   --color-blue: #1839eb;
   --color-cream: #EEE9D2;
   --color-lite-cream: #D6D2BD;
+=======
+    --font-sm: 16px;
+    --font-md: 18px;
+    --font-lg: 19.3px;
+    --font-xl: 20px;
+    --font-2xl: 22px;
+    --font-3xl: 24px;
+    --font-4xl: 32px;
+    --font-5xl: 36px;
+    --font-6xl: 48px;
+    /* ----color- */
+    --color-yellow: #f1c045;
+    --color-lite-black: #010101;
+    --color-secondary-green: #214635;
+    --color-green: #9bc2a0;
+    --color-orange: #df8b42;
+    --color-lite-blue: #62aaa7;
+    --color-azureish-white: #E0EEED;
+    --color-grey: #ededed;
+    --color-blue: #1839eb;
+    --color-cream: #EEE9D2;
+    --color-lite-cream: #D6D2BD;
+>>>>>>> a82c1b2b49e963b481f82bee5c8b27367f8431cf
 }
 
 /* -------Common---Things------ */
 .common_button {
+<<<<<<< HEAD
   min-height: 56px;
   padding: 16px 32px;
   border-radius: 100px;
   background: var(--color-yellow);
+=======
+    font-weight: 600;
+    padding: 16px 32px;
+    border-radius: 100px;
+    background: var(--color-yellow);
+    font-size: var(--font-sm);
+    line-height: 24px;
+    color: var(--color-lite-black);
+    transition: all 300ms linear;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.common_button::before {
+    background: black;
+    border: 1px solid transparent;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 100px;
+    transition: 300ms linear;
+    z-index: -1;
+}
+
+.common_button:hover::before {
+    opacity: 1;
+    left: 0;
+}
+
+.common_button:hover {
+    border: 1px solid transparent;
+    color: white;
+>>>>>>> a82c1b2b49e963b481f82bee5c8b27367f8431cf
 }
 
 .common_heading {
@@ -62,11 +127,19 @@
 }
 
 .lite_cream {
+<<<<<<< HEAD
   background: var(--color-lite-cream);
 }
 
 .bg_cream {
   background: var(--color-cream);
+=======
+    background: var(--color-lite-cream);
+}
+
+.bg_cream {
+    background: var(--color-cream);
+>>>>>>> a82c1b2b49e963b481f82bee5c8b27367f8431cf
 }
 
 .secondary_green {
@@ -195,4 +268,100 @@
 
 .text_6xl {
   font-size: var(--font-6xl);
+}
+
+
+
+
+
+
+
+
+@media (max-width:1400px) {
+    :root {
+        --font-sm: 16px;
+        --font-md: 18px;
+        --font-lg: 19.3px;
+        --font-xl: 20px;
+        --font-2xl: 22px;
+        --font-3xl: 24px;
+        --font-4xl: 32px;
+        --font-5xl: 36px;
+        --font-6xl: 48px;
+    }
+}
+
+@media (max-width:1200px) {
+    :root {
+        --font-sm: 16px;
+        --font-md: 18px;
+        --font-lg: 19.3px;
+        --font-xl: 20px;
+        --font-2xl: 22px;
+        --font-3xl: 24px;
+        --font-4xl: 32px;
+        --font-5xl: 36px;
+        --font-6xl: 48px;
+    }
+}
+
+@media (max-width:1024px) {
+    :root {
+        --font-sm: 16px;
+        --font-md: 18px;
+        --font-lg: 19.3px;
+        --font-xl: 20px;
+        --font-2xl: 22px;
+        --font-3xl: 24px;
+        --font-4xl: 32px;
+        --font-5xl: 36px;
+        --font-6xl: 48px;
+    }
+}
+
+@media (max-width:992px) {
+    :root {
+        --font-sm: 14px;
+        --font-md: 18px;
+        --font-lg: 19.3px;
+        --font-xl: 20px;
+        --font-2xl: 22px;
+        --font-3xl: 24px;
+        --font-4xl: 32px;
+        --font-5xl: 36px;
+        --font-6xl: 48px;
+    }
+}
+
+
+@media (max-width:768px) {
+    :root {
+        --font-sm: 14px;
+        --font-md: 18px;
+        --font-lg: 19.3px;
+        --font-xl: 20px;
+        --font-2xl: 22px;
+        --font-3xl: 24px;
+        --font-4xl: 32px;
+        --font-5xl: 36px;
+        --font-6xl: 48px;
+    }
+}
+
+@media (max-width:576px) {
+    :root {
+        --font-sm: 14px;
+        --font-md: 18px;
+        --font-lg: 19.3px;
+        --font-xl: 20px;
+        --font-2xl: 22px;
+        --font-3xl: 24px;
+        --font-4xl: 32px;
+        --font-5xl: 36px;
+        --font-6xl: 28px;
+    }
+
+    .lh_57 {
+        line-height: 42.6px;
+    }
 }
