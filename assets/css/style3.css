@@ -11,13 +11,18 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.video {
+  display: none;
+}
+
+.customers_img {
+  max-width: 557px;
+}
+
 .custom_container {
   max-width: 1164px;
   margin: 0 auto;
   padding: 0 12px;
-}
-.customers_img {
-  max-width: 557px;
 }
 .slider_image_one {
   max-width: 89px;
@@ -92,9 +97,11 @@
 .clients_section {
   padding-top: 150px;
 }
+
 .trust_star_img {
   max-width: 156px;
 }
+
 .edward_card {
   padding: 12px;
   padding-top: 41px;
@@ -102,18 +109,23 @@
   background-color: white;
   box-shadow: 4px 4px 65.5px 0px #0000000d;
 }
+
 .edward1_img {
   width: 107px;
 }
+
 .common_comma {
   width: 32px;
 }
+
 .comma_2 {
   transform: rotate(180deg);
 }
+
 .gap_40 {
   gap: 40px;
 }
+
 .edward_images {
   top: 41px;
   left: 50%;
@@ -312,6 +324,29 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .clients_slider .slick-dots {
     padding: 15px 15px !important;
+  }
+
+  .clients_section {
+    padding-top: 90px;
+  }
+
+  .address_section {
+    padding-top: 122px;
+  }
+
+  .max_width_1308 {
+    border-radius: 20px;
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 767.11px) {
+  .clients_section {
+    padding-top: 60px;
+  }
+
+  .address_section {
+    padding-top: 102px;
   }
 }
 

@@ -39,7 +39,22 @@ check.addEventListener("click", () => {
   check_img.classList.toggle("d-none");
 });
 function openNav() {
-    document.getElementById("navbar").classList.toggle("start-0");
-    document.body.classList.toggle("overflow_hidden");
-    document.querySelector(".menu").classList.toggle("cross")
+  document.getElementById("navbar").classList.toggle("start-0");
+  document.body.classList.toggle("overflow_hidden");
+  document.querySelector(".menu").classList.toggle("cross");
 }
+
+// ===================================== video play ========================================//
+
+let pauseIcon = document.querySelector(".pause_icon");
+let videoThumbnail = document.querySelector(".video_thumbnail");
+let video = document.querySelector(".youtube_video");
+
+pauseIcon.addEventListener("click", () => {
+  videoThumbnail.style.display = "none";
+  pauseIcon.style.display = "none";
+  video.style.display = "block";
+
+  let videoIframe = document.getElementById("videoIframe");
+  videoIframe.src += "&autoplay=1";
+});
