@@ -157,6 +157,16 @@
     height: 30.57px;
     border-radius: 50%;
     background: #214635;
+    transition: all linear 300ms;
+}
+.footer_icon_box:hover{
+    transform: scale(1.1);
+}
+footer ul li a{
+    transition: all linear 300ms;
+}
+footer ul li a:hover{
+    opacity: unset !important;
 }
 
 /* services */
@@ -373,6 +383,12 @@ ul {
 
     .services_box {
         padding: 30px;
+    }
+    .accordion{
+        margin-top: 30px;
+    }
+    .Frequently_top_spacing{
+        padding-top: 50px;
     }
 }
 

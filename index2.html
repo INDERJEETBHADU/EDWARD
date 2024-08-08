@@ -290,13 +290,17 @@
                             amet edit, sed do tempor incididunt ut dolore magna aliqua lorem
                             ipsum dolor sit amet, consectetur adopiscing edit.</p>
                         <div class="footer_icon_parent d-flex align-items-center">
-                            <a href="https://www.facebook.com/" class="footer_icon_box d-flex justify-content-center align-items-center"><img
+                            <a target="_blank" href="https://www.facebook.com/"
+                                class="footer_icon_box d-flex justify-content-center align-items-center"><img
                                     src="./assets/images/svg/facebook-icon.svg" alt="icon"></a>
-                            <a href="https://www.instagram.com/" class="footer_icon_box d-flex justify-content-center align-items-center"><img
+                            <a target="_blank" href="https://www.instagram.com/"
+                                class="footer_icon_box d-flex justify-content-center align-items-center"><img
                                     src="./assets/images/svg/instagram.svg" alt="icon"></a>
-                            <a href="https://mail.google.com/mail/u/0/" class="footer_icon_box d-flex justify-content-center align-items-center"><img
+                            <a target="_blank" href="https://mail.google.com/mail/u/0/"
+                                class="footer_icon_box d-flex justify-content-center align-items-center"><img
                                     src="./assets/images/svg/mail-icon.svg" alt="icon"></a>
-                            <a href="" class="footer_icon_box d-flex justify-content-center align-items-center"><img
+                            <a target="_blank" href="https://in.linkedin.com/"
+                                class="footer_icon_box d-flex justify-content-center align-items-center"><img
                                     src="./assets/images/svg/inded-icon.svg" alt="icon"></a>
                         </div>
                     </div>
@@ -335,10 +339,11 @@
                     <div class="col-xl-2 mt-xl-0 mt-3 col-sm-6 col-12 d-flex justify-content-xl-center">
                         <ul class="d-flex flex-column footer_text_gap">
                             <li class="fw-bold text_sm lh_24 text_lite_black footer_heading_gap">Contact</li>
-                            <li><a href=""
+                            <li><a href="mailto:webmaster@example.com"
                                     class="fw-normal text_sm lh_24 text_lite_black opacity_70">info@yourservice.com</a>
                             </li>
-                            <li><a href="" class="fw-normal text_sm lh_24 text_lite_black opacity_70">123.456.7890</a>
+                            <li><a href="tel:+6494461709"
+                                    class="fw-normal text_sm lh_24 text_lite_black opacity_70">123.456.7890</a>
                             </li>
                         </ul>
                     </div>
@@ -358,6 +363,19 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./assets/app.js"></script>
+    <script>
+        document.getElementById('newsletterForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            Swal.fire({
+                title: 'Email Submit',
+                icon: 'success',
+                timer: 3000,
+                showConfirmButton: false
+            });
+
+            event.target.reset();
+        });
+    </script>
 </body>
 
 </html>

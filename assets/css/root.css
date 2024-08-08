@@ -74,24 +74,24 @@
 }
 
 .common_button::before {
-    background: black;
-    border: 1px solid transparent;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -100%;
-    position: absolute;
-    z-index: 0;
-    opacity: 0;
-    border-radius: 100px;
-    transition: 300ms linear;
-    z-index: -1;
+  background: black;
+  border: 1px solid transparent;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  border-radius: 100px;
+  transition: 300ms linear;
+  z-index: -1;
 }
 
 .common_button:hover::before {
-    opacity: 1;
-    left: 0;
+  opacity: 1;
+  left: 0;
 }
 
 .common_button:hover {
@@ -261,25 +261,18 @@
   font-size: var(--font-6xl);
 }
 
-
-
-
-
-
-
-
-@media (max-width:1400px) {
-    :root {
-        --font-sm: 16px;
-        --font-md: 18px;
-        --font-lg: 19.3px;
-        --font-xl: 20px;
-        --font-2xl: 22px;
-        --font-3xl: 24px;
-        --font-4xl: 32px;
-        --font-5xl: 36px;
-        --font-6xl: 48px;
-    }
+@media (max-width: 1400px) {
+  :root {
+    --font-sm: 16px;
+    --font-md: 18px;
+    --font-lg: 19.3px;
+    --font-xl: 20px;
+    --font-2xl: 22px;
+    --font-3xl: 24px;
+    --font-4xl: 32px;
+    --font-5xl: 36px;
+    --font-6xl: 48px;
+  }
 }
 
 @media (max-width:1200px) {
@@ -310,18 +303,18 @@
     }
 }
 
-@media (max-width:992px) {
-    :root {
-        --font-sm: 14px;
-        --font-md: 18px;
-        --font-lg: 19.3px;
-        --font-xl: 20px;
-        --font-2xl: 22px;
-        --font-3xl: 24px;
-        --font-4xl: 32px;
-        --font-5xl: 36px;
-        --font-6xl: 48px;
-    }
+@media (max-width: 992px) {
+  :root {
+    --font-sm: 14px;
+    --font-md: 18px;
+    --font-lg: 19.3px;
+    --font-xl: 20px;
+    --font-2xl: 22px;
+    --font-3xl: 24px;
+    --font-4xl: 32px;
+    --font-5xl: 36px;
+    --font-6xl: 48px;
+  }
 }
 
 
@@ -339,18 +332,18 @@
     }
 }
 
-@media (max-width:576px) {
-    :root {
-        --font-sm: 14px;
-        --font-md: 18px;
-        --font-lg: 19.3px;
-        --font-xl: 20px;
-        --font-2xl: 22px;
-        --font-3xl: 24px;
-        --font-4xl: 32px;
-        --font-5xl: 36px;
-        --font-6xl: 28px;
-    }
+@media (max-width: 576px) {
+  :root {
+    --font-sm: 14px;
+    --font-md: 18px;
+    --font-lg: 19.3px;
+    --font-xl: 20px;
+    --font-2xl: 22px;
+    --font-3xl: 24px;
+    --font-4xl: 32px;
+    --font-5xl: 36px;
+    --font-6xl: 28px;
+  }
 
     .lh_57 {
         line-height: 42.6px;
