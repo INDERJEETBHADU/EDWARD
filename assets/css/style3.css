@@ -1,41 +1,36 @@
 @import url(./root.css);
-.max_width_1308{
-    max-width: 1308px;
-    background: #62AAA733;
-    border-radius: 36px;
-    margin: 0 auto;
-    padding: 110px 0;
-}
-.py_60{
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
 
-.custom_container{
-    max-width: 1164px;
-    margin: 0 auto;
-    padding: 0 12px;
+.max_width_1308 {
+  max-width: 1308px;
+  background: #62aaa733;
+  border-radius: 36px;
+  margin: 0 12px !important;
+  padding: 110px 0;
 }
-.customers_img{
-    max-width: 557px;
+.py_60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
-
-
-.slider_image_one{
-    max-width: 89px;
+.custom_container {
+  max-width: 1164px;
+  margin: 0 auto;
+  padding: 0 12px;
 }
-.slider_image_two{
-    max-width: 164px;
+.customers_img {
+  max-width: 557px;
 }
-
+.slider_image_one {
+  max-width: 89px;
+}
+.slider_image_two {
+  max-width: 164px;
+}
 .slider_container {
   width: 100%;
   position: relative;
   display: flex;
   overflow: hidden;
 }
-
 .slider_parent {
   display: flex;
   gap: 24px;
@@ -49,11 +44,249 @@
   animation-name: slide;
 }
 
-/* Combined hover effects */
 .slider_parent:hover,
 .slider_container:hover .slider_parent {
   animation-play-state: paused;
 }
+
+.slide_image_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid var(--color-lite-blue);
+  width: 209px;
+  background: #62aaa70a;
+  border-radius: 12px;
+  min-height: 108px;
+}
+.review_box {
+  max-width: 267px;
+  min-height: 211px;
+  border-radius: 20px;
+}
+.years-box {
+  background-color: #9bc2a0;
+  min-height: 211px;
+  border-radius: 20px;
+}
+.reviews-box {
+  background-color: #eee9d2;
+  min-height: 211px;
+  border-radius: 20px;
+}
+.review-img {
+  width: 38px;
+}
+.gap_6 {
+  gap: 6px;
+}
+.star_img_w {
+  max-width: 168px;
+}
+.review_txt {
+  padding-top: 10.39px;
+}
+
+/* ========================================== Clients Section Start Here ===================================================== */
+
+.clients_section {
+  padding-top: 150px;
+}
+.trust_star_img {
+  max-width: 156px;
+}
+.edward_card {
+  padding: 12px;
+  padding-top: 41px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 4px 4px 65.5px 0px #0000000d;
+}
+.edward1_img {
+  width: 107px;
+}
+.common_comma {
+  width: 32px;
+}
+.comma_2 {
+  transform: rotate(180deg);
+}
+.gap_40 {
+  gap: 40px;
+}
+.edward_images {
+  top: 41px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.edward_txt {
+  background-color: #f7f7f7;
+  margin-top: 54px;
+  padding: 0 10px;
+  padding-top: 69px;
+  padding-bottom: 44px;
+  border-radius: 12px;
+}
+.p_color {
+  color: #4b4b4b;
+}
+.slick-dots li.slick-active button:before p {
+  margin: 0 !important;
+}
+
+/* clients slider code here */
+.clients_slider .slick-slide {
+  margin: 0 11px;
+}
+
+.clients_slider .slick-list {
+  margin: 0 -6px;
+}
+
+.clients_slider.slick-slider .slick-list {
+  box-shadow: 4px 4px 65.5px 0px #00000014;
+  border-radius: 20px;
+}
+.clients_slider .slick-dots li.slick-active button:before {
+  width: 40px;
+  height: 8px;
+  border-radius: 14px;
+  background-color: #f1c045;
+  opacity: 100% !important;
+  color: unset !important;
+  font-size: 0 !important;
+}
+
+.clients_slider .slick-dots li {
+  width: 28px;
+  height: 8px;
+  border-radius: 14px;
+  background-color: #fbf1d7;
+  margin: 0 10px;
+}
+.slick-dots li button:before {
+  content: "" !important;
+}
+
+.clients_slider .slick-dots {
+  width: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 19px 53px;
+  border: 0.3px solid #f1c045;
+  border-radius: 100px;
+  height: unset !important;
+  bottom: -60px !important;
+  background-color: #fdfdfb;
+  display: flex;
+}
+.clients_section .prev,
+.next {
+  outline: none !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.clients_section .next {
+  left: 61%;
+  bottom: -22px;
+}
+
+.clients_section .prev {
+  right: 61%;
+  bottom: -22px;
+}
+
+/* ========================================== Address Section Start Here ===================================================== */
+.address_section {
+  padding-top: 150px;
+}
+.address_section .nav-tabs {
+  border: 0.5px solid #62aaa7;
+  background-color: #ededed;
+  border-radius: 100px;
+  width: fit-content !important;
+  margin: 0 auto !important;
+}
+
+.nav-tabs .nav-link {
+  border-radius: 100px !important;
+  border: none !important;
+  color: #010101 !important;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #62aaa7 !important;
+  color: white !important;
+}
+
+.home_owner {
+  width: 175px;
+  height: 56px;
+}
+
+.home_renter {
+  width: 175px;
+  height: 56px;
+}
+
+.address_form {
+  max-width: 475px !important;
+}
+
+.text_input {
+  border: 0.5px solid #010101;
+  border-radius: 20px;
+  outline: none;
+  height: 56px;
+}
+
+.checkbox {
+  border: 0.5px solid #010101;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.checkbox_txt {
+  color: #1839e8;
+}
+
+.checkbox_part {
+  cursor: pointer;
+  width: fit-content;
+  padding-top: 20px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.connected_btn {
+  padding: 16px 32px;
+  border-radius: 100px;
+  background-color: #f1c045;
+  outline: none;
+  border: none;
+}
+
+.calender_box {
+  border: 0.5px solid #f1c045;
+  background: #f1c0450a;
+  border-radius: 36px;
+  padding: 36px 42px;
+}
+
+.calender_svg {
+  box-shadow: 0px 4.71px 70.63px 0px #5928e50a;
+}
+
+/* =========================================================== Slider Keyframe  ===================================================== */
 
 @keyframes slide {
   0% {
@@ -65,23 +298,62 @@
   }
 }
 
-
-.slide_image_box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0.5px solid var(--color-lite-blue);
-    width: 209px;
-    background: #62AAA70A;
-    border-radius: 12px;
-    min-height: 108px;
+/* =========================================================== Max Width  =========================================================== */
+@media (max-width: 1399.11px) {
+  .clients_slider .slick-dots {
+    padding: 19px 71px;
+  }
 }
 
+@media (max-width: 991.11px) {
+  .calender_box {
+    max-width: 475px;
+  }
 
+  .clients_slider .slick-dots {
+    padding: 15px 15px !important;
+  }
+}
 
+@media (max-width: 575.11px) {
+  .clients_slider .slick-dots {
+    width: 240px !important;
+    padding: 12px 0px;
+  }
 
-.review_box{
-    max-width: 267px;
-    min-height: 211px;
-    border-radius: 20px;
+  .home_owner {
+    width: 140px;
+    height: 45px;
+  }
+
+  .home_renter {
+    width: 140px;
+    height: 45px;
+  }
+
+  .star_img_w {
+    max-width: 134px;
+  }
+
+  .px_sm_6 {
+    padding: 0 6px !important;
+  }
+
+  .calender_box {
+    padding: 20px 12px;
+  }
+}
+
+/* =========================================================== Min Width  ===================================================== */
+
+@media (min-width: 1400px) {
+  .clients_section .next {
+    left: 59.6%;
+    bottom: -23px;
+  }
+
+  .clients_section .prev {
+    right: 59.6%;
+    bottom: -23px;
+  }
 }
