@@ -38,3 +38,8 @@ const check_img = document.querySelector(".check-img");
 check.addEventListener("click", () => {
   check_img.classList.toggle("d-none");
 });
+function openNav() {
+    document.getElementById("navbar").classList.toggle("start-0");
+    document.body.classList.toggle("overflow_hidden");
+    document.querySelector(".menu").classList.toggle("cross")
+}

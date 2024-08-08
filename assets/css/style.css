@@ -1,4 +1,3 @@
-
 dl,
 ol,
 ul {
@@ -10,7 +9,70 @@ ul {
     padding-left: 0 !important;
 }
 
-@media (max-width: 1199.9px) {
+.home {
+    transition: 400ms linear;
+}
+
+.home:hover {
+    -webkit-text-stroke-width: 1px;
+    opacity: 1 !important;
+}
+
+.home {
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.home:hover::after {
+    width: 100%;
+}
+
+/* ------marin---padding----gap */
+.gap_22 {
+    gap: 22px;
+}
+
+.gap_20 {
+    gap: 20px;
+}
+
+.hero_sub_heading {
+    max-width: 188px;
+    width: 100%;
+    padding: 4px 16px;
+    border-radius: 42px;
+    border: 1px solid #9BC2A0;
+    background: #9BC2A059;
+    border-radius: 42px;
+}
+
+.hero_main_heading {
+    max-width: 588px;
+    margin-top: 14px;
+}
+
+.hero_office_img {
+    max-width: 180px;
+    border-radius: 20px;
+}
+
+.hero_btn_margin {
+    margin-top: 54px;
+}
+
+
+@media (max-width: 992.9px) {
     .mobile_view {
         position: absolute;
         backdrop-filter: blur(60px);

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +28,10 @@
   --color-lite-blue: #62aaa7;
   --color-grey: #ededed;
   --color-blue: #1839eb;
+  --color-cream: #EEE9D2;
+  --color-lite-cream: #D6D2BD;
 }
+
 /* -------Common---Things------ */
 .common_button {
   min-height: 56px;
@@ -42,6 +46,7 @@
   line-height: 46.8px;
   color: var(--color-lite-black);
 }
+
 /* -------Common---Things------ */
 
 .text_yellow {
@@ -56,8 +61,20 @@
   color: var(--color-green);
 }
 
+.lite_cream {
+  background: var(--color-lite-cream);
+}
+
+.bg_cream {
+  background: var(--color-cream);
+}
+
 .secondary_green {
   background-color: var(--color-secondary-green);
+}
+
+.text_light_black {
+  color: var(--color-lite-black);
 }
 
 .text_orange {
