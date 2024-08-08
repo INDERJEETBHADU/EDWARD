@@ -152,6 +152,13 @@
     max-width: 345px;
 }
 
+.footer_icon_box {
+    width: 30.57px;
+    height: 30.57px;
+    border-radius: 50%;
+    background: #214635;
+}
+
 /* services */
 .services_box {
     max-width: 1308px;
@@ -212,6 +219,11 @@
 }
 
 /* gap , margin padding */
+.footer_icon_parent {
+    gap: 10.57px;
+    margin-top: 20px;
+}
+
 .newsletter_input_top_spacing {
     margin-top: 30px;
 }
@@ -354,10 +366,12 @@ ul {
     .footer_parent_radius {
         padding-bottom: 50px;
     }
+
     .services_card_top_padding {
         padding-top: 30px;
     }
-    .services_box{
+
+    .services_box {
         padding: 30px;
     }
 }
