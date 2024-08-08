@@ -7,12 +7,28 @@
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="./assets/css/root.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style2.css">
+    <link rel="stylesheet" href="./assets//css/style3.css">
+
+    <!-- =================================================== SLIDER LINKS =================================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- =================================================== BOOTSTRAP LINKS ================================================= -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
 </head>
 
 <body>
+
+    <!-- ====================================HEADER AND HERO SECTION=============================== -->
     <header class="lite_cream hero_bg position-relative">
         <nav class="py-2 secondary_green">
             <div class="container custom_container">
@@ -143,7 +159,8 @@
             </div>
         </div>
     </header>
-    <!-- WORK---SECTION -->
+
+    <!-- ====================================== WORK SECTION======================================== -->
     <section>
         <div class="container custom_container">
             <div class="d-flex flex-column flex-lg-row justify-content-between work_sec_padding">
@@ -220,19 +237,707 @@
                     </div>
                     <button class="common_button mt-md-5 mt-4">Start Now</button>
                 </div>
-
             </div>
         </div>
-
-
     </section>
-    <script src="./assets/app.js">
 
-    </script>
+       <!-- =================================================== ADDRESS SECTION ================================================== -->
+    <section class="address_section pb-5">
+        <div class="custom_container">
+            <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="home_owner nav-link active fw-semibold text_md text_light_black lh_24 text-nowrap"
+                        id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+                        aria-controls="home" aria-selected="true">Home Owner</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="home_renter nav-link fw-semibold text_md text_light_black lh_24" id="profile-tab"
+                        data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                        aria-selected="false">Renter</button>
+                </li>
 
+            </ul>
+
+            <h2 class="common_heading text-center pt-4">What's Your <span class="text_orange">new address?</span></h2>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row mt-lg-5 mt-3 align-items-center align-items-xl-end gap-4 gap-lg-0">
+                        <div class="col-lg-6 d-flex justify-content-center d-lg-inline-block">
+                            <form action="" class="address_form w-100">
+                                <div>
+                                    <div class="fw-semibold text_md lh_27 text_light_black">Full Name*</div>
+                                    <input type="text" class="text_input o w-100 px-2" required>
+                                </div>
+                                <div class="pt-3">
+                                    <div class="fw-semibold text_md lh_27 text_light_black">Active Email*</div>
+                                    <input type="email" class="text_input o w-100 px-2" required>
+                                </div>
+                                <div class="pt-3">
+                                    <div class="fw-semibold text_md lh_27 text_light_black">Phone Number*</div>
+                                    <input type="number" class="text_input o w-100 px-2" required>
+                                </div>
+                                <div class="pt-3">
+                                    <div class="fw-semibold text_md lh_27 text_light_black">Connection Address*</div>
+                                    <input type="text" class="text_input o w-100 px-2" required>
+                                </div>
+
+                                <div class="checkbox_part d-flex align-items-center gap-2 mt-20 mx-auto mx-lg-0">
+                                    <div class="checkbox d-flex justify-content-center align-items-center">
+                                        <img src="./assets/images/svg/right.svg" alt="right" class="check-img d-none">
+                                    </div>
+                                    <div class="checkbox_txt fw-normal text_md lh_24">I accept the Terms
+                                        and conditions</div>
+                                </div>
+                                <div class="d-flex justify-content-center d-lg-inline-block w-100">
+                                    <button
+                                        class="connected_btn mt-lg-5 mt-3 fw-semibold text_sm lh_24 text_light_black d-flex justify-content-center align-items-center w-100">Get
+                                        Connected</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-center d-lg-inline-block">
+                            <div class="calender_box">
+                                <div class="fw-bold text_xl lh_29 text_light_black text-center">When are you Moving ?
+                                </div>
+                                <img src="./assets/images/svg/calender.svg" class="calender_svg pt-3 w-100"
+                                    alt="calender-svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="row mt-5 justify-content-center">
+                        <div class="col-lg-6 col-12 d-flex justify-content-center d-lg-inline-block">
+                            <div class="calender_box">
+                                <div class="fw-bold text_xl lh_29 text_light_black text-center">When are you Moving ?
+                                </div>
+                                <img src="./assets/images/svg/calender.svg" class="calender_svg pt-3 w-100"
+                                    alt="calender-svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- ===================================================OUR SERVICES SECTION ============================================== -->
+       <section>
+        <div class="services_box mx-auto">
+            <h2 class="common_heading text-center mb-0">Our <span class="text_orange">Services</span></h2>
+            <div class="row services_card_top_padding">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center ">
+                    <div class="services_card d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-center">
+                                <div class="services_icon_box d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/svg/services-electricity.svg" alt="icon">
+                                </div>
+                            </div>
+                            <h3 class="services_card_sub_heading text-center">Electricity</h3>
+                            <p class="services_card_paragraph text-center mb-0">Fast and reliable electricity
+                                connections
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="/"
+                                class="services_Learn_text d-flex align-items-center fw-semibold text_sm lh_24 text_lite_blue"><span>Learn
+                                    More
+                                </span><span><img src="./assets/images/svg/services-arrow-icon.svg"
+                                        alt="arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center mt-4 mt-sm-0">
+                    <div class="services_card d-flex flex-column justify-content-between services_card_padding">
+                        <div>
+                            <div class="d-flex justify-content-center">
+                                <div class="services_icon_box d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/svg/services-gas.svg" alt="icon">
+                                </div>
+                            </div>
+                            <h3 class="services_card_sub_heading text-center">Gas</h3>
+                            <p class="services_card_paragraph text-center mb-0">Efficient gas connections for your home
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="/"
+                                class="services_Learn_text d-flex align-items-center fw-semibold text_sm lh_24 text_lite_blue"><span>Learn
+                                    More
+                                </span><span><img src="./assets/images/svg/services-arrow-icon.svg"
+                                        alt="arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center mt-4 mt-md-0">
+                    <div class="services_card d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-center">
+                                <div class="services_icon_box d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/svg/services-internet.svg" alt="icon">
+                                </div>
+                            </div>
+                            <h3 class="services_card_sub_heading text-center">Internet</h3>
+                            <p class="services_card_paragraph text-center mb-0">High-speed internet setup
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="/"
+                                class="services_Learn_text d-flex align-items-center fw-semibold text_sm lh_24 text_lite_blue"><span>Learn
+                                    More
+                                </span><span><img src="./assets/images/svg/services-arrow-icon.svg"
+                                        alt="arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center mt-4 mt-lg-0">
+                    <div class="services_card d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-center">
+                                <div class="services_icon_box d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/svg/services-insurance.svg" alt="icon">
+                                </div>
+                            </div>
+                            <h3 class="services_card_sub_heading text-center">Insurance</h3>
+                            <p class="services_card_paragraph text-center mb-0">Comprehensive insurance packages.
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="/"
+                                class="services_Learn_text d-flex align-items-center fw-semibold text_sm lh_24 text_lite_blue"><span>Learn
+                                    More
+                                </span><span><img src="./assets/images/svg/services-arrow-icon.svg"
+                                        alt="arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center services_btn_top_padding">
+                <button class="common_button">Explore Services</button>
+            </div>
+        </div>
+    </section>
+
+     <!-- ================================================== SERVICES-SLIDER SECTION ========================================== -->
+    <section class="py_60 overflow-hidden">
+        <div class="slider_container">
+            <div class="slider_parent d-flex">
+                <div class="slide_image_box">
+                    <img src="./assets/images/webp/actewagl.png" alt="actewagl" class="slider_image_two">
+                </div>
+                <div class="slide_image_box">
+                    <img src="./assets/images/webp/agl.png" alt="actewagl" class="slider_image_one">
+                </div>
+                <div class="slide_image_box">
+                    <img src="./assets/images/webp/energy-australia.png" alt="actewagl" class="slider_image_two">
+                </div>
+                <div class="slide_image_box">
+                    <img src="./assets/images/webp/actewagl.png" alt="actewagl" class="slider_image_two">
+                </div>
+                <div class="slide_image_box">
+                    <img src="./assets/images/webp/agl.png" alt="actewagl" class="slider_image_one">
+                </div>
+                <div class="slide_image_box">
+                    <img src="./assets/images/webp/energy-australia.png" alt="actewagl" class="slider_image_two">
+                </div>
+                <div class="slide_image_box">
+                    <img src="./assets/images/webp/actewagl.png" alt="actewagl" class="slider_image_two">
+                </div>
+                <div class="slide_image_box">
+                    <img src="./assets/images/webp/agl.png" alt="actewagl" class="slider_image_one">
+                </div>
+                <div class="slide_image_box">
+                    <img src="./assets/images/webp/energy-australia.png" alt="actewagl" class="slider_image_two">
+                </div>
+                <div class="slide_image_box">
+                    <img src="./assets/images/webp/actewagl.png" alt="actewagl" class="slider_image_two">
+                </div>
+                <div class="slide_image_box">
+                    <img src="./assets/images/webp/agl.png" alt="actewagl" class="slider_image_one">
+                </div>
+                <div class="slide_image_box">
+                    <img src="./assets/images/webp/energy-australia.png" alt="actewagl" class="slider_image_two">
+                </div>
+                <div class="slide_image_box">
+                    <img src="./assets/images/webp/actewagl.png" alt="actewagl" class="slider_image_two">
+                </div>
+                <div class="slide_image_box">
+                    <img src="./assets/images/webp/agl.png" alt="actewagl" class="slider_image_one">
+                </div>
+                <div class="slide_image_box">
+                    <img src="./assets/images/webp/energy-australia.png" alt="actewagl" class="slider_image_two">
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- ================================================== CUSTOMERS SECTION ================================================ -->
+    <section>
+        <div class="d-flex justify-content-center">
+            <div class="max_width_1308 w-100">
+                <div class="custom_container">
+                    <div
+                        class="row align-items-center align-items-xl-end flex-column-reverse flex-lg-row gap-4 gap-lg-0">
+                        <div class="col-lg-6 col-12 d-flex justify-content-center">
+                            <div class="position-relative my-media-lg max-lg-w video_box">
+                                <div class="position-absolute translate-middle start-50 top-50 z-1 video_play cursor">
+                                    <img src="./assets/images/svg/pause.svg" style="cursor: pointer;" alt="pause btn">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-4">
+                                    <img src="./assets/images/webp/clients-video.webp" alt="about-us-col-img"
+                                        class="w-100 img_scale_hover">
+                                </div>
+                                <div class="position-absolute top-0 start-0 w-100 h-100 rounded-4 change_z_ind z-n1">
+                                    <iframe class="videos rounded-4 w-100 h-100"
+                                        src="https://www.youtube.com/embed/BfYuoJUmGg0?si=VkcNw2lTQ3yA0Jgu"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <h2 class="common_heading text-center text-lg-start m-0">We’ve helped over 1 million
+                                customers
+                                <span class="text_orange">move
+                                    home</span>
+                            </h2>
+
+                            <div class="row pt-4">
+                                <div class="col-sm-6 col-12">
+                                    <div
+                                        class="years_box w-100 d-flex justify-content-center align-items-center flex-column">
+                                        <div class="fw-bold text_6xl text-white lh_57 text-center">21+</div>
+                                        <div class="fw-normal text_3xl ff-sans text-white text-center lh_34">Years
+                                            Experience</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12 mt-3 mt-sm-0">
+                                    <div
+                                        class="reviews_box w-100 d-flex justify-content-center align-items-center flex-column">
+                                        <div>
+                                            <div
+                                                class="d-flex align-items-center gap_6 flex-column justify-content-center flex-sm-row justify-content-sm-start">
+                                                <div class="review_img"><img
+                                                        src="./assets/images/webp/google-reviews.webp" class="w-100"
+                                                        alt="google-reviews-img"></div>
+                                                <div class="fw-semibold text_light_black lh_21 text_md">Google Reviews
+                                                </div>
+                                            </div>
+                                            <div class="star_img w-100 d-flex justify-content-center pt-2"><img
+                                                    src="./assets/images/webp/star.webp" class="w-100 star_img_w"
+                                                    alt="star_img"></div>
+                                            <div
+                                                class="review_txt fw-medium text_sm lh_19 text_light_black text-center">
+                                                4.9
+                                                Stars | 359 reviews </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================== CLIENTS SECTION ================================================== -->
+    <section class="clients_section">
+        <div class="custom_container position-relative">
+            <div class="d-flex align-items-center flex-column flex-lg-row gap-4 gap-lg-0 justify-content-lg-between">
+                <h2 class="common_heading text-center text-lg-start">What Our <span class="text_orange">Clients
+                        Say</span></h2>
+                <div class="d-flex align-items-end gap-3">
+                    <div><img src="./assets/images/webp/trust-piolet.webp" class="trust_star_img w-full"
+                            alt="trust-piolet-img"></div>
+                    <div class="fw-medium text_sm lh_24 text_light_black text-decoration-underline">1020 Reviews</div>
+                </div>
+            </div>
+
+            <div class="clients_slider pt-lg-5 pb-lg-4 pt-4 pb-3">
+                <div class="clients_slider1 clients_common_slider">
+                    <div class="edward_card position-relative">
+                        <div
+                            class="edward_images d-flex justify-content-center align-items-center gap_40 position-absolute">
+                            <img src="./assets/images/webp/comma.png" class="common_comma" alt="comma-image">
+                            <img src="./assets/images/webp/edward-one.webp" class="edward1_img" alt="edward-one-img">
+                            <img src="./assets/images/webp/comma.png" class="common_comma comma_2" alt="comma-image">
+                        </div>
+                        <div class="edward_txt">
+                            <div class="fw-semibold lh_29 text_xl text_light_black text-center">Edward Nguyen</div>
+                            <p class="fw-normal lh_24 text_md text-center p_color pt-2 px-2">Lorem ipsum dolor sit amet
+                                consectetur. Orci egestas enim nisi molestie cursus sagittis. Quis vestibulum
+                                scelerisque
+                                integer id viverra vitae mi nunc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clients_slider1 clients_common_slider">
+                    <div class="edward_card position-relative">
+                        <div
+                            class="edward_images d-flex justify-content-center align-items-center gap_40 position-absolute">
+                            <img src="./assets/images/webp/comma.png" class="common_comma" alt="comma-image">
+                            <img src="./assets/images/webp/edward-two.webp" class="edward1_img" alt="edward-two-img">
+                            <img src="./assets/images/webp/comma.png" class="common_comma comma_2" alt="comma-image">
+                        </div>
+                        <div class="edward_txt">
+                            <div class="fw-semibold lh_29 text_xl text_light_black text-center">Edward Nguyen</div>
+                            <p class="fw-normal lh_24 text_md text-center p_color pt-2 px-2">Lorem ipsum dolor sit amet
+                                consectetur. Orci egestas enim nisi molestie cursus sagittis. Quis vestibulum
+                                scelerisque
+                                integer id viverra vitae mi nunc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clients_slider1 clients_common_slider">
+                    <div class="edward_card position-relative">
+                        <div
+                            class="edward_images d-flex justify-content-center align-items-center gap_40 position-absolute">
+                            <img src="./assets/images/webp/comma.png" class="common_comma" alt="comma-image">
+                            <img src="./assets/images/webp/edward-three.webp" class="edward1_img"
+                                alt="edward-one-three">
+                            <img src="./assets/images/webp/comma.png" class="common_comma comma_2" alt="comma-image">
+                        </div>
+                        <div class="edward_txt">
+                            <div class="fw-semibold lh_29 text_xl text_light_black text-center">Edward Nguyen</div>
+                            <p class="fw-normal lh_24 text_md text-center p_color pt-2 px-2">Lorem ipsum dolor sit amet
+                                consectetur. Orci egestas enim nisi molestie cursus sagittis. Quis vestibulum
+                                scelerisque
+                                integer id viverra vitae mi nunc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clients_slider1 clients_common_slider">
+                    <div class="edward_card position-relative">
+                        <div
+                            class="edward_images d-flex justify-content-center align-items-center gap_40 position-absolute">
+                            <img src="./assets/images/webp/comma.png" class="common_comma" alt="comma-image">
+                            <img src="./assets/images/webp/edward-two.webp" class="edward1_img" alt="edward-two-img">
+                            <img src="./assets/images/webp/comma.png" class="common_comma comma_2" alt="comma-image">
+                        </div>
+                        <div class="edward_txt">
+                            <div class="fw-semibold lh_29 text_xl text_light_black text-center">Edward Nguyen</div>
+                            <p class="fw-normal lh_24 text_md text-center p_color pt-2 px-2">Lorem ipsum dolor sit amet
+                                consectetur. Orci egestas enim nisi molestie cursus sagittis. Quis vestibulum
+                                scelerisque
+                                integer id viverra vitae mi nunc.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="d-none d-lg-flex justify-content-between position-relative">
+                <button class="prev d-flex justify-content-center align-items-center position-absolute">
+                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" transform="matrix(-1 0 0 1 32.5 0.636475)" fill="#F1C045"
+                            fill-opacity="0.2" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.5588 10.7028C18.7607 10.9049 18.8741 11.1789 18.8741 11.4646C18.8741 11.7503 18.7607 12.0244 18.5588 12.2265L14.6488 16.1365L18.5588 20.0465C18.7492 20.2509 18.8529 20.5212 18.848 20.8005C18.843 21.0798 18.7299 21.3463 18.5324 21.5438C18.3348 21.7414 18.0683 21.8545 17.789 21.8595C17.5097 21.8644 17.2394 21.7607 17.035 21.5703L12.3632 16.8984C12.1613 16.6962 12.0479 16.4222 12.0479 16.1365C12.0479 15.8508 12.1613 15.5768 12.3632 15.3746L17.035 10.7028C17.2372 10.5009 17.5112 10.3875 17.7969 10.3875C18.0826 10.3875 18.3566 10.5009 18.5588 10.7028Z"
+                            fill="#010101" fill-opacity="0.5" />
+                    </svg>
+                </button>
+                <button class="next d-flex justify-content-center align-items-center position-absolute">
+                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16.5" cy="16.6365" r="16" fill="#F1C045" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.4412 10.7028C14.2393 10.9049 14.1259 11.1789 14.1259 11.4646C14.1259 11.7503 14.2393 12.0244 14.4412 12.2265L18.3512 16.1365L14.4412 20.0465C14.2508 20.2509 14.1471 20.5212 14.152 20.8005C14.157 21.0798 14.2701 21.3463 14.4676 21.5438C14.6652 21.7414 14.9317 21.8545 15.211 21.8595C15.4903 21.8644 15.7606 21.7607 15.965 21.5703L20.6368 16.8984C20.8387 16.6962 20.9521 16.4222 20.9521 16.1365C20.9521 15.8508 20.8387 15.5768 20.6368 15.3746L15.965 10.7028C15.7628 10.5009 15.4888 10.3875 15.2031 10.3875C14.9174 10.3875 14.6434 10.5009 14.4412 10.7028Z"
+                            fill="black" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+  
+    <section>
+        <div class="choose_yellow_box mx-auto position-relative overflow-hidden">
+            <div class="choose_yellow_top_ellipse d-lg-block d-none"></div>
+            <div class="d-flex justify-content-between align-items-center flex-lg-row flex-column">
+                <div class="choose_text_parent me-0 me-xl-3 order-lg-1 order-2 mt-lg-0 mt-4">
+                    <h2 class="common_heading mb-3">Why <span class="text_orange">Choose Us</span></h2>
+                    <div class="pt-3">
+                        <div class="d-flex choose_icon_gap">
+                            <div class="choose_common_box d-flex justify-content-center align-items-center">
+                                <img src="./assets/images/svg/choose-convenience.svg" alt="convenience">
+                            </div>
+                            <div>
+                                <h5 class="choose_sub_heading mb-0">One call convenience</h5>
+                                <p class="choose_sub_paragraph mb-0">Experience the ultimate ease of moving with our
+                                    "One
+                                    Call
+                                    Convenience" service. </p>
+                            </div>
+                        </div>
+                        <div class="d-flex choose_icon_gap mt-3">
+                            <div class="choose_common_box d-flex justify-content-center align-items-center">
+                                <img src="./assets/images/svg/chose-expert-advice.svg" alt="convenience">
+                            </div>
+                            <div>
+                                <h5 class="choose_sub_heading mb-0">Expert advice</h5>
+                                <p class="choose_sub_paragraph mb-0">Receive top-tier guidance from industry
+                                    veterans. Our experts offer tailored advice, ensuring you make informed
+                                    decisions every step of the way. </p>
+                            </div>
+                        </div>
+                        <div class="d-flex choose_icon_gap mt-3">
+                            <div class="choose_common_box d-flex justify-content-center align-items-center">
+                                <img src="./assets/images/svg/choose-customer-service.svg" alt="convenience">
+                            </div>
+                            <div>
+                                <h5 class="choose_sub_heading mb-0">Best service for customers</h5>
+                                <p class="choose_sub_paragraph mb-0">At our company, we pride ourselves on
+                                    delivering the best service for customers by ensuring seamless connections for
+                                    all your home utilities.. </p>
+                            </div>
+                        </div>
+                        <div class="d-flex choose_icon_gap mt-3">
+                            <div class="choose_common_box d-flex justify-content-center align-items-center">
+                                <img src="./assets/images/svg/choose-efficiency.svg" alt="convenience">
+                            </div>
+                            <div>
+                                <h5 class="choose_sub_heading mb-0">Fast and efficient setup</h5>
+                                <p class="choose_sub_paragraph mb-0">With our streamlined process, you'll experience
+                                    a quick and hassle-free setup for all your essential services. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="common_button choose_start_btn">Get
+                        Started</button>
+                </div>
+
+                <div
+                    class="d-flex flex-lg-row flex-column choose_img_gap ms-0 ms-lg-3 order-1 order-lg-2 align-items-lg-end align-items-start">
+                    <div class="d-lg-flex d-none flex-lg-column flex-wrap w-100 flex-row choose_img_gap">
+                        <img class="choose_img" src="./assets/images/webp/choose-card-exchange.webp" alt="exchange">
+                        <img class="choose_img " src="./assets/images/webp/choose-unboxing.webp" alt="exchange">
+                    </div>
+                    <img class="choose_mic_img d-lg-block d-none " src="./assets/images/webp/choose-mic.webp"
+                        alt="exchange">
+                    <img class="choose_group_img d-block d-lg-none " src="./assets/images/webp/group_img.png"
+                        alt="exchange">
+                </div>
+
+            </div>
+            <div class="choose_bottom_ellipse d-lg-block d-none"></div>
+        </div>
+    </section>
+    <section>
+        <div class="container Frequently_top_spacing">
+            <h2 class="common_heading text-center">Frequently <span class="text_orange">Asked Questions</span></h2>
+            <div class="accordion mx-auto" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Q.1 What services do you help connect when I move home ?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            We assist you in connecting essential services such as electricity, gas, internet, and
+                            insurance. Our goal is to make your move as seamless as possible by handling all these
+                            connections in just one phone call. </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordion_top_spacing">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Q.2 How long does it take to connect all the services?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            We assist you in connecting essential services such as electricity, gas, internet, and
+                            insurance. Our goal is to make your move as seamless as possible by handling all these
+                            connections in just one phone call. </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordion_top_spacing">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Q.3 How do I get started with your service?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            We assist you in connecting essential services such as electricity, gas, internet, and
+                            insurance. Our goal is to make your move as seamless as possible by handling all these
+                            connections in just one phone call.</div>
+                    </div>
+                </div>
+                <div class="accordion-item accordion_top_spacing">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Q.4 What areas do you service?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            We assist you in connecting essential services such as electricity, gas, internet, and
+                            insurance. Our goal is to make your move as seamless as possible by handling all these
+                            connections in just one phone call. </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordion_top_spacing">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                            Q.5 Do you offer support after the services are connected?
+                        </button>
+                    </h2>
+                    <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            We assist you in connecting essential services such as electricity, gas, internet, and
+                            insurance. Our goal is to make your move as seamless as possible by handling all these
+                            connections in just one phone call.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="newsletter_box mx-auto">
+        <h2 class="common_heading text-center text-white mb-0">Join Our Newsletter</h2>
+        <p class="text-center text_sm lh_24 mt-3 text-white mb-0">Stay updated with our latest news and exclusive
+            offers.
+            Subscribe now to receive <span class="d-md-block">
+                insights and special
+                promotions directly in your inbox!
+            </span></p>
+
+        <form id="newsletterForm" class="d-flex gap-2 flex-wrap justify-content-center newsletter_input_top_spacing">
+            <div class="newsletter_input_box w-100">
+                <input class="newsletter_input" required type="email" placeholder="Enter your email address">
+            </div>
+            <button class="common_button">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <div class="bg_cream footer_parent_radius">
+            <div class="container footer_custom_container">
+                <div class="row">
+                    <div class="col-xl-4 mt-xl-0 mt-3 col-md-5 col-sm-6 col-12">
+                        <a href="/">
+                            <h1 class="fw-bold text_6xl lh_64 mb-0 text_lite_black">LOGO</h1>
+                        </a>
+                        <p class="fw-normal opacity_70 text_sm lh_24 text_lite_black footer_paragraph mt-4 mb-0">Lorem
+                            Ipsum
+                            sit
+                            amet edit, sed do tempor incididunt ut dolore magna aliqua lorem
+                            ipsum dolor sit amet, consectetur adopiscing edit.</p>
+                        <div class="footer_icon_parent d-flex align-items-center">
+                            <a target="_blank" href="https://www.facebook.com/"
+                                class="footer_icon_box d-flex justify-content-center align-items-center"><img
+                                    src="./assets/images/svg/facebook-icon.svg" alt="icon"></a>
+                            <a target="_blank" href="https://www.instagram.com/"
+                                class="footer_icon_box d-flex justify-content-center align-items-center"><img
+                                    src="./assets/images/svg/instagram.svg" alt="icon"></a>
+                            <a target="_blank" href="https://mail.google.com/mail/u/0/"
+                                class="footer_icon_box d-flex justify-content-center align-items-center"><img
+                                    src="./assets/images/svg/mail-icon.svg" alt="icon"></a>
+                            <a target="_blank" href="https://in.linkedin.com/"
+                                class="footer_icon_box d-flex justify-content-center align-items-center"><img
+                                    src="./assets/images/svg/inded-icon.svg" alt="icon"></a>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xl-3 mt-xl-0 mt-3 col-md-4 col-6 d-flex justify-content-xl-end justify-content-sm-center">
+                        <ul class="d-flex flex-column footer_text_gap">
+                            <li class="fw-bold text_sm lh_24 text_lite_black footer_heading_gap">Link</li>
+                            <li><a href="" class="fw-normal text_sm lh_24 text_lite_black opacity_70">About</a></li>
+                            <li><a href="" class="fw-normal text_sm lh_24 text_lite_black opacity_70">How it Works</a>
+                            </li>
+                            <li><a href="" class="fw-normal text_sm lh_24 text_lite_black opacity_70">Services</a></li>
+                            <li><a href="" class="fw-normal text_sm lh_24 text_lite_black opacity_70">Why Choose Us</a>
+                            </li>
+                            <li><a href="" class="fw-normal text_sm lh_24 text_lite_black opacity_70">FAQs</a></li>
+                            <li><a href="" class="fw-normal text_sm lh_24 text_lite_black opacity_70">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mt-xl-0 mt-3 col-6 d-flex justify-content-md-center">
+                        <ul class="d-flex flex-column footer_text_gap">
+                            <li class="fw-bold text_sm lh_24 text_lite_black footer_heading_gap">Connect</li>
+                            <li><a href="" class="fw-normal text_sm lh_24 text_lite_black opacity_70">Electricity
+                                    Connection</a></li>
+                            <li><a href="" class="fw-normal text_sm lh_24 text_lite_black opacity_70">Gas Connection</a>
+                            </li>
+                            <li><a href="" class="fw-normal text_sm lh_24 text_lite_black opacity_70">Water
+                                    Connection</a></li>
+                            <li><a href="" class="fw-normal text_sm lh_24 text_lite_black opacity_70">Home Phone</a>
+                            </li>
+                            <li><a href="" class="fw-normal text_sm lh_24 text_lite_black opacity_70">Internet
+                                    Service</a></li>
+                            <li><a href="" class="fw-normal text_sm lh_24 text_lite_black opacity_70">Pay TV</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 mt-xl-0 mt-3 col-sm-6 col-12 d-flex justify-content-xl-center">
+                        <ul class="d-flex flex-column footer_text_gap">
+                            <li class="fw-bold text_sm lh_24 text_lite_black footer_heading_gap">Contact</li>
+                            <li><a href="mailto:webmaster@example.com"
+                                    class="fw-normal text_sm lh_24 text_lite_black opacity_70">info@yourservice.com</a>
+                            </li>
+                            <li><a href="tel:+6494461709"
+                                    class="fw-normal text_sm lh_24 text_lite_black opacity_70">123.456.7890</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="secondary_green">
+            <div class="container footer_green_box">
+                <p class="text-white opacity_70 fw-normal text_sm lh_24 mb-0 text-center">@Connections Made Easy 2024
+                    Copyrights. All Rights Reserved</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+     <!-- =================================================== SLIDER LINKS =================================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- =================================================== BOOTSTRAP LINKS ================================================= -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+        <!-- =============================== Custom JS File =============================== -->
+          <script src="./assets/app.js"></script>
+
+          <!-- POPUP -->
+    <script>
+        document.getElementById('newsletterForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            Swal.fire({
+                title: 'Email Submit',
+                icon: 'success',
+                timer: 3000,
+                showConfirmButton: false
+            });
+            event.target.reset();
+        });
+    </script>
 </body>
 
 </html>
