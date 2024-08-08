@@ -1,9 +1,10 @@
 @import url(./root.css);
+
 .max_width_1308 {
   max-width: 1308px;
   background: #62aaa733;
   border-radius: 36px;
-  margin: 0 auto;
+  margin: 0 12px !important;
   padding: 110px 0;
 }
 .py_60 {
@@ -231,7 +232,6 @@
 }
 
 .nav-tabs .nav-link {
-  padding: 16px 59px;
   border-radius: 100px !important;
   border: none !important;
   color: #010101 !important;
@@ -240,7 +240,16 @@
 .nav-tabs .nav-link.active {
   background-color: #62aaa7 !important;
   color: white !important;
-  width: 230px !important;
+}
+
+.home_owner {
+  width: 175px;
+  height: 56px;
+}
+
+.home_renter {
+  width: 175px;
+  height: 56px;
 }
 
 .address_form {
@@ -250,6 +259,7 @@
 .text_input {
   border: 0.5px solid #010101;
   border-radius: 20px;
+  outline: none;
   height: 56px;
 }
 
@@ -265,7 +275,17 @@
 }
 
 .checkbox_part {
+  cursor: pointer;
+  width: fit-content;
   padding-top: 20px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 .connected_btn {
@@ -288,22 +308,31 @@
 }
 
 @media (max-width: 575.11px) {
-  .nav-tabs .nav-link.active {
-    max-width: 172px !important;
-    padding: 16px 30px;
-  }
-
   .clients_slider .slick-dots {
     width: 240px !important;
     padding: 12px 0px;
+  }
+
+  .home_owner {
+    width: 140px;
+    height: 45px;
+  }
+
+  .home_renter {
+    width: 140px;
+    height: 45px;
   }
 
   .star_img_w {
     max-width: 134px;
   }
 
-  .px_sm_6{
+  .px_sm_6 {
     padding: 0 6px !important;
+  }
+
+  .calender_box{
+    padding: 20px 12px;
   }
 }
 
