@@ -198,18 +198,6 @@
   bottom: -22px;
 }
 
-@media (min-width: 1400px) {
-  .clients_section .next {
-    left: 59.6%;
-    bottom: -23px;
-  }
-
-  .clients_section .prev {
-    right: 59.6%;
-    bottom: -23px;
-  }
-}
-
 /* ========================================== Address Section Start Here ===================================================== */
 .address_section {
   padding-top: 150px;
@@ -298,6 +286,8 @@ input[type="number"]::-webkit-outer-spin-button {
   box-shadow: 0px 4.71px 70.63px 0px #5928e50a;
 }
 
+/* =========================================================== Slider Keyframe  ===================================================== */
+
 @keyframes slide {
   0% {
     transform: translateX(0);
@@ -305,6 +295,23 @@ input[type="number"]::-webkit-outer-spin-button {
 
   100% {
     transform: translateX(-50%);
+  }
+}
+
+/* =========================================================== Max Width  =========================================================== */
+@media (max-width: 1399.11px) {
+  .clients_slider .slick-dots {
+    padding: 19px 71px;
+  }
+}
+
+@media (max-width: 991.11px) {
+  .calender_box {
+    max-width: 475px;
+  }
+
+  .clients_slider .slick-dots {
+    padding: 15px 15px !important;
   }
 }
 
@@ -337,18 +344,16 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
-@media (max-width: 991.11px) {
-  .calender_box {
-    max-width: 475px;
+/* =========================================================== Min Width  ===================================================== */
+
+@media (min-width: 1400px) {
+  .clients_section .next {
+    left: 59.6%;
+    bottom: -23px;
   }
 
-  .clients_slider .slick-dots {
-    padding: 15px 15px !important;
-  }
-}
-
-@media (max-width: 1399.11px) {
-  .clients_slider .slick-dots {
-    padding: 19px 71px;
+  .clients_section .prev {
+    right: 59.6%;
+    bottom: -23px;
   }
 }
