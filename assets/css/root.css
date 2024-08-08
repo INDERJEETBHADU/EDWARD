@@ -36,7 +36,6 @@
 /* -------Common---Things------ */
 .common_button {
     font-weight: 600;
-    min-height: 56px;
     padding: 16px 32px;
     border-radius: 100px;
     background: var(--color-yellow);
@@ -260,6 +259,7 @@
         --font-6xl: 48px;
     }
 }
+
 @media (max-width:1024px) {
     :root {
         --font-sm: 16px;
@@ -273,6 +273,7 @@
         --font-6xl: 48px;
     }
 }
+
 @media (max-width:992px) {
     :root {
         --font-sm: 14px;
@@ -301,6 +302,7 @@
         --font-6xl: 48px;
     }
 }
+
 @media (max-width:576px) {
     :root {
         --font-sm: 14px;
@@ -311,6 +313,10 @@
         --font-3xl: 24px;
         --font-4xl: 32px;
         --font-5xl: 36px;
-        --font-6xl: 48px;
+        --font-6xl: 28px;
+    }
+
+    .lh_57 {
+        line-height: 42.6px;
     }
 }
