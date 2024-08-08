@@ -10,7 +10,6 @@
 }
 
 :root {
-<<<<<<< HEAD
   --font-sm: 16px;
   --font-md: 18px;
   --font-lg: 19.3px;
@@ -31,7 +30,6 @@
   --color-blue: #1839eb;
   --color-cream: #EEE9D2;
   --color-lite-cream: #D6D2BD;
-=======
     --font-sm: 16px;
     --font-md: 18px;
     --font-lg: 19.3px;
@@ -53,17 +51,14 @@
     --color-blue: #1839eb;
     --color-cream: #EEE9D2;
     --color-lite-cream: #D6D2BD;
->>>>>>> a82c1b2b49e963b481f82bee5c8b27367f8431cf
 }
 
 /* -------Common---Things------ */
 .common_button {
-<<<<<<< HEAD
   min-height: 56px;
   padding: 16px 32px;
   border-radius: 100px;
   background: var(--color-yellow);
-=======
     font-weight: 600;
     padding: 16px 32px;
     border-radius: 100px;
@@ -102,7 +97,6 @@
 .common_button:hover {
     border: 1px solid transparent;
     color: white;
->>>>>>> a82c1b2b49e963b481f82bee5c8b27367f8431cf
 }
 
 .common_heading {
@@ -127,19 +121,16 @@
 }
 
 .lite_cream {
-<<<<<<< HEAD
   background: var(--color-lite-cream);
 }
 
 .bg_cream {
   background: var(--color-cream);
-=======
     background: var(--color-lite-cream);
 }
 
 .bg_cream {
     background: var(--color-cream);
->>>>>>> a82c1b2b49e963b481f82bee5c8b27367f8431cf
 }
 
 .secondary_green {
