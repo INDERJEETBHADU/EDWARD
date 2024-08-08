@@ -252,7 +252,7 @@
         --font-md: 18px;
         --font-lg: 19.3px;
         --font-xl: 20px;
-        --font-2xl: 22px;
+        --font-2xl: 19px;
         --font-3xl: 24px;
         --font-4xl: 32px;
         --font-5xl: 36px;
@@ -266,7 +266,7 @@
         --font-md: 18px;
         --font-lg: 19.3px;
         --font-xl: 20px;
-        --font-2xl: 22px;
+        --font-2xl: 19px;
         --font-3xl: 24px;
         --font-4xl: 32px;
         --font-5xl: 36px;
@@ -299,7 +299,11 @@
         --font-3xl: 24px;
         --font-4xl: 32px;
         --font-5xl: 36px;
-        --font-6xl: 48px;
+        --font-6xl: 40px;
+    }
+
+    .lh_57 {
+        line-height: 50.6px;
     }
 }
 
@@ -318,5 +322,9 @@
 
     .lh_57 {
         line-height: 42.6px;
+    }
+
+    .common_button {
+        max-width: 230px;
     }
 }
