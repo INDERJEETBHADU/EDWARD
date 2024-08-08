@@ -286,3 +286,29 @@
 .calender_svg {
   box-shadow: 0px 4.71px 70.63px 0px #5928e50a;
 }
+
+@media (max-width: 575.11px) {
+  .nav-tabs .nav-link.active {
+    max-width: 172px !important;
+    padding: 16px 30px;
+  }
+
+  .clients_slider .slick-dots {
+    width: 240px !important;
+    padding: 12px 0px;
+  }
+
+  .star_img_w {
+    max-width: 134px;
+  }
+
+  .px_sm_6{
+    padding: 0 6px !important;
+  }
+}
+
+@media (max-width: 991.11px) {
+  .calender_box {
+    max-width: 475px;
+  }
+}
