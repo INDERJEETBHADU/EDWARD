@@ -332,18 +332,18 @@
     }
 }
 
-@media (max-width: 576px) {
-  :root {
-    --font-sm: 14px;
-    --font-md: 18px;
-    --font-lg: 19.3px;
-    --font-xl: 20px;
-    --font-2xl: 22px;
-    --font-3xl: 24px;
-    --font-4xl: 32px;
-    --font-5xl: 36px;
-    --font-6xl: 28px;
-  }
+@media (max-width:576px) {
+    :root {
+        --font-sm: 14px;
+        --font-md: 18px;
+        --font-lg: 19.3px;
+        --font-xl: 20px;
+        --font-2xl: 22px;
+        --font-3xl: 24px;
+        --font-4xl: 32px;
+        --font-5xl: 30px;
+        --font-6xl: 28px;
+    }
 
     .lh_57 {
         line-height: 42.6px;
