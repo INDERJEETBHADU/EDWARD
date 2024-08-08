@@ -139,7 +139,7 @@ ul {
     height: 159px;
     border-radius: 8.86px;
     box-shadow: 1.77px 1.77px 29.01px 0px #00000014;
-    bottom: 10%;
+    bottom: 30%;
     right: -17%;
     padding: 10px 6px;
     background-color: white;
@@ -176,6 +176,14 @@ ul {
 }
 
 /* --------------WORK----SECTION---CSS */
+.work_images_width {
+    width: 575.84px;
+}
+
+.work_text_width {
+    max-width: 506.84px;
+}
+
 .work_sec_padding {
     padding-top: 150px;
     padding-bottom: 150px;
@@ -318,7 +326,72 @@ ul {
     }
 }
 
+@media (max-width:992px) {
+    .step_icon_box {
+        min-width: 28px;
+    }
+
+    .hero_section_padding {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .hero_main_img {
+        max-width: 360px;
+        margin-top: 0px;
+    }
+
+    .hero_btn_margin {
+        margin-top: 24px;
+    }
+
+    .work_sec_padding {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .step_box {
+        max-width: 506px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .step_icon_box {
+        min-width: 28px;
+    }
+
+    .hero_section_padding {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .hero_main_img {
+        max-width: 360px;
+        margin-top: 0px;
+    }
+
+    .hero_btn_margin {
+        margin-top: 24px;
+    }
+
+    .step_box {
+        max-width: 506px;
+    }
+
+    .work_sec_padding {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+}
+
 @media (max-width:576px) {
+
+    .work_images_width {
+        width: 100%;
+    }
+
 
     .step_icon_box {
         min-width: 28px;
