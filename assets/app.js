@@ -18,6 +18,8 @@ $(".clients_slider").slick({
         dots: true,
         prevArrow: false,
         nextArrow: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
       },
     },
     {
@@ -43,18 +45,3 @@ function openNav() {
   document.body.classList.toggle("overflow_hidden");
   document.querySelector(".menu").classList.toggle("cross");
 }
-
-// ===================================== video play ========================================//
-
-let pauseIcon = document.querySelector(".pause_icon");
-let videoThumbnail = document.querySelector(".video_thumbnail");
-let video = document.querySelector(".youtube_video");
-
-pauseIcon.addEventListener("click", () => {
-  videoThumbnail.style.display = "none";
-  pauseIcon.style.display = "none";
-  video.style.display = "block";
-
-  let videoIframe = document.getElementById("videoIframe");
-  videoIframe.src += "&autoplay=1";
-});
