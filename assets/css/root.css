@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -25,10 +26,12 @@
     --color-green: #9bc2a0;
     --color-orange: #df8b42;
     --color-lite-blue: #62aaa7;
+    --color-azureish-white: #E0EEED;
     --color-grey: #ededed;
     --color-blue: #1839eb;
     --color-cream: #EEE9D2;
-    --color-lite-cream:#D6D2BD;
+    --color-lite-cream: #D6D2BD;
+
 }
 
 /* -------Common---Things------ */
@@ -59,10 +62,12 @@
 .text_green {
     color: var(--color-green);
 }
-.lite_cream{
+
+.lite_cream {
     background: var(--color-lite-cream);
 }
-.bg_cream{
+
+.bg_cream {
     background: var(--color-cream);
 }
 
@@ -187,6 +192,16 @@
     font-size: var(--font-6xl);
 }
 
-.font_montserrat {
-    font-family: "Montserrat", sans-serif;
+@media (max-width:576px) {
+    :root {
+        --font-sm: 14px;
+        --font-md: 18px;
+        --font-lg: 19.3px;
+        --font-xl: 20px;
+        --font-2xl: 22px;
+        --font-3xl: 24px;
+        --font-4xl: 32px;
+        --font-5xl: 36px;
+        --font-6xl: 48px;
+    }
 }
