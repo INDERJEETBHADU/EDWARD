@@ -27,6 +27,8 @@ $(".clients_slider").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
       },
     },
   ],
@@ -46,6 +48,7 @@ function openNav() {
   document.querySelector(".menu").classList.toggle("cross");
 }
 
+// ===================================== Video Play ========================================//
 let video = document.querySelectorAll(".video_play");
 video.forEach((e) => {
   e.addEventListener("click", () => {
