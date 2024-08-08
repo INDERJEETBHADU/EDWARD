@@ -109,6 +109,10 @@
   padding-top: 10.39px;
 }
 
+.review_text {
+  color: #4d4d4d !important;
+}
+
 /* ========================================== Clients Section Start Here ===================================================== */
 
 .clients_section {
@@ -164,6 +168,10 @@
   margin: 0 !important;
 }
 
+.clients_slider {
+  padding-bottom: 36px !important;
+}
+
 /* clients slider code here */
 .clients_slider .slick-slide {
   margin: 0 11px;
@@ -192,7 +200,7 @@
   height: 8px;
   border-radius: 14px;
   background-color: #fbf1d7;
-  margin: 0 10px;
+  margin: 0 8px;
 }
 .slick-dots li button:before {
   content: "" !important;
@@ -202,7 +210,7 @@
   width: fit-content;
   left: 50%;
   transform: translateX(-50%);
-  padding: 19px 53px;
+  padding: 19px 60px;
   border: 0.3px solid var(--color-yellow);
   border-radius: 100px;
   height: unset !important;
@@ -215,16 +223,36 @@
   outline: none !important;
   border: none !important;
   background-color: transparent !important;
+  transition: all 300ms linear !important;
 }
 
 .clients_section .next {
-  left: 61%;
+  left: 60.5%;
   bottom: -22px;
+  transition: all 200ms linear;
+  transform: rotate(180deg);
 }
 
 .clients_section .prev {
-  right: 61%;
+  right: 60.5%;
   bottom: -22px;
+}
+
+.clients_section .prev svg,
+.clients_section .next svg {
+  fill: #7e796c;
+  border-radius: 50%;
+  transition: all 300ms linear !important;
+}
+
+.clients_section .prev svg:hover,
+.clients_section .next svg:hover {
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+}
+
+.clients_section .prev:hover svg path, .clients_section .next svg:hover path {
+  fill: black !important;
 }
 
 /* ========================================== Address Section Start Here ===================================================== */

@@ -1,15 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-decoration: none !important;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 :root {
+  --font-sm: 16px;
+  --font-md: 18px;
+  --font-lg: 19.3px;
+  --font-xl: 20px;
+  --font-2xl: 22px;
+  --font-3xl: 24px;
+  --font-4xl: 32px;
+  --font-5xl: 36px;
+  --font-6xl: 48px;
+  /* ----color- */
+  --color-yellow: #f1c045;
+  --color-lite-black: #010101;
+  --color-secondary-green: #214635;
+  --color-green: #9bc2a0;
+  --color-orange: #df8b42;
+  --color-lite-blue: #62aaa7;
+  --color-grey: #ededed;
+  --color-blue: #1839eb;
+  --color-cream: #EEE9D2;
+  --color-lite-cream: #D6D2BD;
     --font-sm: 16px;
     --font-md: 18px;
     --font-lg: 19.3px;
@@ -35,6 +55,10 @@
 
 /* -------Common---Things------ */
 .common_button {
+  min-height: 56px;
+  padding: 16px 32px;
+  border-radius: 100px;
+  background: var(--color-yellow);
     font-weight: 600;
     padding: 16px 32px;
     border-radius: 100px;
@@ -50,24 +74,24 @@
 }
 
 .common_button::before {
-    background: black;
-    border: 1px solid transparent;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -100%;
-    position: absolute;
-    z-index: 0;
-    opacity: 0;
-    border-radius: 100px;
-    transition: 300ms linear;
-    z-index: -1;
+  background: black;
+  border: 1px solid transparent;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  border-radius: 100px;
+  transition: 300ms linear;
+  z-index: -1;
 }
 
 .common_button:hover::before {
-    opacity: 1;
-    left: 0;
+  opacity: 1;
+  left: 0;
 }
 
 .common_button:hover {
@@ -76,31 +100,32 @@
 }
 
 .common_heading {
-    font-weight: 700;
-    font-size: var(--font-5xl);
-    line-height: 46.8px;
-    color: var(--color-lite-black);
+  font-weight: 700;
+  font-size: var(--font-5xl);
+  line-height: 46.8px;
+  color: var(--color-lite-black);
 }
 
 /* -------Common---Things------ */
 
 .text_yellow {
-    color: var(--color-yellow);
+  color: var(--color-yellow);
 }
 
 .text_lite_black {
-    color: var(--color-lite-black);
+  color: var(--color-lite-black);
 }
 
 .text_green {
-    color: var(--color-green);
+  color: var(--color-green);
 }
 
 .lite_cream {
-    background: var(--color-lite-cream);
+  background: var(--color-lite-cream);
 }
 
 .bg_cream {
+  background: var(--color-cream);
     background: var(--color-lite-cream);
 }
 
@@ -109,152 +134,145 @@
 }
 
 .secondary_green {
-    background-color: var(--color-secondary-green);
+  background-color: var(--color-secondary-green);
 }
 
 .text_light_black {
-    color: var(--color-lite-black);
+  color: var(--color-lite-black);
 }
 
 .text_orange {
-    color: var(--color-orange);
+  color: var(--color-orange);
 }
 
 .text_lite_blue {
-    color: var(--color-lite-blue);
+  color: var(--color-lite-blue);
 }
 
 .text_light_black {
-    color: var(--color-lite-black);
+  color: var(--color-lite-black);
 }
 
 .text_grey {
-    color: var(--color-grey);
+  color: var(--color-grey);
 }
 
 .text_blue {
-    color: var(--color-blue);
+  color: var(--color-blue);
 }
 
 .opacity_70 {
-    opacity: 70%;
+  opacity: 70%;
 }
 
 .lts_045 {
-    letter-spacing: -0.45px;
+  letter-spacing: -0.45px;
 }
 
 .lh_64 {
-    line-height: 64px;
+  line-height: 64px;
 }
 
 .lh_24 {
-    line-height: 24px;
+  line-height: 24px;
 }
 
 .lh_19 {
-    line-height: 19.2px;
+  line-height: 19.2px;
 }
 
 .lh_57 {
-    line-height: 57.6px;
+  line-height: 57.6px;
 }
 
 .lh_29 {
-    line-height: 29px;
+  line-height: 29px;
 }
 
 .lh_46 {
-    line-height: 46.8px;
+  line-height: 46.8px;
 }
 
 .lh_38 {
-    line-height: 38.4px;
+  line-height: 38.4px;
 }
 
 .lh_31 {
-    line-height: 31.9px;
+  line-height: 31.9px;
 }
 
 .lh_33 {
-    line-height: 33.6px;
+  line-height: 33.6px;
 }
 
 .lh_27 {
-    line-height: 27px;
+  line-height: 27px;
 }
 
 .lh_32 {
-    line-height: 32.4px;
+  line-height: 32.4px;
 }
 
 .lh_34 {
-    line-height: 34.8px;
+  line-height: 34.8px;
 }
 
 .lh_21 {
-    line-height: 21.94px;
+  line-height: 21.94px;
 }
 
 .lh_23 {
-    line-height: 23.53px;
+  line-height: 23.53px;
 }
 
 .text_sm {
-    font-size: var(--font-sm);
+  font-size: var(--font-sm);
 }
 
 .text_md {
-    font-size: var(--font-md);
+  font-size: var(--font-md);
 }
 
 .text_lg {
-    font-size: var(--font-lg);
+  font-size: var(--font-lg);
 }
 
 .text_xl {
-    font-size: var(--font-xl);
+  font-size: var(--font-xl);
 }
 
 .text_2xl {
-    font-size: var(--font-2xl);
+  font-size: var(--font-2xl);
 }
 
 .text_3xl {
-    font-size: var(--font-3xl);
+  font-size: var(--font-3xl);
 }
 
 .text_4xl {
-    font-size: var(--font-4xl);
+  font-size: var(--font-4xl);
 }
 
 .text_5xl {
-    font-size: var(--font-5xl);
+  font-size: var(--font-5xl);
 }
 
 .text_6xl {
-    font-size: var(--font-6xl);
+  font-size: var(--font-6xl);
 }
 
-
-
-
-
-
-
-
-@media (max-width:1400px) {
-    :root {
-        --font-sm: 16px;
-        --font-md: 18px;
-        --font-lg: 19.3px;
-        --font-xl: 20px;
-        --font-2xl: 22px;
-        --font-3xl: 24px;
-        --font-4xl: 32px;
-        --font-5xl: 36px;
-        --font-6xl: 48px;
-    }
+@media (max-width: 1400px) {
+  :root {
+    --font-sm: 16px;
+    --font-md: 18px;
+    --font-lg: 19.3px;
+    --font-xl: 20px;
+    --font-2xl: 22px;
+    --font-3xl: 24px;
+    --font-4xl: 32px;
+    --font-5xl: 36px;
+    --font-6xl: 48px;
+  }
 }
 
 @media (max-width:1200px) {
@@ -263,7 +281,7 @@
         --font-md: 18px;
         --font-lg: 19.3px;
         --font-xl: 20px;
-        --font-2xl: 19px;
+        --font-2xl: 22px;
         --font-3xl: 24px;
         --font-4xl: 32px;
         --font-5xl: 36px;
@@ -277,7 +295,7 @@
         --font-md: 18px;
         --font-lg: 19.3px;
         --font-xl: 20px;
-        --font-2xl: 19px;
+        --font-2xl: 22px;
         --font-3xl: 24px;
         --font-4xl: 32px;
         --font-5xl: 36px;
@@ -285,18 +303,18 @@
     }
 }
 
-@media (max-width:992px) {
-    :root {
-        --font-sm: 14px;
-        --font-md: 18px;
-        --font-lg: 19.3px;
-        --font-xl: 20px;
-        --font-2xl: 22px;
-        --font-3xl: 24px;
-        --font-4xl: 32px;
-        --font-5xl: 36px;
-        --font-6xl: 48px;
-    }
+@media (max-width: 992px) {
+  :root {
+    --font-sm: 14px;
+    --font-md: 18px;
+    --font-lg: 19.3px;
+    --font-xl: 20px;
+    --font-2xl: 22px;
+    --font-3xl: 24px;
+    --font-4xl: 32px;
+    --font-5xl: 36px;
+    --font-6xl: 48px;
+  }
 }
 
 
@@ -310,32 +328,24 @@
         --font-3xl: 24px;
         --font-4xl: 32px;
         --font-5xl: 36px;
-        --font-6xl: 40px;
-    }
-
-    .lh_57 {
-        line-height: 50.6px;
+        --font-6xl: 48px;
     }
 }
 
-@media (max-width:576px) {
-    :root {
-        --font-sm: 14px;
-        --font-md: 18px;
-        --font-lg: 19.3px;
-        --font-xl: 20px;
-        --font-2xl: 22px;
-        --font-3xl: 24px;
-        --font-4xl: 32px;
-        --font-5xl: 36px;
-        --font-6xl: 28px;
-    }
+@media (max-width: 576px) {
+  :root {
+    --font-sm: 14px;
+    --font-md: 18px;
+    --font-lg: 19.3px;
+    --font-xl: 20px;
+    --font-2xl: 22px;
+    --font-3xl: 24px;
+    --font-4xl: 32px;
+    --font-5xl: 36px;
+    --font-6xl: 28px;
+  }
 
     .lh_57 {
         line-height: 42.6px;
-    }
-
-    .common_button {
-        max-width: 230px;
     }
 }
