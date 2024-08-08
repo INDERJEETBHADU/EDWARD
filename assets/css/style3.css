@@ -49,16 +49,6 @@
   animation-play-state: paused;
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
 .slide_image_box {
   display: flex;
   align-items: center;
@@ -183,12 +173,13 @@
   width: fit-content;
   left: 50%;
   transform: translateX(-50%);
-  padding: 13px 53px;
+  padding: 19px 53px;
   border: 0.3px solid #f1c045;
   border-radius: 100px;
   height: unset !important;
   bottom: -60px !important;
   background-color: #fdfdfb;
+  display: flex;
 }
 .clients_section .prev,
 .next {
@@ -198,24 +189,24 @@
 }
 
 .clients_section .next {
-  left: 59.5%;
-  bottom: -21px;
+  left: 61%;
+  bottom: -22px;
 }
 
 .clients_section .prev {
-  right: 59.5%;
-  bottom: -21px;
+  right: 61%;
+  bottom: -22px;
 }
 
 @media (min-width: 1400px) {
   .clients_section .next {
-    left: 58%;
-    bottom: -21px;
+    left: 59.6%;
+    bottom: -23px;
   }
 
   .clients_section .prev {
-    right: 58%;
-    bottom: -21px;
+    right: 59.6%;
+    bottom: -23px;
   }
 }
 
@@ -307,6 +298,16 @@ input[type="number"]::-webkit-outer-spin-button {
   box-shadow: 0px 4.71px 70.63px 0px #5928e50a;
 }
 
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 @media (max-width: 575.11px) {
   .clients_slider .slick-dots {
     width: 240px !important;
@@ -331,7 +332,7 @@ input[type="number"]::-webkit-outer-spin-button {
     padding: 0 6px !important;
   }
 
-  .calender_box{
+  .calender_box {
     padding: 20px 12px;
   }
 }
@@ -339,5 +340,15 @@ input[type="number"]::-webkit-outer-spin-button {
 @media (max-width: 991.11px) {
   .calender_box {
     max-width: 475px;
+  }
+
+  .clients_slider .slick-dots {
+    padding: 15px 15px !important;
+  }
+}
+
+@media (max-width: 1399.11px) {
+  .clients_slider .slick-dots {
+    padding: 19px 71px;
   }
 }
