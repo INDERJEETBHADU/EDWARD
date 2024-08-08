@@ -9,7 +9,7 @@
   margin: 0 auto !important;
 }
 
-.address_section{
+.address_section {
   padding-bottom: 150px;
   padding-top: 150px;
 }
@@ -396,11 +396,21 @@ input[type="number"]::-webkit-outer-spin-button {
     border-radius: 20px;
     padding: 50px 0;
   }
+
+  .address_section {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
 }
 
 @media (max-width: 767.11px) {
   .clients_section {
     padding-top: 60px;
+  }
+
+  .address_section {
+    padding-bottom: 80px;
+    padding-top: 0px;
   }
 }
 
@@ -430,6 +440,11 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .calender_box {
     padding: 20px 12px;
+  }
+
+  .address_section {
+    padding-bottom: 48px;
+    padding-top: 0px;
   }
 }
 
