@@ -319,6 +319,11 @@ ul {
 }
 
 @media (max-width:576px) {
+
+    .step_icon_box {
+        min-width: 28px;
+    }
+
     .hero_section_padding {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -327,5 +332,22 @@ ul {
     .hero_main_img {
         max-width: 360px;
         margin-top: 0px;
+    }
+
+    .hero_btn_margin {
+        margin-top: 24px;
+    }
+
+    .work_sec_padding {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .step_box {
+        max-width: 506px;
+    }
+
+    .mt_20 {
+        margin-top: 10px;
     }
 }
