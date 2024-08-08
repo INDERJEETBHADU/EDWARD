@@ -1,5 +1,99 @@
 @import url(./root.css);
 
+/* ========================================== Address Section Start Here ===================================================== */
+.address_section .nav-tabs {
+  border: 0.5px solid var(--color-lite-blue);
+  background-color: var(--color-grey);
+  border-radius: 100px;
+  width: fit-content !important;
+  margin: 0 auto !important;
+}
+
+.address_section{
+  padding-bottom: 150px !important;
+}
+
+.nav-tabs .nav-link {
+  border-radius: 100px !important;
+  border: none !important;
+  color: var(--color-lite-black) !important;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--color-lite-blue) !important;
+  color: white !important;
+}
+
+.home_owner {
+  width: 175px;
+  height: 56px;
+}
+
+.home_renter {
+  width: 175px;
+  height: 56px;
+}
+
+.address_form {
+  max-width: 566px !important;
+}
+
+.text_input {
+  border: 0.5px solid var(--color-lite-black);
+  border-radius: 20px;
+  outline: none;
+  height: 56px;
+}
+
+.checkbox {
+  border: 0.5px solid var(--color-lite-black);
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.checkbox_txt {
+  color: #1839e8;
+}
+
+.checkbox_part {
+  cursor: pointer;
+  width: fit-content;
+  padding-top: 20px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.connected_btn {
+  max-width: 188px !important;
+  height: 56px;
+  border-radius: 100px;
+  background-color: var(--color-yellow);
+  outline: none;
+  transition: all 200ms linear;
+  border: none;
+  width: fit-content !important;
+}
+
+.calender_box {
+  border: 0.5px solid var(--color-yellow);
+  background: #f1c0450a;
+  border-radius: 36px;
+  padding: 36px 42px;
+}
+
+.calender_svg {
+  box-shadow: 0px 4.71px 70.63px 0px #5928e50a;
+}
+
+/* ========================================== Customer Section Start Here ===================================================== */
+
 .max_width_1308 {
   max-width: 1308px;
   background: #62aaa733;
@@ -117,6 +211,11 @@
 
 .clients_section {
   padding-top: 150px;
+  padding-bottom: 170px;
+}
+
+.rounded_38 {
+  border-radius: 38px !important;
 }
 
 .trust_star_img {
@@ -261,104 +360,6 @@
   fill: black !important;
 }
 
-/* ========================================== Address Section Start Here ===================================================== */
-.address_section {
-  padding-top: 150px;
-}
-
-.address_section .nav-tabs {
-  border: 0.5px solid var(--color-lite-blue);
-  background-color: var(--color-grey);
-  border-radius: 100px;
-  width: fit-content !important;
-  margin: 0 auto !important;
-}
-
-.nav-tabs .nav-link {
-  border-radius: 100px !important;
-  border: none !important;
-  color: var(--color-lite-black) !important;
-}
-
-.nav-tabs .nav-link.active {
-  background-color: var(--color-lite-blue) !important;
-  color: white !important;
-}
-
-.home_owner {
-  width: 175px;
-  height: 56px;
-}
-
-.home_renter {
-  width: 175px;
-  height: 56px;
-}
-
-.address_form {
-  max-width: 566px !important;
-}
-
-.text_input {
-  border: 0.5px solid var(--color-lite-black);
-  border-radius: 20px;
-  outline: none;
-  height: 56px;
-}
-
-.checkbox {
-  border: 0.5px solid var(--color-lite-black);
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-}
-
-.checkbox_txt {
-  color: #1839e8;
-}
-
-.checkbox_part {
-  cursor: pointer;
-  width: fit-content;
-  padding-top: 20px;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0;
-}
-
-.connected_btn {
-  max-width: 188px !important;
-  height: 56px;
-  border-radius: 100px;
-  background-color: var(--color-yellow);
-  outline: none;
-  transition: all 200ms linear;
-  border: none;
-  width: fit-content !important;
-}
-
-.connected_btn:hover {
-  background-color: transparent;
-  color: var(--color-yellow);
-  border: 1px solid var(--color-lite-black);
-}
-
-.calender_box {
-  border: 0.5px solid var(--color-yellow);
-  background: #f1c0450a;
-  border-radius: 36px;
-  padding: 36px 42px;
-}
-
-.calender_svg {
-  box-shadow: 0px 4.71px 70.63px 0px #5928e50a;
-}
-
 /* =========================================================== Slider Keyframe  ===================================================== */
 @keyframes slide {
   0% {
@@ -390,10 +391,6 @@ input[type="number"]::-webkit-outer-spin-button {
     padding-top: 90px;
   }
 
-  .address_section {
-    padding-top: 122px;
-  }
-
   .max_width_1308 {
     border-radius: 20px;
     padding: 50px 0;
@@ -403,10 +400,6 @@ input[type="number"]::-webkit-outer-spin-button {
 @media (max-width: 767.11px) {
   .clients_section {
     padding-top: 60px;
-  }
-
-  .address_section {
-    padding-top: 102px;
   }
 }
 
@@ -453,7 +446,11 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
-
+@media (min-width: 992px) {
+  .address_form {
+    max-width: 475px !important;
+  }
+}
 
 /* SLIDER CODE */
 .slider_parent {
