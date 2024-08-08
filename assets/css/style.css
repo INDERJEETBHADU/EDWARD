@@ -47,6 +47,10 @@ ul {
     gap: 20px;
 }
 
+.mt_20 {
+    margin-top: 20px;
+}
+
 .hero_bg {
     border-radius: 0px 0px 36px 36px;
 }
@@ -54,6 +58,34 @@ ul {
 .hero_section_padding {
     padding-top: 127px;
     padding-bottom: 139px;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.image-container:hover::before {
+    opacity: 1;
+}
+
+.image-container img {
+    transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
 }
 
 .hero_sub_heading {
@@ -109,6 +141,105 @@ ul {
     padding: 10px 6px;
     background-color: white;
     z-index: 2;
+}
+
+.rating_box {
+    width: 18.34px;
+    height: 18.34px;
+    background-color: #00B67A;
+    font-size: 7.86px;
+    line-height: 9.58px;
+    letter-spacing: -0.18px;
+}
+
+.review_text {
+    font-size: 7.86px;
+    line-height: 9.58px;
+    letter-spacing: -0.18px;
+}
+
+.edward_sub_box {
+    background: #F7F7F7;
+    width: 142px;
+    border-radius: 12px;
+    height: 83px;
+    margin-top: 36px;
+    padding: 46px 13px 17px 12px;
+}
+
+.Edward_Nguyen_text {
+    font-size: 14px;
+    line-height: 20.3px;
+}
+
+/* --------------WORK----SECTION---CSS */
+.work_sec_padding {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.step_box {
+    border-bottom: 0.5px solid #62AAA7;
+    background: #62AAA70A;
+    padding: 10px 40px;
+    border-radius: 36px;
+}
+
+.step_heading {
+    font-size: var(--font-3xl);
+    line-height: 33.6px;
+    font-weight: 500;
+    color: var(--color-lite-black);
+}
+
+.step_icon_box {
+    width: 28px;
+    height: 28px;
+    background: #E3EAE7;
+    border-radius: 50%;
+}
+
+.mt_12 {
+    margin-top: 12px;
+}
+
+.gap_10 {
+    gap: 10px;
+}
+
+.step_sub_heading {
+    font-weight: 600;
+    font-size: var(--font-sm);
+    line-height: 24px;
+    color: var(--color-lite-black);
+}
+
+.step_paragraph {
+    font-weight: 400;
+    font-size: var(--font-sm);
+    line-height: 24px;
+    color: var(--color-lite-black);
+    opacity: 70%;
+}
+
+.work_sec_lady_call_img {
+    max-width: 275px;
+    width: 100%;
+    border-radius: 36px;
+}
+
+.work_sec_family_img {
+    max-width: 275px;
+    width: 100%;
+    border-radius: 36px;
+}
+
+.Satisfied_Customers_box {
+    max-width: 275px;
+    width: 100%;
+    height: 266px;
+    border-radius: 36px;
+    background: #62AAA7;
 }
 
 
