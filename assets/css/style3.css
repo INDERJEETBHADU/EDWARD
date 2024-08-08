@@ -10,7 +10,8 @@
 }
 
 .address_section{
-  padding-bottom: 150px !important;
+  padding-bottom: 150px;
+  padding-top: 150px;
 }
 
 .nav-tabs .nav-link {
