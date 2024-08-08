@@ -342,7 +342,8 @@
                             <li><a href="mailto:webmaster@example.com"
                                     class="fw-normal text_sm lh_24 text_lite_black opacity_70">info@yourservice.com</a>
                             </li>
-                            <li><a href="tel:+6494461709" class="fw-normal text_sm lh_24 text_lite_black opacity_70">123.456.7890</a>
+                            <li><a href="tel:+6494461709"
+                                    class="fw-normal text_sm lh_24 text_lite_black opacity_70">123.456.7890</a>
                             </li>
                         </ul>
                     </div>
@@ -362,6 +363,19 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./assets/app.js"></script>
+    <script>
+        document.getElementById('newsletterForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            Swal.fire({
+                title: 'Email Submit',
+                icon: 'success',
+                timer: 3000,
+                showConfirmButton: false
+            });
+
+            event.target.reset();
+        });
+    </script>
 </body>
 
 </html>
