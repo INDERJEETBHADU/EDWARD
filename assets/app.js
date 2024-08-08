@@ -52,16 +52,3 @@ video.forEach((e) => {
     e.closest(".video_box").lastElementChild.classList.add("z-2");
   });
 });
-
-document.getElementById('newsletterForm').addEventListener('submit', function (event) {
-  event.preventDefault();
-  Swal.fire({
-    title: 'Thank you for subscribing!',
-    text: 'You will receive our latest news and exclusive offers.',
-    icon: 'success',
-    timer: 3000,
-    showConfirmButton: false
-  });
-
-  event.target.reset();
-});
