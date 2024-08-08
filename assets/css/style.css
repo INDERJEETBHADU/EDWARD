@@ -43,6 +43,35 @@ ul {
     gap: 22px;
 }
 
+.gap_20 {
+    gap: 20px;
+}
+
+.hero_sub_heading {
+    max-width: 188px;
+    width: 100%;
+    padding: 4px 16px;
+    border-radius: 42px;
+    border: 1px solid #9BC2A0;
+    background: #9BC2A059;
+    border-radius: 42px;
+}
+
+.hero_main_heading {
+    max-width: 588px;
+    margin-top: 14px;
+}
+
+.hero_office_img {
+    max-width: 180px;
+    border-radius: 20px;
+}
+
+.hero_btn_margin {
+    margin-top: 54px;
+}
+
+
 @media (max-width: 992.9px) {
     .mobile_view {
         position: absolute;

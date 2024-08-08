@@ -1,1 +1,135 @@
 @import url(./root.css);
+
+.choose_yellow_box {
+    max-width: 1308px;
+    min-height: 825px;
+    background: var(--color-cream);
+    border-radius: 36px;
+    padding: 109px 60px;
+}
+
+.choose_sub_heading {
+    font-size: var(--font-sm);
+    color: var(--color-lite-black);
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.choose_sub_paragraph {
+    font-weight: 400;
+    font-size: var(--font-sm);
+    color: var(--color-lite-black);
+    line-height: 24px;
+    opacity: 70%;
+    margin-top: 10px;
+}
+
+.choose_common_box {
+    min-width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--color-lite-cream);
+}
+
+.choose_text_parent {
+    max-width: 491px;
+    width: 100%;
+}
+
+.choose_img {
+    max-width: 275px;
+    width: 100%;
+    border-radius: 36px;
+}
+
+.choose_mic_img {
+    max-width: 275px;
+    max-height: 503px;
+    border-radius: 36px;
+}
+
+.choose_img_gap {
+    width: 575px;
+    gap: 25.50px;
+}
+
+/* Frequently */
+.Frequently_top_spacing {
+    padding-top: 150px;
+}
+
+.accordion-button {
+    border: none !important;
+    box-shadow: none !important;
+    background: none !important;
+    font-weight: 600;
+    font-size: var(--font-sm);
+    line-height: 24px;
+    border-radius: 24px;
+}
+
+.accordion-body {
+    font-weight: 400;
+    font-size: var(--font-sm);
+    line-height: 24px;
+    color: var(--color-lite-black);
+    opacity: 70%;
+    border-radius: 24px;
+}
+
+.accordion-item {
+    border-radius: 20px !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: 1px solid #01010133 !important;
+}
+
+
+.accordion-item:has(.show) {
+    background: #FEF9ED !important;
+    border: 1px solid #01010133 !important;
+}
+
+.accordion_top_spacing {
+    margin-top: 24px;
+}
+
+.accordion {
+    max-width: 1140px !important;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/svg/accodion-icon.svg) !important;
+}
+.accordion-button::after {
+    background-image: url(../images/svg/accodion-bottom-icon.svg) !important;
+}
+
+/* gap , margin padding */
+.choose_icon_gap {
+    gap: 10px;
+}
+
+.choose_start_btn {
+    margin-top: 48px;
+}
+
+@media (max-width:992px) {
+    .choose_img_gap {
+        width: unset;
+    }
+
+    .choose_mic_img {
+        width: 100%;
+        max-width: unset;
+        max-height: 300px;
+        object-position: top;
+    }
+
+    .choose_yellow_box {
+        padding: 109px 10px;
+    }
+}
