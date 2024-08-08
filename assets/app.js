@@ -45,3 +45,10 @@ function openNav() {
   document.body.classList.toggle("overflow_hidden");
   document.querySelector(".menu").classList.toggle("cross");
 }
+
+let video = document.querySelectorAll(".video_play");
+video.forEach((e) => {
+  e.addEventListener("click", () => {
+    e.closest(".video_box").lastElementChild.classList.add("z-2");
+  });
+});

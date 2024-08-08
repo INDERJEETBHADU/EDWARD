@@ -8,6 +8,10 @@
   padding: 110px 0;
 }
 
+.change_z_ind {
+  z-index: -10;
+}
+
 .py_60 {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -312,7 +316,6 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* =========================================================== Slider Keyframe  ===================================================== */
-
 @keyframes slide {
   0% {
     transform: translateX(0);
