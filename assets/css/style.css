@@ -19,7 +19,7 @@ ul {
 }
 
 .home {
-    padding-bottom: 5px;
+    padding-bottom: 13px;
     transition: color 0.3s ease-in-out;
 }
 
@@ -39,8 +39,8 @@ ul {
 }
 
 /* ------marin---padding----gap */
-.gap_22 {
-    gap: 22px;
+.gap_32 {
+    gap: 32px;
 }
 
 .gap_20 {
@@ -186,7 +186,6 @@ ul {
 
 .work_sec_padding {
     padding-top: 150px;
-    padding-bottom: 150px;
 }
 
 .step_box {
@@ -347,13 +346,14 @@ ul {
 
     .work_sec_padding {
         padding-top: 80px;
-        padding-bottom: 80px;
     }
 
     .step_box {
         max-width: 506px;
     }
-
+    .work_images_width {
+        width: 100%;
+    }
 }
 
 @media (max-width:768px) {
@@ -381,17 +381,13 @@ ul {
 
     .work_sec_padding {
         padding-top: 80px;
-        padding-bottom: 80px;
     }
+
+
 
 }
 
 @media (max-width:576px) {
-
-    .work_images_width {
-        width: 100%;
-    }
-
 
     .step_icon_box {
         min-width: 28px;
@@ -413,7 +409,6 @@ ul {
 
     .work_sec_padding {
         padding-top: 48px;
-        padding-bottom: 48px;
     }
 
     .step_box {
