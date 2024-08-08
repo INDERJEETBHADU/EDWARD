@@ -65,6 +65,8 @@
     font-size: var(--font-sm);
     line-height: 24px;
     border-radius: 24px;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
 }
 
 .accordion-body {
@@ -74,6 +76,7 @@
     color: var(--color-lite-black);
     opacity: 70%;
     border-radius: 24px;
+    padding: 2px 24px 16px 24px !important;
 }
 
 .accordion-item {
@@ -232,6 +235,10 @@ footer ul li a:hover {
 }
 
 /* gap , margin padding */
+.choose_box_top_spacing {
+    padding-top: 150px;
+}
+
 .footer_icon_parent {
     gap: 10.57px;
     margin-top: 20px;
@@ -345,6 +352,14 @@ ul {
 @media (max-width:768px) {
     .Frequently_top_spacing {
         margin-bottom: -116px;
+    }
+
+    .choose_sub_paragraph {
+        margin-top: unset;
+    }
+
+    .choose_start_btn {
+        margin-top: 25px;
     }
 }
 

@@ -241,7 +241,7 @@
         </div>
     </section>
 
-       <!-- =================================================== ADDRESS SECTION ================================================== -->
+    <!-- =================================================== ADDRESS SECTION ================================================== -->
     <section class="address_section pb-5">
         <div class="custom_container">
             <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
@@ -322,8 +322,8 @@
         </div>
     </section>
 
-     <!-- ===================================================OUR SERVICES SECTION ============================================== -->
-       <section>
+    <!-- ===================================================OUR SERVICES SECTION ============================================== -->
+    <section class="px-3 px-xxl-0">
         <div class="services_box mx-auto">
             <h2 class="common_heading text-center mb-0">Our <span class="text_orange">Services</span></h2>
             <div class="row services_card_top_padding">
@@ -419,7 +419,7 @@
         </div>
     </section>
 
-     <!-- ================================================== SERVICES-SLIDER SECTION ========================================== -->
+    <!-- ================================================== SERVICES-SLIDER SECTION ========================================== -->
     <section class="py_60 overflow-hidden">
         <div class="slider_container">
             <div class="slider_parent d-flex">
@@ -487,7 +487,7 @@
         </div>
     </section>
 
-     <!-- ================================================== CUSTOMERS SECTION ================================================ -->
+    <!-- ================================================== CUSTOMERS SECTION ================================================ -->
     <section>
         <div class="d-flex justify-content-center">
             <div class="max_width_1308 w-100">
@@ -669,9 +669,8 @@
             </div>
         </div>
     </section>
-
-  
-    <section>
+    <!-- ===================================================== CHOOSE SECTION ============================================ -->
+    <section class="px-3 px-xxl-0 choose_box_top_spacing">
         <div class="choose_yellow_box mx-auto position-relative overflow-hidden">
             <div class="choose_yellow_top_ellipse d-lg-block d-none"></div>
             <div class="d-flex justify-content-between align-items-center flex-lg-row flex-column">
@@ -735,7 +734,7 @@
                     </div>
                     <img class="choose_mic_img d-lg-block d-none " src="./assets/images/webp/choose-mic.webp"
                         alt="exchange">
-                    <img class="choose_group_img d-block d-lg-none " src="./assets/images/webp/group_img.png"
+                    <img class="choose_group_img d-block d-lg-none " src="./assets/images/webp/group_img.webp"
                         alt="exchange">
                 </div>
 
@@ -743,6 +742,7 @@
             <div class="choose_bottom_ellipse d-lg-block d-none"></div>
         </div>
     </section>
+    <!-- ==================================================== FREQUENTY SECTION ========================================== -->
     <section>
         <div class="container Frequently_top_spacing">
             <h2 class="common_heading text-center">Frequently <span class="text_orange">Asked Questions</span></h2>
@@ -825,22 +825,28 @@
             </div>
         </div>
     </section>
-    <div class="newsletter_box mx-auto">
-        <h2 class="common_heading text-center text-white mb-0">Join Our Newsletter</h2>
-        <p class="text-center text_sm lh_24 mt-3 text-white mb-0">Stay updated with our latest news and exclusive
-            offers.
-            Subscribe now to receive <span class="d-md-block">
-                insights and special
-                promotions directly in your inbox!
-            </span></p>
+    <!-- ===================================================== NEWSLETTER BOX ============================================== -->
+    <div class="px-3 px-xxl-0">
+        <div class="newsletter_box mx-auto">
+            <h2 class="common_heading text-center text-white mb-0">Join Our Newsletter</h2>
+            <p class="text-center text_sm lh_24 mt-3 text-white mb-0">Stay updated with our latest news and exclusive
+                offers.
+                Subscribe now to receive <span class="d-md-block">
+                    insights and special
+                    promotions directly in your inbox!
+                </span></p>
 
-        <form id="newsletterForm" class="d-flex gap-2 flex-wrap justify-content-center newsletter_input_top_spacing">
-            <div class="newsletter_input_box w-100">
-                <input class="newsletter_input" required type="email" placeholder="Enter your email address">
-            </div>
-            <button class="common_button">Submit</button>
-        </form>
+            <form id="newsletterForm"
+                class="d-flex gap-2 flex-wrap justify-content-center newsletter_input_top_spacing">
+                <div class="newsletter_input_box w-100">
+                    <input class="newsletter_input" required type="email" placeholder="Enter your email address">
+                </div>
+                <button type="submit" class="common_button">Submit</button>
+            </form>
+        </div>
     </div>
+    <!-- ===================================================== FOOTER SECTION ============================================== -->
+     
     <footer>
         <div class="bg_cream footer_parent_radius">
             <div class="container footer_custom_container">
@@ -925,7 +931,7 @@
     </footer>
 
 
-     <!-- =================================================== SLIDER LINKS =================================================== -->
+    <!-- =================================================== SLIDER LINKS =================================================== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -936,11 +942,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!--================== SWEET ALERT LINK ===================== -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-        <!-- =============================== Custom JS File =============================== -->
-          <script src="./assets/app.js"></script>
 
-          <!-- POPUP -->
+    <!-- =============================== Custom JS File =============================== -->
+    <script src="./assets/app.js"></script>
+
+    <!-- POPUP -->
     <script>
         document.getElementById('newsletterForm').addEventListener('submit', function (event) {
             event.preventDefault();
@@ -950,6 +959,7 @@
                 timer: 3000,
                 showConfirmButton: false
             });
+
             event.target.reset();
         });
     </script>
