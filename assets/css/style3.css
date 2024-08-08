@@ -261,7 +261,7 @@
 }
 
 .address_form {
-  max-width: 475px !important;
+  max-width: 566px !important;
 }
 
 .text_input {
@@ -297,11 +297,20 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .connected_btn {
-  padding: 16px 32px;
+  max-width: 188px !important;
+  height: 56px;
   border-radius: 100px;
   background-color: var(--color-yellow);
   outline: none;
+  transition: all 200ms linear;
   border: none;
+  width: fit-content !important;
+}
+
+.connected_btn:hover {
+  background-color: transparent;
+  color: var(--color-yellow);
+  border: 1px solid var(--color-lite-black);
 }
 
 .calender_box {
@@ -335,7 +344,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @media (max-width: 991.11px) {
   .calender_box {
-    max-width: 475px;
+    max-width: 566px;
   }
 
   .clients_slider .slick-dots {
