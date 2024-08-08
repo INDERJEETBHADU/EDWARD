@@ -62,6 +62,9 @@
 .lite_cream{
     background: var(--color-lite-cream);
 }
+.bg_cream{
+    background: var(--color-cream);
+}
 
 .secondary_green {
     background-color: var(--color-secondary-green);
