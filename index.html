@@ -15,7 +15,7 @@
 <body>
     <header class="lite_cream hero_bg position-relative">
         <nav class="py-2 secondary_green">
-            <div class="container">
+            <div class="container custom_container">
                 <div class="d-flex justify-content-between align-items-center">
                     <a href="/" class="font_montserrat mb-0 fw-bold text-white text_6xl lh_64">LOGO</a>
                     <ul id="navbar" class="d-flex fw-normal  text_sm lh_24 align-items-center  gap_22 mobile_view">
@@ -44,7 +44,7 @@
                     <button
                         class="common_button d-none d-sm-block border-0 fw-semibold text_sm lh_24 text_lite_black">Get
                         Started</button>
-                    <div onclick="openNav()" class="menu d-block d-lg-none z-3">
+                    <div onclick="openNav()" class="menu d-block  d-lg-none z_index_4">
                         <span></span>
                         <span class="my-2"></span>
 
@@ -54,9 +54,9 @@
 
             </div>
         </nav>
-        <div class="container">
-            <div class="row hero_section_padding">
-                <div class="col-6">
+        <div class="container custom_container">
+            <div class="row  hero_section_padding">
+                <div class="col-lg-6 col-12 pt-5 order-lg-1 order-2">
                     <div class="hero_sub_heading">
                         <h6 class=" fw-medium text_sm lh_19 text_lite_black text-nowrap mb-0">Simplify Your Move</h6>
                     </div>
@@ -65,31 +65,49 @@
                     <p class=" fw-normal text_xl lh_29 text_lite_black mt-3">Connect electricity, gas, internet, and
                         insurance
                         effortlessly.</p>
-                <div class="d-flex align-items-center gap-3 mt-4">
-                    <div class="image-container position-relative">
-                        <img class="hero_office_img w-100" src="./assets/images/webp/office-hero.png" alt="office">
+                    <div class="d-flex align-items-center gap-3 mt-4">
+                        <div class="position-relative image-container">
+                            <img class="hero_office_img w-100" src="./assets/images/webp/office-hero.png" alt="office">
+                            <div class="overlay">
+                                <p class="overlay-text mb-0 fw-semibold text_sm lh_24 text-white text-center mb-3">
+                                    office
+                                    Connection
+                                </p>
+                            </div>
+                        </div>
+                        <div class="position-relative image-container">
+                            <img class="hero_office_img w-100" src="./assets/images/webp/gas-connection.png"
+                                alt="office">
+                            <div class="overlay">
+                                <p class="overlay-text mb-0 fw-semibold text_sm lh_24 text-white text-center mb-3">Gas
+                                    Connection
+                                </p>
+                            </div>
+                        </div>
+                        <div class="position-relative image-container">
+                            <img class="hero_office_img w-100" src="./assets/images/webp/electrican.png" alt="office">
+                            <div class="overlay">
+                                <p class="overlay-text mb-0 fw-semibold text_sm lh_24 text-white text-center mb-3">
+                                    electric
+                                    Connection
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="image-container position-relative">
-                        <img class="hero_office_img w-100" src="./assets/images/webp/gas-connection.png" alt="office">
-                    </div>
-                    <div class="image-container position-relative">
-                        <img class="hero_office_img w-100" src="./assets/images/webp/electrican.png" alt="office">
-                    </div>
-                </div>
 
-                    <div class="hero_btn_margin d-flex align-content-center gap-3">
-                        <button
-                            class="common_button  d-none d-sm-block border-0 fw-semibold text_sm lh_24 text_lite_black">Get
+
+                    <div class="hero_btn_margin d-flex flex-column flex-sm-row align-content-center gap-3">
+                        <button class="common_button   border-0 fw-semibold text_sm lh_24 text_lite_black">Get
                             Connected Now</button>
                         <button class="hero_learn_more_btn  text_lite_black fw-semibold text_sm lh_24">Learn More <img
                                 src="./assets/images/svg/learn-more-arrow.svg" alt=""></button>
                     </div>
                 </div>
-                <div class="col-6 ">
+                <div class="col-lg-6 col-12 order-1 order-lg-2 d-flex justify-content-center   justify-content-lg-end ">
                     <div class="position-relative">
                         <img class="hero_main_img w-100 position-relative z-1"
                             src="./assets/images/webp/hero-main-img.png" alt="hero_main">
-                        <div class="edward_box position-absolute">
+                        <div class="edward_box d-none position-absolute">
                             <div class="d-flex gap-2  align-items-center justify-content-center">
                                 <div class="d-flex align-items-center gap-1">
                                     <div class=" d-flex flex-column">
@@ -106,9 +124,12 @@
                             </div>
 
                             <div class="d-flex justify-content-center ">
-                                <div class="edward_sub_box">
-                                    <img src="./assets/images/svg/trust-pilot-comma-left.svg" alt="comma">
-                                    <img src="./assets/images/svg/trust-pilot-comma-right.svg" alt="comma">
+                                <div class="edward_sub_box position-relative">
+                                    <div class="d-flex gap-3 align-items-center position-absolute comma_lady_position">
+                                        <img src="./assets/images/svg/trust-pilot-comma-left.svg" alt="comma">
+                                        <img src="./assets/images/svg/edward-lady.svg" alt="lady">
+                                        <img src="./assets/images/svg/trust-pilot-comma-right.svg" alt="comma">
+                                    </div>
                                     <p class="mb-0 text-nowrap Edward_Nguyen_text text_lite_black">Edward Nguyen</p>
                                 </div>
                             </div>
@@ -125,7 +146,7 @@
         <div class="container">
             <div class="row work_sec_padding">
                 <div class="col-6 ">
-                    <div class="d-flex align-items-start gap-4">
+                    <div class="d-flex align-items-end gap-4">
                         <img class="work_sec_lady_call_img" src="./assets/images/webp/work-lady-call-img.png"
                             alt="work-lady">
                         <div class="">

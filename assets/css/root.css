@@ -35,7 +35,6 @@
 /* -------Common---Things------ */
 .common_button {
     font-weight: 600;
-    border: 1px solid transparent;
     min-height: 56px;
     padding: 16px 32px;
     border-radius: 100px;
@@ -43,6 +42,37 @@
     font-size: var(--font-sm);
     line-height: 24px;
     color: var(--color-lite-black);
+    transition: all 300ms linear;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.common_button::before {
+    background: black;
+    border: 1px solid transparent;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 100px;
+    transition: 300ms linear;
+    z-index: -1;
+}
+
+.common_button:hover::before {
+    opacity: 1;
+    left: 0;
+}
+
+.common_button:hover {
+    border: 1px solid transparent;
+    color: white;
 }
 
 .common_heading {
