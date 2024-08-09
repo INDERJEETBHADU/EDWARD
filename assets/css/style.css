@@ -2,15 +2,7 @@ dl,
 ol,
 ul {
   margin-bottom: 0 !important;
-}
-
-ol,
-ul {
   padding-left: 0 !important;
-}
-
-.home {
-  transition: 400ms linear;
 }
 
 .home:hover {
@@ -74,8 +66,10 @@ ul {
   max-width: 180px;
   border-radius: 20px;
 }
-
-.image-container {
+.hero_section_padding{
+  padding-bottom: 50px;
+}
+.image_container {
   overflow: hidden;
 }
 
@@ -94,8 +88,8 @@ ul {
   justify-content: center;
 }
 
-.image-container:hover .overlay,
-.image-container:hover .overlay-text {
+.image_container:hover .overlay,
+.image_container:hover .overlay_text {
   opacity: 1;
 }
 
@@ -106,6 +100,7 @@ ul {
 .hero_learn_more_btn {
   border: 1px solid #000000;
   padding: 16px 32px;
+  height: 56px;
   transition: all 400ms linear;
   border-radius: 100px;
   background-color: transparent;
@@ -263,6 +258,9 @@ ul {
     top: 15%;
     width: auto;
   }
+  .hero_section_padding{
+    padding: 0px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -377,15 +375,6 @@ ul {
     padding-bottom: 80px;
   }
 
-  .hero_main_img {
-    max-width: 360px;
-    margin-top: 0px;
-  }
-
-  .hero_btn_margin {
-    margin-top: 24px;
-  }
-
   .step_box {
     max-width: 506px;
   }
@@ -411,15 +400,6 @@ ul {
   .hero_section_padding {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-
-  .hero_main_img {
-    max-width: 360px;
-    margin-top: 0px;
-  }
-
-  .hero_btn_margin {
-    margin-top: 24px;
   }
 
   .work_sec_padding {
