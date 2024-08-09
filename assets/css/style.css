@@ -4,7 +4,9 @@ ul {
   margin-bottom: 0 !important;
   padding-left: 0 !important;
 }
-
+.navlist_padding{
+  padding: 10px;
+}
 .home:hover {
   -webkit-text-stroke-width: 1px;
   opacity: 1 !important;
@@ -31,8 +33,8 @@ ul {
 }
 
 /* ------marin---padding----gap */
-.gap_32 {
-  gap: 32px;
+.gap_12 {
+  gap: 12px;
 }
 
 .gap_20 {
@@ -126,7 +128,7 @@ ul {
 
 .hero_main_img_layer {
   right: 0%;
-  top: 15%;
+  top: 144px;
   width: 500px;
 }
 
@@ -263,13 +265,17 @@ ul {
 
   .hero_main_img_layer {
     right: 0%;
-    top: 15%;
+    top: 144px;
     width: auto;
   }
 }
 @media (max-width:1620px) {
+  .nav_height{
+    height: 82px;
+  }
   .hero_section_padding {
-    padding-bottom: 50px;
+    padding-top: 0;
+    padding-bottom: 0px;
   }
   .min_vh_100{
     min-height: 100vh;
@@ -354,7 +360,7 @@ ul {
 
   .hero_main_img_layer {
     right: 0%;
-    top: 15%;
+    top: 144px;
   }
 
   .hero_section_padding {
