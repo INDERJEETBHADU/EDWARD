@@ -452,6 +452,11 @@ ul {
     border-radius: 20px;
   }
 
+  .hero_learn_more_btn{
+    height: 50px;
+    padding: 0;
+  }
+
   .custom_container {
     padding-left: 16px !important;
     padding-right: 16px !important;

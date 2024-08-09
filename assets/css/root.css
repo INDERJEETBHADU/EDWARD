@@ -226,6 +226,11 @@
     --font-6xl: 28px;
   }
 
+  .common_button{
+    height: 50px;
+    padding:12px 32px;
+  }
+
   .lh_57 {
     line-height:38.6px;
   }
