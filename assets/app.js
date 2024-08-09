@@ -56,6 +56,21 @@ video.forEach((e) => {
   });
 });
 
-function form(event) {
+function formHandler(event) {
   event.preventDefault();
+
+  const form = event.target;
+  const inputs = form.querySelectorAll("input[required]");
+  let allFilled = true;
+  inputs.forEach((input) => {
+    if (!input.value.trim()) {
+      allFilled = false;
+    }
+  });
+
+  if (allFilled) {
+    alert("Form successfully submitted!");
+  } else {
+    alert("Please fill out all required fields.");
+  }
 }
