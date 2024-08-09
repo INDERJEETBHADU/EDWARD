@@ -1,7 +1,7 @@
 @import url(./root.css);
 
 /* ========================================== Address Section Start Here ===================================================== */
-.address_section .nav-tabs {
+.address_section .nav_tabs {
   border: 0.5px solid var(--color-lite-blue);
   background-color: var(--color-grey);
   border-radius: 100px;
@@ -9,13 +9,13 @@
   margin: 0 auto !important;
 }
 
-.nav-tabs .nav-link {
+.nav_tabs .nav_link {
   border-radius: 100px !important;
   border: none !important;
   color: var(--color-lite-black) !important;
 }
 
-.nav-tabs .nav-link.active {
+.nav_tabs .nav_link.active {
   background-color: var(--color-lite-blue) !important;
   color: white !important;
 }
@@ -136,10 +136,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .py_60 {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.video {
-  display: none;
 }
 
 .customers_img {
@@ -414,6 +410,15 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
+/* =========================================================== Min Width  ===================================================== */
+
+@media (min-width: 992px) {
+  .address_form {
+    max-width: 475px !important;
+  }
+}
+
+
 /* =========================================================== Max Width  =========================================================== */
 @media (max-width: 991.11px) {
   .calender_box {
@@ -497,13 +502,5 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .slider_image_two {
     max-width: 130px;
-  }
-}
-
-/* =========================================================== Min Width  ===================================================== */
-
-@media (min-width: 992px) {
-  .address_form {
-    max-width: 475px !important;
   }
 }
