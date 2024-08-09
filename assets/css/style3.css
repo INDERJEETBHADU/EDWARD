@@ -121,11 +121,11 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* ========================================== Customer Section Start Here ===================================================== */
 
-.max_width_1308 {
+.customers_box {
   max-width: 1308px;
   background: #62aaa733;
   border-radius: 36px;
-  margin: 0 12px !important;
+  margin: 0 16px !important;
   padding: 110px 0;
 }
 
@@ -140,12 +140,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .customers_img {
   max-width: 557px;
-}
-
-.custom_container {
-  max-width: 1164px;
-  margin: 0 auto;
-  padding: 0 12px;
 }
 
 .slider_image_one {
@@ -411,7 +405,20 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* =========================================================== Min Width  ===================================================== */
+@media (min-width: 1620px) {
+  .customers_box {
+    padding: 110px 85px !important ;
+    max-width: auto;
+  }
+}
 
+@media (min-width: 992px) {
+  .address_form {
+    max-width: 475px !important;
+  }
+}
+
+/* =========================================================== Max Width  =========================================================== */
 @media (max-width: 1199.11px) {
   .clients_slider .slick-dots {
     width: 316px;
@@ -424,22 +431,20 @@ input[type="number"]::-webkit-outer-spin-button {
   .clients_section .prev {
     right: 62%;
   }
-}
 
-/* =========================================================== Max Width  =========================================================== */
-@media (min-width: 992px) {
-  .address_form {
-    max-width: 475px !important;
+  .customers_box {
+    padding: 68px 0;
   }
 }
 
 @media (max-width: 991.11px) {
   .calender_box {
     max-width: 566px;
+    border-radius: 24px;
   }
 
   .max_width_1308 {
-    border-radius: 20px;
+    border-radius: 24px;
     padding: 50px 0;
   }
 
@@ -535,5 +540,24 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .text_md {
     font-size: 15px;
+  }
+
+  .clients_section .next {
+    left: 51.3% !important;
+    bottom: -22px;
+  }
+
+  .clients_section .prev {
+    right: 51.3% !important;
+    bottom: -22px;
+  }
+
+  .clients_section {
+    padding-bottom: 56px;
+  }
+
+  .customers_box {
+    padding: 22px 0;
+    border-radius: 24px;
   }
 }

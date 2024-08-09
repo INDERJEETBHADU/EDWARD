@@ -16,10 +16,8 @@ $(".clients_slider").slick({
         slidesToScroll: 1,
         infinite: true,
         dots: true,
-        prevArrow: false,
-        nextArrow: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        prevArrow: ".prev",
+        nextArrow: ".next",
       },
     },
     {
@@ -27,8 +25,18 @@ $(".clients_slider").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        prevArrow: ".prev",
+        nextArrow: ".next",
+      },
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: ".prev",
+        nextArrow: ".next",
+        dots: false,
       },
     },
   ],
@@ -75,23 +83,47 @@ function formHandler(event) {
   }
 }
 
-// =========== back to top ============ 
+// =========== back to top ============
 
 let backToTopBtn = document.getElementById("backToTop");
 
-window.onscroll = function() {
-    scrollFunction();
+window.onscroll = function () {
+  scrollFunction();
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backToTopBtn.style.display = "block";
-    } else {
-        backToTopBtn.style.display = "none";
-    }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
 }
 
-backToTopBtn.onclick = function() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
+backToTopBtn.onclick = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
+const sliderParent = document.getElementById("sliderParent");
+const images = [
+  "./assets/images/webp/actewagl.png",
+  "./assets/images/webp/agl.png",
+  "./assets/images/webp/energy-australia.png",
+];
+const imageClasses = [
+  "slider_image_two",
+  "slider_image_one",
+  "slider_image_two",
+];
+
+for (let i = 0; i < 50; i++) {
+  const slideImageBox = document.createElement("div");
+  slideImageBox.className = "slide_image_box";
+
+  const img = document.createElement("img");
+  img.src = images[i % images.length];
+  img.alt = "actewagl";
+  img.className = imageClasses[i % imageClasses.length];
+
+  slideImageBox.appendChild(img);
+  sliderParent.appendChild(slideImageBox);
+}
