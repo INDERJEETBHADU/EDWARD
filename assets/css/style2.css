@@ -92,6 +92,7 @@
 }
 
 .accordion-body {
+    max-width: 989px;
     font-weight: 400;
     font-size: var(--font-sm);
     line-height: 24px;
@@ -436,7 +437,7 @@ ul {
     background-color: var(--color-secondary-green);
 }
 
-@media (min-width:1200px) {
+@media (min-width:1200px) and (max-width:1536px) {
     .footer_custom_container {
         max-width: 1164px !important;
     }
@@ -556,6 +557,26 @@ ul {
         width: 100%;
     }
 
+    .services_box {
+        border-radius: 24px;
+    }
+
+    .services_card {
+        border-radius: 24px;
+    }
+
+    .choose_yellow_box {
+        border-radius: 24px;
+    }
+    #backToTop{
+        padding: 10px;
+    }
+    .newsletter_box{
+        border-radius: 24px;
+    }
+    .footer_parent_radius {
+        border-radius: 24px 24px 0px 0px;
+    }
 }
 
 @media (max-width:575.98px) {
@@ -596,6 +617,9 @@ ul {
 
     .accordion {
         --bs-accordion-btn-icon-width: 12px !important;
+    }
+    #backToTop{
+        padding: 7px;
     }
 
 }
