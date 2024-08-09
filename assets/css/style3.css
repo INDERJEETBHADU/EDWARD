@@ -466,6 +466,16 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* =========================================================== Max Width  =========================================================== */
+@media (min-width: 1619px) {
+  .clients_section .next{
+    left: 57.4%;
+  }
+
+  .clients_section .prev{
+    right: 57.4%;
+  }
+}
+
 @media (max-width: 1199.11px) {
   .clients_slider .slick-dots {
     width: 316px;
