@@ -121,7 +121,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* ========================================== Customer Section Start Here ===================================================== */
 
-.max_width_1308 {
+.customers_box {
   max-width: 1308px;
   background: #62aaa733;
   border-radius: 36px;
@@ -427,6 +427,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* =========================================================== Max Width  =========================================================== */
+@media (min-width: 1620px) {
+.customers_box{
+  padding: 110px 85px !important ;
+  max-width: auto;
+}
+}
 @media (min-width: 992px) {
   .address_form {
     max-width: 475px !important;
