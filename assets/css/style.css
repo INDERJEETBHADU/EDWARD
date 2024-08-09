@@ -286,7 +286,12 @@ ul {
     max-width: 1320px !important;
   }
 }
-
+@media (max-width:1200px) {
+  .hero_section_padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 @media (max-width: 991.98px) {
   .mobile_view {
     position: absolute;
