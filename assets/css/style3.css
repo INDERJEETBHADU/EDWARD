@@ -383,6 +383,53 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 16px !important;
 }
 
+/* =========================================================== Popup  ===================================================== */
+
+.success-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.popup-text {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #4CAF50;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.d-none {
+  display: none;
+}
+
 /* =========================================================== Slider Keyframe  ===================================================== */
 @keyframes slide {
   0% {

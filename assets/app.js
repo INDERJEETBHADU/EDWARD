@@ -64,6 +64,25 @@ video.forEach((e) => {
   });
 });
 
+// function formHandler(event) {
+//   event.preventDefault();
+
+//   const form = event.target;
+//   const inputs = form.querySelectorAll("input[required]");
+//   let allFilled = true;
+//   inputs.forEach((input) => {
+//     if (!input.value.trim()) {
+//       allFilled = false;
+//     }
+//   });
+
+//   if (allFilled) {
+//     alert("Form successfully submitted!");
+//   } else {
+//     alert("Please fill out all required fields.");
+//   }
+// }
+
 function formHandler(event) {
   event.preventDefault();
 
@@ -77,10 +96,20 @@ function formHandler(event) {
   });
 
   if (allFilled) {
-    alert("Form successfully submitted!");
+    showSuccessPopup();
   } else {
     alert("Please fill out all required fields.");
   }
+}
+
+function showSuccessPopup() {
+  const popup = document.getElementById("successPopup");
+  popup.classList.remove("d-none");
+
+  // Hide the popup after 3 seconds
+  setTimeout(() => {
+    popup.classList.add("d-none");
+  }, 3000);
 }
 
 // =========== back to top ============
