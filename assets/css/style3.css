@@ -389,7 +389,7 @@ input[type="number"]::-webkit-outer-spin-button {
   fill: black !important;
 }
 
-.common_padding_slider{
+.common_padding_slider {
   padding: 60px 0;
 }
 
@@ -428,6 +428,21 @@ input[type="number"]::-webkit-outer-spin-button {
     border-radius: 20px;
     padding: 50px 0;
   }
+
+  .years_box {
+    min-height: 171px;
+  }
+
+  .reviews_box {
+    min-height: 171px;
+  }
+
+  .clients_slider .slick-dots {
+    width: 227px;
+  }
+  .edward_txt {
+    padding-bottom: 14px;
+  }
 }
 
 @media (max-width: 575.11px) {
@@ -451,6 +466,28 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .calender_box {
     padding: 20px 12px;
+  }
+
+  .common_padding_slider {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .address_section_h,.customers_h {
+    line-height: 38px;
+  }
+
+  .text_input {
+    border-radius: 10px;
+  }
+
+  .gap-35 {
+    gap: 35px;
+  }
+
+  .slide_image_box {
+    width: 185px;
+    min-height: 90px;
   }
 }
 
