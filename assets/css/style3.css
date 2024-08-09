@@ -93,6 +93,37 @@ input[type="number"]::-webkit-outer-spin-button {
   box-shadow: 0px 4.71px 70.63px 0px #5928e50a;
 }
 
+/* ========================================== Customer service section Start Here ============================================= */
+.slider_parent {
+  --slider-inner-width: 1920px;
+  --slider-speed: 60s;
+}
+
+.slider_parent {
+  display: flex;
+  gap: 24px;
+  animation: scroll linear infinite var(--slider-speed);
+  width: calc(2 * var(--slider-inner-width));
+  transition: animation-play-state ease 110s;
+}
+
+.slider_parent:hover {
+  animation-play-state: paused;
+}
+
+.slider_container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider_container .slider_parent {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
 /* ========================================== Customer Section Start Here ===================================================== */
 
 .max_width_1308 {
@@ -311,16 +342,16 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .clients_slider .slick-dots {
-  width: fit-content;
+  border: 0.3px solid #f1c045;
+  width: 300px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 19px 60px;
-  border: 0.3px solid var(--color-yellow);
-  border-radius: 100px;
-  height: unset !important;
-  bottom: -60px !important;
-  background-color: #fdfdfb;
-  display: flex;
+  bottom: -59px;
 }
 
 .clients_section .prev,
@@ -332,14 +363,13 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .clients_section .next {
-  left: 60.5%;
+  left: 59.8%;
   bottom: -22px;
-  transition: all 200ms linear;
   transform: rotate(180deg);
 }
 
 .clients_section .prev {
-  right: 60.5%;
+  right: 59.8%;
   bottom: -22px;
 }
 
@@ -372,13 +402,17 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
-/* =========================================================== Max Width  =========================================================== */
-@media (max-width: 1399.11px) {
-  .clients_slider .slick-dots {
-    padding: 19px 71px;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc((0px - var(--slider-inner-width)) - 0%));
   }
 }
 
+/* =========================================================== Max Width  =========================================================== */
 @media (max-width: 991.11px) {
   .calender_box {
     max-width: 566px;
@@ -390,6 +424,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .clients_section {
     padding-top: 90px;
+    padding-bottom: 90px;
   }
 
   .max_width_1308 {
@@ -406,6 +441,7 @@ input[type="number"]::-webkit-outer-spin-button {
 @media (max-width: 767.11px) {
   .clients_section {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .address_section {
@@ -415,11 +451,6 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 @media (max-width: 575.11px) {
-  .clients_slider .slick-dots {
-    width: 240px !important;
-    padding: 12px 0px;
-  }
-
   .home_owner {
     width: 140px;
     height: 45px;
@@ -450,61 +481,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* =========================================================== Min Width  ===================================================== */
 
-@media (min-width: 1400px) {
-  .clients_section .next {
-    left: 59.6%;
-    bottom: -23px;
-  }
-
-  .clients_section .prev {
-    right: 59.6%;
-    bottom: -23px;
-  }
-}
-
 @media (min-width: 992px) {
   .address_form {
     max-width: 475px !important;
   }
-}
-
-/* SLIDER CODE */
-.slider_parent {
-  --slider-inner-width: 1920px;
-  --slider-speed: 60s;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(calc((0px - var(--slider-inner-width)) - 0%));
-  }
-}
-
-.slider_parent {
-  display: flex;
-  gap: 24px;
-  animation: scroll linear infinite var(--slider-speed);
-  width: calc(2 * var(--slider-inner-width));
-  transition: animation-play-state ease 110s;
-}
-
-.slider_parent:hover {
-  animation-play-state: paused;
-}
-
-.slider_container {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.slider_container .slider_parent {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  margin: 0;
 }
