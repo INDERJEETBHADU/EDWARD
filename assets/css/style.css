@@ -1138,11 +1138,13 @@ ul {
 }
 
 .home_owner {
+  background: transparent;
   width: 175px;
   height: 56px;
 }
 
 .home_renter {
+  background: transparent;
   width: 175px;
   height: 56px;
 }
