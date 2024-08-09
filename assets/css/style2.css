@@ -167,7 +167,7 @@
 
 .footer_parent_radius {
     border-radius: 36px 36px 0px 0px;
-    padding-top: 233px;
+    padding-top: 210px;
     padding-bottom: 66px;
 }
 
@@ -419,7 +419,27 @@ ul {
 .submit_btn {
     height: 56px;
 }
+/* back to top  */
 
+#backToTop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #62AAA7;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all linear 300ms;
+}
+
+#backToTop:hover {
+    background-color: var(--color-secondary-green);
+}
 
 
 @media (max-width:1199.98px) {
@@ -462,11 +482,11 @@ ul {
     }
 
     .services_card_top_padding {
-        padding-top: 30px;
+        padding-top: 20px;
     }
 
     .services_box {
-        padding: 40px 30px;
+        padding: 50px 30px;
         margin-top: 50px;
     }
 
@@ -531,6 +551,9 @@ ul {
     .newsletter_box {
         transform: translateY(48%);
         padding: 30px;
+    }
+    .services_btn_top_padding {
+        padding-top: 30px;
     }
 
     .Frequently_top_spacing {
