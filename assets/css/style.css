@@ -285,7 +285,7 @@ ul {
   .mobile_view {
     position: absolute;
     backdrop-filter: blur(60px);
-    background-color: black;
+    background-color: var(--color-secondary-green);
     height: 100vh;
     width: 100%;
     top: 0;
