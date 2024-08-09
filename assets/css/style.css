@@ -382,13 +382,18 @@ ul {
     .work_sec_padding {
         padding-top: 80px;
     }
-
+.text_md_20{
+    font-size: 20px;
+}
 
 
 }
 
 @media (max-width:576px) {
-
+.px_sm_16{
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
     .step_icon_box {
         min-width: 28px;
     }
@@ -418,4 +423,12 @@ ul {
     .mt_20 {
         margin-top: 10px;
     }
+    .hero_office_img {
+    max-width: 166px;
+    border-radius: 20px;
+}
+.custom_container{
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
 }
