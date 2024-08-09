@@ -203,7 +203,7 @@
 
 @media (max-width:1200px) {
   :root {
-    --font-5xl: 32px !important;
+    --font-5xl: 30px !important;
   }
   .common_heading{
     line-height: 38.8px;
