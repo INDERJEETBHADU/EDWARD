@@ -29,7 +29,7 @@
 <body>
 
     <!-- ====================================HEADER AND HERO SECTION=============================== -->
-    <header class="lite_cream hero_bg position-relative min-vh-100">
+    <header class="lite_cream hero_bg position-relative min-vh-100 d-flex flex-column">
         <nav class="py-2 secondary_green">
             <div class="container custom_container">
                 <div class="d-flex justify-content-between align-items-center">
@@ -37,7 +37,7 @@
                     <ul id="navbar" class="d-flex fw-normal text_sm lh_24 align-items-center gap_32 mobile_view">
                         <li>
                             <a class=" home position-relative text-white opacity_70 mb-0" onclick="openNav()"
-                                href="home">Home</a>
+                                href="/home">Home</a>
                         </li>
                         <li>
                             <a class="home position-relative text-white opacity_70 mb-0" onclick="openNav()"
@@ -71,7 +71,7 @@
 
             </div>
         </nav>
-        <div class="container custom_container">
+        <div class="container custom_container d-flex flex-column flex-grow-1 justify-content-center">
             <div class="row hero_section_padding">
                 <div class="col-lg-7 col-12 pt-5 order-lg-1 order-2">
                     <div class="hero_sub_heading">
@@ -122,7 +122,7 @@
                                 src="./assets/images/svg/learn-more-arrow.svg" alt=""></button>
                     </div>
                 </div>
-                <div class="col-lg-5 col-12 order-1 order-lg-2 d-flex justify-content-center justify-content-lg-end ">
+                <div class="col-lg-5 col-12 order-1 order-lg-2 d-flex justify-content-center justify-content-lg-end">
                     <div class="position-relative">
                         <img class="hero_main_img w-100 position-relative z-1"
                             src="./assets/images/webp/hero-main-img.png" alt="hero_main">
@@ -161,6 +161,7 @@
         </div>
     </header>
 
+
     <!-- ====================================== WORK SECTION======================================== -->
     <section>
         <div class="container custom_container">
@@ -169,16 +170,20 @@
                     <div class="d-flex align-items-end gap-xl-4 gap-1">
                         <img class="w-100 d-lg-none " src="./assets/images/webp/work-joint-img.png" alt="work-joint">
 
-                        <img class="work_sec_lady_call_img d-none d-lg-block"
-                            src="./assets/images/webp/work-lady-call-img.png" alt="work-lady">
-                        <div class=" d-none d-lg-block">
-                            <img class="work_sec_family_img" src="./assets/images/webp/work-family.png"
-                                alt="work-family">
-                            <div class="Satisfied_Customers_box mt-4 d-flex justify-content-center align-items-center">
-                                <div class=" d-flex justify-content-center flex-column align-items-center">
-                                    <img src="./assets/images/svg/smile-box-img.svg" alt="smile-box-img">
-                                    <h2 class=" fw-bold text_4xl lh_38 text-white mb-0 mt-3 pt-1">700K+</h2>
-                                    <h3 class=" fw-normal text_2xl lh_31 text-white mb-0">Satisfied Customers</h3>
+                        <div class="overflow-hidden w-100 choose_img_radius"> <img
+                                class="work_sec_lady_call_img d-none d-lg-block"
+                                src="./assets/images/webp/work-lady-call-img.png" alt="work-lady"></div>
+                        <div class=" d-none d-lg-block w-100">
+                            <div class="overflow-hidden w-100 choose_img_radius"> <img class="work_sec_family_img"
+                                    src="./assets/images/webp/work-family.png" alt="work-family"></div>
+                            <div class="overflow-hidden w-100 choose_img_radius mt-4">
+                                <div
+                                    class="Satisfied_Customers_box d-flex justify-content-center align-items-center">
+                                    <div class=" d-flex justify-content-center flex-column align-items-center">
+                                        <img src="./assets/images/svg/smile-box-img.svg" alt="smile-box-img">
+                                        <h2 class=" fw-bold text_4xl lh_38 text-white mb-0 mt-3 pt-1">700K+</h2>
+                                        <h3 class=" fw-normal text_2xl lh_31 text-white mb-0">Satisfied Customers</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -722,12 +727,15 @@
 
                 <div
                     class="d-flex flex-lg-row flex-column choose_img_gap ms-0 ms-lg-3 order-1 order-lg-2 align-items-lg-end align-items-start">
-                    <div class="d-lg-flex d-none flex-lg-column flex-wrap w-100 flex-row choose_img_gap">
-                        <img class="choose_img" src="./assets/images/webp/choose-card-exchange.webp" alt="exchange">
-                        <img class="choose_img " src="./assets/images/webp/choose-unboxing.webp" alt="exchange">
+                    <div
+                        class="d-lg-flex d-none flex-lg-column choose_img_parent flex-wrap w-100 flex-row choose_img_gap">
+                        <div class="overflow-hidden w-100 choose_img_radius"> <img class="choose_img"
+                                src="./assets/images/webp/choose-card-exchange.webp" alt="exchange"></div>
+                        <div class="overflow-hidden w-100 choose_img_radius"> <img class="choose_img "
+                                src="./assets/images/webp/choose-unboxing.webp" alt="exchange"></div>
                     </div>
-                    <img class="choose_mic_img d-lg-block d-none " src="./assets/images/webp/choose-mic.webp"
-                        alt="exchange">
+                    <div class="overflow-hidden w-100 choose_img_radius"><img class="choose_mic_img d-lg-block d-none "
+                            src="./assets/images/webp/choose-mic.webp" alt="exchange"></div>
                     <img class="choose_group_img d-block d-lg-none " src="./assets/images/webp/group_img.webp"
                         alt="exchange">
                 </div>
