@@ -27,6 +27,8 @@ $(".clients_slider").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        prevArrow: true,
+        nextArrow: true,
         autoplay: true,
         autoplaySpeed: 2000,
       },
@@ -36,6 +38,8 @@ $(".clients_slider").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        prevArrow: true,
+        nextArrow: true,
         dots: false,
       },
     },
@@ -103,27 +107,27 @@ backToTopBtn.onclick = function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
-const sliderParent = document.getElementById('sliderParent');
+const sliderParent = document.getElementById("sliderParent");
 const images = [
-    './assets/images/webp/actewagl.png',
-    './assets/images/webp/agl.png',
-    './assets/images/webp/energy-australia.png'
+  "./assets/images/webp/actewagl.png",
+  "./assets/images/webp/agl.png",
+  "./assets/images/webp/energy-australia.png",
 ];
 const imageClasses = [
-    'slider_image_two',
-    'slider_image_one',
-    'slider_image_two'
+  "slider_image_two",
+  "slider_image_one",
+  "slider_image_two",
 ];
 
 for (let i = 0; i < 50; i++) {
-    const slideImageBox = document.createElement('div');
-    slideImageBox.className = 'slide_image_box';
+  const slideImageBox = document.createElement("div");
+  slideImageBox.className = "slide_image_box";
 
-    const img = document.createElement('img');
-    img.src = images[i % images.length];
-    img.alt = 'actewagl';
-    img.className = imageClasses[i % imageClasses.length];
+  const img = document.createElement("img");
+  img.src = images[i % images.length];
+  img.alt = "actewagl";
+  img.className = imageClasses[i % imageClasses.length];
 
-    slideImageBox.appendChild(img);
-    sliderParent.appendChild(slideImageBox);
+  slideImageBox.appendChild(img);
+  sliderParent.appendChild(slideImageBox);
 }
