@@ -130,6 +130,7 @@ ul {
 .hero_main_img_layer {
     right: 0%;
     top: 15%;
+    width: 500px;
 }
 
 .edward_box {
@@ -259,6 +260,11 @@ ul {
     .hero_main_img {
         min-width: 493px !important;
     }
+    .hero_main_img_layer {
+        right: 0%;
+        top: 15%;
+        width: auto;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -325,15 +331,16 @@ ul {
         transform: rotate(-43deg) translateY(-13px);
         transition: 300ms linear;
     }
-    .work_sec_padding {
-        padding-top: 150px;
-        padding-bottom: 5opx;
-    }
+
 }
 
 @media (max-width:992px) {
     .step_icon_box {
         min-width: 28px;
+    }
+    .hero_main_img_layer {
+        right: 0%;
+        top: 15%;
     }
 
     .hero_section_padding {
@@ -351,7 +358,8 @@ ul {
     }
 
     .work_sec_padding {
-        padding-top: 80px;
+        padding-top: 150px;
+        padding-bottom: 50px;
     }
 
     .step_box {
@@ -386,7 +394,8 @@ ul {
     }
 
     .work_sec_padding {
-        padding-top: 80px;
+        padding-top: 100px;
+        padding-bottom: 50px;
     }
 
 
@@ -414,7 +423,7 @@ ul {
     }
 
     .work_sec_padding {
-        padding-top: 48px;
+        padding-top: 60px;
         padding-bottom: 30px;
     }
 
