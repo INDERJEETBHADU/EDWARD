@@ -329,7 +329,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .clients_slider .slick-dots {
   border: 0.3px solid #f1c045;
-  width: 300px;
+  width: 270px;
   height: 46px;
   display: flex;
   justify-content: center;
@@ -353,13 +353,13 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .clients_section .next {
-  left: 59.8%;
+  left: 58.4%;
   bottom: 7px;
   transform: rotate(180deg);
 }
 
 .clients_section .prev {
-  right: 59.8%;
+  right: 58.4%;
   bottom: 7px;
 }
 
@@ -412,25 +412,43 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* =========================================================== Min Width  ===================================================== */
 
+@media (max-width: 1199.11px) {
+  .clients_slider .slick-dots {
+    width: 316px;
+  }
+
+  .clients_section .next {
+    left: 62%;
+  }
+
+  .clients_section .prev {
+    right: 62%;
+  }
+}
+
+/* =========================================================== Max Width  =========================================================== */
 @media (min-width: 992px) {
   .address_form {
     max-width: 475px !important;
   }
 }
 
-/* =========================================================== Max Width  =========================================================== */
 @media (max-width: 991.11px) {
   .calender_box {
     max-width: 566px;
   }
 
-  .clients_slider .slick-dots {
-    padding: 15px 15px !important;
-  }
-
   .max_width_1308 {
     border-radius: 20px;
     padding: 50px 0;
+  }
+
+  .clients_section .prev {
+    right: 66.3% !important;
+  }
+
+  .clients_section .next {
+    left: 66.3% !important;
   }
 
   .years_box {
@@ -441,11 +459,18 @@ input[type="number"]::-webkit-outer-spin-button {
     min-height: 171px;
   }
 
-  .clients_slider .slick-dots {
-    width: 227px;
-  }
   .edward_txt {
     padding-bottom: 14px;
+  }
+}
+
+@media (max-width: 767.11px) {
+  .clients_section .next {
+    left: 71.3% !important;
+  }
+
+  .clients_section .prev {
+    right: 71.3% !important;
   }
 }
 
@@ -477,6 +502,10 @@ input[type="number"]::-webkit-outer-spin-button {
     padding-bottom: 30px;
   }
 
+  .clients_slider .slick-dots {
+    width: 200px;
+  }
+
   .address_section_h,
   .customers_h {
     line-height: 38px;
@@ -484,6 +513,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .text_input {
     height: 50px;
+    border-radius: 10px;
   }
 
   .gap-35 {
@@ -501,5 +531,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .slider_image_two {
     max-width: 130px;
+  }
+
+  .text_md {
+    font-size: 15px;
   }
 }
