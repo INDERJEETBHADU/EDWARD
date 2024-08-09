@@ -1,5 +1,4 @@
 // ===================================== ClIENT SLIDER ========================================//
-
 $(".clients_slider").slick({
   dots: true,
   infinite: true,
@@ -43,7 +42,6 @@ $(".clients_slider").slick({
 });
 
 // ===================================== CHECKBOX ========================================//
-
 const check = document.querySelector(".checkbox_part");
 const check_img = document.querySelector(".check-img");
 
@@ -78,7 +76,6 @@ video.forEach((e) => {
 });
 
 // =========== back to top ================================================
-
 let backToTopBtn = document.getElementById("backToTop");
 
 window.onscroll = function () {

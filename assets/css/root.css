@@ -91,7 +91,6 @@
 }
 
 /* -------Common---Things------ */
-
 .text_lite_black {
   color: var(--color-lite-black);
 }
@@ -99,7 +98,6 @@
 .lite_cream {
   background: var(--color-cream);
 }
-
 
 .bg_cream {
   background: var(--color-cream);
@@ -205,6 +203,7 @@
   :root {
     --font-5xl: 30px !important;
   }
+  
   .common_heading{
     line-height: 38.8px;
   }
