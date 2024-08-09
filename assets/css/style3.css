@@ -470,7 +470,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .common_padding_slider {
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 
   .address_section_h,
@@ -479,7 +479,8 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .text_input {
-    border-radius: 10px;
+
+    height: 50px;
   }
 
   .gap-35 {
