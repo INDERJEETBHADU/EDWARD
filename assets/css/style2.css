@@ -7,6 +7,7 @@
     border-radius: 36px;
     padding: 109px 84px;
     margin-top: 75px;
+    margin-bottom: 75px;
 }
 
 .choose_sub_heading {
@@ -73,7 +74,7 @@
 
 /* Frequently */
 .Frequently_top_spacing {
-    padding-top: 150px;
+    padding-top: 75px;
     margin-bottom: -30px;
 }
 
@@ -126,6 +127,10 @@
 
 .accordion-button::after {
     background-image: url(../images/svg/accodion-bottom-icon.svg) !important;
+}
+
+.accordion {
+    --bs-accordion-btn-icon-width: 20px !important;
 }
 
 /* newsletter */
@@ -181,7 +186,7 @@
 }
 
 .footer_icon_box:hover {
-    box-shadow: 0px 0px 10px 1px rgba(33,70,53,1);
+    box-shadow: 0px 0px 10px 1px rgba(33, 70, 53, 1);
 }
 
 footer ul li a {
@@ -411,19 +416,10 @@ ul {
     transform: scale(1.1);
 }
 
-@media (max-width:767.98px) {
-    .Frequently_top_spacing {
-        margin-bottom: -116px;
-    }
-
-    .choose_sub_paragraph {
-        margin-top: unset;
-    }
-
-    .choose_start_btn {
-        margin-top: 25px;
-    }
+.submit_btn {
+    height: 56px;
 }
+
 
 
 @media (max-width:1199.98px) {
@@ -434,6 +430,7 @@ ul {
     .services_box {
         padding: 80px 30px;
     }
+
 
 }
 
@@ -449,6 +446,11 @@ ul {
     .choose_yellow_box {
         padding: 35px 30px;
         margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .choose_start_btn {
+        margin-top: 25px;
     }
 
     .footer_heading_gap {
@@ -464,7 +466,7 @@ ul {
     }
 
     .services_box {
-        padding: 30px;
+        padding: 40px 30px;
         margin-top: 50px;
     }
 
@@ -474,8 +476,49 @@ ul {
 
     .Frequently_top_spacing {
         padding-top: 50px;
+        margin-bottom: -70px;
     }
+
+    .choose_text_parent {
+        max-width: unset;
+        width: 100%;
+    }
+
+
 }
+
+@media (max-width:767.98px) {
+    .Frequently_top_spacing {
+        margin-bottom: -116px;
+    }
+
+    .text_md_20 {
+        font-size: 20px;
+    }
+
+    .choose_sub_paragraph {
+        margin-top: unset;
+    }
+
+    .Frequently_top_spacing {
+        padding-top: 30px;
+    }
+
+    .services_card {
+        max-width: unset;
+    }
+
+    .accordion-button {
+        padding-bottom: 5px !important;
+    }
+
+    .submit_btn {
+        max-width: 347px;
+        width: 100%;
+    }
+
+}
+
 
 
 @media (min-width:1200px) {
@@ -494,15 +537,30 @@ ul {
         margin-bottom: -150px;
     }
 
-    .footer_parent_radius {
-        padding-top: 200px;
+    .footer_green_box {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .footer_icon_parent {
+        margin-top: 24px;
     }
 
     .services_box {
         margin-top: 30px;
     }
-    .choose_yellow_box{
+
+    .choose_yellow_box {
         margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .services_card {
+        max-width: 267px;
+    }
+
+    .accordion {
+        --bs-accordion-btn-icon-width: 12px !important;
     }
 
 }
