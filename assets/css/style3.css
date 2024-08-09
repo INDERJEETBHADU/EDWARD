@@ -9,11 +9,6 @@
   margin: 0 auto !important;
 }
 
-.address_section {
-  padding-bottom: 150px;
-  padding-top: 150px;
-}
-
 .nav-tabs .nav-link {
   border-radius: 100px !important;
   border: none !important;
@@ -241,11 +236,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* ========================================== Clients Section Start Here ===================================================== */
 
-.clients_section {
-  padding-top: 150px;
-  padding-bottom: 170px;
-}
-
 .rounded_38 {
   border-radius: 38px !important;
 }
@@ -276,6 +266,10 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .gap_40 {
   gap: 40px;
+}
+
+.clients_slider.slick-dotted.slick-slider {
+  margin-bottom: 60px !important;
 }
 
 .edward_images {
@@ -354,6 +348,10 @@ input[type="number"]::-webkit-outer-spin-button {
   bottom: -59px;
 }
 
+.clients_slider .slick-list {
+  background-color: #00000005 !important;
+}
+
 .clients_section .prev,
 .next {
   outline: none !important;
@@ -364,13 +362,13 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .clients_section .next {
   left: 59.8%;
-  bottom: -22px;
+  bottom: 7px;
   transform: rotate(180deg);
 }
 
 .clients_section .prev {
   right: 59.8%;
-  bottom: -22px;
+  bottom: 7px;
 }
 
 .clients_section .prev svg,
@@ -422,31 +420,9 @@ input[type="number"]::-webkit-outer-spin-button {
     padding: 15px 15px !important;
   }
 
-  .clients_section {
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-
   .max_width_1308 {
     border-radius: 20px;
     padding: 50px 0;
-  }
-
-  .address_section {
-    padding-bottom: 80px;
-    padding-top: 80px;
-  }
-}
-
-@media (max-width: 767.11px) {
-  .clients_section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  .address_section {
-    padding-bottom: 80px;
-    padding-top: 0px;
   }
 }
 
@@ -471,11 +447,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .calender_box {
     padding: 20px 12px;
-  }
-
-  .address_section {
-    padding-bottom: 48px;
-    padding-top: 0px;
   }
 }
 
