@@ -118,11 +118,11 @@
                     </div>
 
 
-                    <div class="hero_btn_margin d-flex flex-wrap align-content-center gap-3">
-                        <button class="common_button   border-0 fw-semibold text_sm lh_24 text_lite_black">Get
+                    <div class="hero_btn_margin d-flex flex-wrap align-content-center gap-2 gap-sm-3">
+                        <button class="common_button   border-0 fw-semibold text_sm lh_24 text_lite_black px_sm_16">Get
                             Connected Now</button>
-                        <button class="hero_learn_more_btn  text_lite_black fw-semibold text_sm lh_24">Learn More <img
-                                src="./assets/images/svg/learn-more-arrow.svg" alt=""></button>
+                        <button class="hero_learn_more_btn  text_lite_black fw-semibold text_sm lh_24 px_sm_16">Learn
+                            More <img src="./assets/images/svg/learn-more-arrow.svg" alt=""></button>
                     </div>
                 </div>
                 <div class="col-lg-5 col-12 order-1 order-lg-2 d-flex justify-content-center justify-content-2xl-end">
@@ -207,7 +207,6 @@
                                     process.
                                 </p>
                             </div>
-
                         </div>
 
                     </div>
@@ -223,7 +222,6 @@
                                     insurance
                                 </p>
                             </div>
-
                         </div>
 
                     </div>
@@ -243,15 +241,17 @@
                         </div>
 
                     </div>
+                  <div class="d-flex justify-content-center justify-content-sm-start">
                     <button class="common_button mt-md-5 mt-4">Start Now</button>
+                  </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- =================================================== ADDRESS SECTION ================================================== -->
-    <section class="address_section common_padding">
-        <div class="custom_container">
+    <section class="address_section common_padding" id="contact-us">
+        <div class="custom_container container px-3 px-sm-0">
             <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="home_owner nav-link active fw-semibold text_md text_light_black lh_24 text-nowrap"
@@ -266,44 +266,46 @@
 
             </ul>
 
-            <h2 class="common_heading text-center pt-4">What's Your <span class="text_orange">new address ?</span></h2>
+            <h2 class="common_heading text-center pt-4 address_section_h">What's Your <span class="text_orange">new
+                    address?</span></h2>
 
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="row mt-lg-5 mt-3 align-items-center align-items-xl-end gap-4 gap-lg-0">
+                    <div class="row mt-lg-5 mt-3 align-items-center align-items-xl-end gap-35 gap-sm-5 gap-lg-0">
                         <div class="col-lg-6 d-flex justify-content-center d-lg-inline-block">
-                            <form action="" class="address_form w-100">
+                            <form class="address_form w-100" onsubmit="formHandler(event)">
                                 <div>
                                     <div class="fw-semibold text_md lh_27 text_light_black pb-2">Full Name*</div>
-                                    <input type="text" class="text_input o w-100 px-2" required>
+                                    <input type="text" class="text_input o w-100 px-lg-3 px-2" required>
                                 </div>
                                 <div class="pt-3">
                                     <div class="fw-semibold text_md lh_27 text_light_black pb-2">Active Email*</div>
-                                    <input type="email" class="text_input o w-100 px-2" required>
+                                    <input type="email" class="text_input o w-100 px-lg-3 px-2" required>
                                 </div>
                                 <div class="pt-3">
                                     <div class="fw-semibold text_md lh_27 text_light_black pb-2">Phone Number*</div>
-                                    <input type="number" class="text_input o w-100 px-2" required>
+                                    <input type="number" class="text_input o w-100 px-lg-3 px-2" required>
                                 </div>
                                 <div class="pt-3">
                                     <div class="fw-semibold text_md lh_27 text_light_black pb-2">Connection Address*
                                     </div>
-                                    <input type="text" class="text_input o w-100 px-2" required>
+                                    <input type="text" class="text_input o w-100 px-3" required>
                                 </div>
 
                                 <div class="checkbox_part d-flex align-items-center gap-2 mt-20 mx-auto mx-lg-0">
                                     <div class="checkbox d-flex justify-content-center align-items-center">
                                         <img src="./assets/images/svg/right.svg" alt="right" class="check-img d-none">
                                     </div>
-                                    <div class="checkbox_txt fw-normal text_md lh_24">I accept the Terms
-                                        and conditions</div>
+                                    <div class="checkbox_txt fw-normal text_md lh_24">I accept the Terms and conditions
+                                    </div>
                                 </div>
                                 <div class="d-flex justify-content-center d-lg-inline-block w-100">
                                     <button
-                                        class="connected_btn common_button mt-lg-5 mt-3 fw-semibold text_sm lh_24 text_light_black d-flex justify-content-center align-items-center w-100 text-nowrap">Get
-                                        Connected</button>
+                                        class="connected_btn common_button mt-lg-5 mt-3 fw-semibold text_sm lh_24 text_light_black d-flex justify-content-center align-items-center w-100 text-nowrap"
+                                        type="submit">Get Connected</button>
                                 </div>
                             </form>
+
                         </div>
                         <div class="col-lg-6 d-flex justify-content-center d-lg-inline-block">
                             <div class="calender_box">
@@ -316,7 +318,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    <div class="row mt-5 justify-content-center">
+                    <div class="row mt-lg-5 mt-3 justify-content-center">
                         <div class="col-lg-6 col-12 d-flex justify-content-center d-lg-inline-block">
                             <div class="calender_box">
                                 <div class="fw-bold text_xl lh_29 text_light_black text-center">When are you Moving ?
@@ -436,7 +438,7 @@
     </section>
 
     <!-- ================================================== SERVICES-SLIDER SECTION ========================================== -->
-    <section class="overflow-hidden common_padding">
+    <section class="overflow-hidden common_padding_slider">
         <div class="slider_container">
             <div class="slider_parent d-flex">
                 <div class="slide_image_box">
@@ -492,7 +494,7 @@
     <section class="customers_section common_padding pt-0">
         <div class="d-flex justify-content-center">
             <div class="max_width_1308 w-100">
-                <div class="custom_container">
+                <div class="custom_container container px-3 px-sm-0">
                     <div
                         class="row align-items-center align-items-xl-end flex-column-reverse flex-lg-row gap-4 gap-lg-0">
                         <div class="col-lg-6 col-12 d-flex justify-content-center">
@@ -515,7 +517,8 @@
                         </div>
 
                         <div class="col-lg-6 col-12">
-                            <h2 class="common_heading text-center text-lg-start m-0">We’ve helped over 1 million
+                            <h2 class="common_heading text-center text-lg-start m-0 p-2 p-lg-0 customers_h">We’ve helped
+                                over 1 million
                                 customers
                                 <span class="text_orange">move
                                     home</span>
@@ -562,8 +565,9 @@
 
     <!-- =================================================== CLIENTS SECTION ================================================== -->
     <section class="clients_section common_padding">
-        <div class="custom_container position-relative">
-            <div class="d-flex align-items-center flex-column flex-lg-row gap-4 gap-lg-0 justify-content-lg-between">
+        <div class="custom_container container px-3 px-sm-0 position-relative">
+            <div
+                class="d-flex align-items-center flex-column flex-lg-row gap-2 gap-sm-4 gap-lg-0 justify-content-lg-between pb-sm-2 pb-lg-0">
                 <h2 class="common_heading text-center text-lg-start">What Our <span class="text_orange">Clients
                         Say</span></h2>
                 <div class="d-flex align-items-end gap-3">
@@ -861,7 +865,9 @@
                         <a href="/">
                             <h2 class="fw-bold text_6xl lh_64 mb-0 text_lite_black">LOGO</h2>
                         </a>
-                        <p class="fw-normal opacity_70 text_sm lh_24 text_lite_black footer_paragraph mt-sm-4 mt-0 mb-0">Lorem
+                        <p
+                            class="fw-normal opacity_70 text_sm lh_24 text_lite_black footer_paragraph mt-sm-4 mt-0 mb-0">
+                            Lorem
                             Ipsum
                             sit
                             amet edit, sed do tempor incididunt ut dolore magna aliqua lorem
