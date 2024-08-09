@@ -308,7 +308,7 @@ Connect electricity, gas, internet, and insurance effortlessly." />
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
           <div class="row mt-lg-5 mt-3 align-items-center align-items-xl-end gap-35 gap-sm-5 gap-lg-0">
             <div class="col-lg-6 d-flex justify-content-center d-lg-inline-block">
-              <form class="address_form w-100" onsubmit="formHandler(event)">
+              <form class="address_form w-100" id="address_form">
                 <div>
                   <div class="fw-semibold text_md lh_27 text_light_black pb-2">
                     Full Name*
@@ -1063,6 +1063,21 @@ Connect electricity, gas, internet, and insurance effortlessly." />
 
                 event.target.reset();
             });
+
+            // address section code add
+             document
+                .getElementById("address_form")
+                .addEventListener("submit", function (event) {
+                  event.preventDefault();
+                  Swal.fire({
+                    title: "Email Submit",
+                    icon: "success",
+                    timer: 3000,
+                    showConfirmButton: false,
+                  });
+
+                  event.target.reset();
+                });
     </script>
 </body>
 
