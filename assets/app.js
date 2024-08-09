@@ -16,10 +16,8 @@ $(".clients_slider").slick({
         slidesToScroll: 1,
         infinite: true,
         dots: true,
-        prevArrow: true,
-        nextArrow: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        prevArrow: ".prev",
+        nextArrow: ".next",
       },
     },
     {
@@ -27,10 +25,8 @@ $(".clients_slider").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: true,
-        nextArrow: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        prevArrow: ".prev",
+        nextArrow: ".next",
       },
     },
     {
@@ -38,8 +34,8 @@ $(".clients_slider").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: true,
-        nextArrow: true,
+        prevArrow: ".prev",
+        nextArrow: ".next",
         dots: false,
       },
     },
