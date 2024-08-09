@@ -436,10 +436,11 @@ input[type="number"]::-webkit-outer-spin-button {
 @media (max-width: 991.11px) {
   .calender_box {
     max-width: 566px;
+    border-radius: 24px;
   }
 
   .max_width_1308 {
-    border-radius: 20px;
+    border-radius: 24px;
     padding: 50px 0;
   }
 
@@ -535,5 +536,19 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .text_md {
     font-size: 15px;
+  }
+
+  .clients_section .next {
+    left: 51.3% !important;
+    bottom: -22px;
+  }
+
+  .clients_section .prev {
+    right: 51.3% !important;
+    bottom: -22px;
+  }
+
+  .clients_section {
+    padding-bottom: 56px;
   }
 }

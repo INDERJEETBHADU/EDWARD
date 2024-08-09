@@ -16,8 +16,8 @@ $(".clients_slider").slick({
         slidesToScroll: 1,
         infinite: true,
         dots: true,
-        prevArrow: false,
-        nextArrow: false,
+        prevArrow: true,
+        nextArrow: true,
         autoplay: true,
         autoplaySpeed: 2000,
       },
@@ -29,6 +29,14 @@ $(".clients_slider").slick({
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+      },
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
       },
     },
   ],
@@ -75,23 +83,22 @@ function formHandler(event) {
   }
 }
 
-// =========== back to top ============ 
+// =========== back to top ============
 
 let backToTopBtn = document.getElementById("backToTop");
 
-window.onscroll = function() {
-    scrollFunction();
+window.onscroll = function () {
+  scrollFunction();
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backToTopBtn.style.display = "block";
-    } else {
-        backToTopBtn.style.display = "none";
-    }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
 }
 
-backToTopBtn.onclick = function() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
+backToTopBtn.onclick = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 };
-
