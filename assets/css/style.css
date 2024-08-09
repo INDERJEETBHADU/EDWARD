@@ -261,14 +261,15 @@ ul {
   .min_vh_100{
     min-height: 100vh;
   }
-  .custom_container {
-    max-width: 1164px !important;
+}
+@media (min-width:1620px) {
+  .custom_container{
+    max-width: 1320px !important;
   }
 }
-
 @media (min-width: 1200px) {
   .custom_container {
-    max-width: 1164px ;
+    max-width: 1164px !important;
   }
   .hero_main_img {
     min-width: 493px !important;
