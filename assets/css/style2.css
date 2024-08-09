@@ -324,6 +324,9 @@ footer ul li a:hover {
 .footer_text_gap {
     gap: 12px;
 }
+.choose_img_gap_parent{
+    gap: 25.50px;
+}
 
 ol,
 ul {
@@ -428,6 +431,8 @@ ul {
     background-color: #62AAA7;
     color: white;
     cursor: pointer;
+    width: 56px;
+    height: 56px;
     padding: 15px;
     border-radius: 10px;
     transition: all linear 300ms;
@@ -445,7 +450,7 @@ ul {
 
 @media (max-width:1199.98px) {
     .choose_yellow_box {
-        padding: 70px 30px;
+        padding: 100px 30px;
     }
 
     .services_box {
@@ -462,6 +467,9 @@ ul {
 
     .choose_img_gap {
         max-width: 488px;
+    }
+    .services_card{
+        padding: 16px;
     }
 
 }
@@ -502,7 +510,7 @@ ul {
     }
 
     .services_card_top_padding {
-        padding-top: 20px;
+        padding-top: 30px;
     }
 
     .services_box {
@@ -522,6 +530,9 @@ ul {
     .choose_text_parent {
         max-width: unset;
         width: 100%;
+    }
+    .choose_img_gap_parent{
+        gap: unset;
     }
 
 
@@ -570,6 +581,8 @@ ul {
     }
     #backToTop{
         padding: 10px;
+        width: 50px;
+        height: 50px;
     }
     .newsletter_box{
         border-radius: 24px;
@@ -620,6 +633,8 @@ ul {
     }
     #backToTop{
         padding: 7px;
+        width: 46px;
+        height: 46px;
     }
 
 }
