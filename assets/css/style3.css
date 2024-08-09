@@ -389,6 +389,10 @@ input[type="number"]::-webkit-outer-spin-button {
   fill: black !important;
 }
 
+.common_padding_slider{
+  padding: 60px 0;
+}
+
 /* =========================================================== Slider Keyframe  ===================================================== */
 @keyframes slide {
   0% {
