@@ -197,6 +197,14 @@
   padding: 75px 0px;
 }
 
+@media (max-width:1200px) {
+  :root {
+    --font-5xl: 32px !important;
+  }
+  .common_heading{
+    line-height: 38.8px;
+  }
+}
 
 @media (max-width: 991.98px) {
   :root {
@@ -222,7 +230,7 @@
     padding: 30px 0px;
   }
 
-  .common_heading{
+  .common_heading {
     line-height: 37.8px;
   }
 }
