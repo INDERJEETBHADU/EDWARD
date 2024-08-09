@@ -55,7 +55,20 @@ function openNav() {
   document.body.classList.toggle("overflow_hidden");
   document.querySelector(".menu").classList.toggle("cross");
 }
-
+document.querySelectorAll('#navbar a').forEach(link => {
+  link.addEventListener('click', () => {
+      if (document.getElementById("navbar").classList.contains("start-0")) {
+          openNav();
+      }
+  });
+});
+document.querySelectorAll('.common_button').forEach(button => {
+  button.addEventListener('click', () => {
+      if (document.getElementById("navbar").classList.contains("start-0")) {
+          openNav();
+      }
+  });
+});
 // ===================================== Video Play ========================================//
 let video = document.querySelectorAll(".video_play");
 video.forEach((e) => {
