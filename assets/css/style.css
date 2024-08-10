@@ -8,7 +8,8 @@ ul {
   padding: 10px;
 }
 .page_logo{
-  max-width: 200px;
+  max-width: 147px;
+  height: 64px;
 }
 .home:hover {
   -webkit-text-stroke-width: 1px;
@@ -38,10 +39,6 @@ ul {
 /* ------marin---padding----gap */
 .gap_12 {
   gap: 12px;
-}
-
-.gap_20 {
-  gap: 20px;
 }
 
 .mt_20 {
@@ -75,10 +72,6 @@ ul {
 .hero_section_padding {
   padding-top: 127px;
   padding-bottom: 139px;
-}
-
-.image_container {
-  overflow: hidden;
 }
 
 .overlay {
