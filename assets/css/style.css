@@ -287,9 +287,6 @@ ul {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  .hero_main_img{
-    min-height: 362px;
-  }
 }
 @media (max-width: 991.98px) {
   .mobile_view {
@@ -374,6 +371,9 @@ ul {
 
   .hero_main_img {
     max-width: 360px;
+    min-height: 362px;
+    width: 100% !important;
+    height: 100% !important;
     margin-top: 0px;
   }
 
