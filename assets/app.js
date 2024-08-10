@@ -96,9 +96,9 @@ backToTopBtn.onclick = function () {
 
 const sliderParent = document.getElementById("sliderParent");
 const images = [
-  "./assets/images/webp/actewagl.png",
-  "./assets/images/webp/agl.png",
-  "./assets/images/webp/energy-australia.png",
+  "./assets/images/webp/actewagl.webp",
+  "./assets/images/webp/agl.webp",
+  "./assets/images/webp/energy-australia.webp",
 ];
 const imageClasses = [
   "slider_image_two",
