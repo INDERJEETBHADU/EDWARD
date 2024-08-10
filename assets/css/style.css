@@ -1,16 +1,21 @@
+@import url(./root.css);
+
 dl,
 ol,
 ul {
   margin-bottom: 0 !important;
   padding-left: 0 !important;
 }
-.navlist_padding{
+
+.navlist_padding {
   padding: 10px;
 }
-.page_logo{
+
+.page_logo {
   max-width: 147px;
   height: 64px;
 }
+
 .home:hover {
   -webkit-text-stroke-width: 1px;
   opacity: 1 !important;
@@ -251,10 +256,12 @@ ul {
 .custom_container {
   max-width: auto !important;
 }
+
 @media (min-width: 1200px) {
   .custom_container {
     max-width: 1164px !important;
   }
+
   .hero_main_img {
     min-width: 493px !important;
   }
@@ -265,29 +272,35 @@ ul {
     width: auto;
   }
 }
+
 @media (max-width:1620px) {
-  .nav_height{
+  .nav_height {
     height: 82px;
   }
+
   .hero_section_padding {
     padding-top: 0;
     padding-bottom: 0px;
   }
-  .min_vh_100{
+
+  .min_vh_100 {
     min-height: 100vh;
   }
 }
+
 @media (min-width:1620px) {
-  .custom_container{
+  .custom_container {
     max-width: 1320px !important;
   }
 }
+
 @media (max-width:1200px) {
   .hero_section_padding {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 }
+
 @media (max-width: 991.98px) {
   .mobile_view {
     position: absolute;
@@ -396,9 +409,10 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .hero_main_img{
+  .hero_main_img {
     border-radius: 24px;
   }
+
   .step_icon_box {
     min-width: 28px;
   }
@@ -456,7 +470,7 @@ ul {
     border-radius: 20px;
   }
 
-  .hero_learn_more_btn{
+  .hero_learn_more_btn {
     height: 50px;
     padding: 0;
   }
@@ -1112,9 +1126,6 @@ ul {
     height: 46px;
   }
 }
-
-/* STYLE 3 CSS CODE */
-@import url(./root.css);
 
 /* ========================================== Address Section Start Here ===================================================== */
 .address_section .nav_tabs {
