@@ -118,27 +118,3 @@ for (let i = 0; i < 50; i++) {
   slideImageBox.appendChild(img);
   sliderParent.appendChild(slideImageBox);
 }
-
-var FakeBeacon = {
-  init: function() {
-    document.querySelector('.js-beacon').addEventListener('click', function() {
-      FakeBeacon.load(this);
-    });
-  },
-
-  load: function(el) {
-    FakeBeacon.loadScript();
-    el.classList.add('is-loading');
-    window.Beacon('once', 'ready', function() {
-      el.remove();
-      window.Beacon('open');
-      Cookies.set('hs-beacon', 'open', { expires: 1 });
-    });
-    window.Beacon('on', 'close', function() {
-      Cookies.remove('hs-beacon');
-    });
-  },
-
-  loadScript: function() {
-  }
-}
