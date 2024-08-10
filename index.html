@@ -26,10 +26,6 @@ Connect electricity, gas, internet, and insurance effortlessly.">
 Connect electricity, gas, internet, and insurance effortlessly.">
     <meta property="twitter:image" content="https://connections-made-easy-html.web.app/meta-img.webp">
 
-    <!-- CUSTOM CSS FILES -->
-    <link rel="stylesheet" href="./assets/css/root.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-
     <!-- =================================================== SLIDER LINKS =================================================== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
         integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
@@ -43,6 +39,10 @@ Connect electricity, gas, internet, and insurance effortlessly.">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+
+    <!-- CUSTOM CSS FILES -->
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -59,7 +59,7 @@ Connect electricity, gas, internet, and insurance effortlessly.">
         <nav class="py-3 secondary_green nav_height d-flex align-items-center justify-content-center">
             <div class="container custom_container">
                 <div class="d-flex justify-content-between align-items-center">
-                    <a href="/"><img class="page_logo w-100" src="./assets//images/webp/logo-transparency.webp" alt="logo-transparency"></a>
+                    <a href="/"><img class="page_logo w-100 object-fit-contain" src="./assets//images/webp/logo-transparency.webp" alt="logo-transparency"></a>
                     <ul id="navbar" class="d-flex fw-normal text_sm lh_24 gap_12 align-items-center mobile_view">
                         <li class="navlist_padding">
                             <a class="home position-relative text-white opacity_70 mb-0 text_md_20" onclick="openNav()"
@@ -151,8 +151,8 @@ Connect electricity, gas, internet, and insurance effortlessly.">
                 </div>
                 <div class="col-lg-5 col-12 order-1 order-lg-2 d-flex justify-content-center justify-content-2xl-end">
                     <div class="position-relative">
-                        <img class="hero_main_img w-100 position-relative z-1"
-                            src="./assets/images/webp/hero-main-img.webp" rel="preload" alt="hero_main">
+                        <img class="hero_main_img w-100 position-relative z-1" width="100%" height="100%"
+                            src="./assets/images/webp/hero-main-img.webp" rel="preload" fetchpriority="high" alt="hero_main">
                         <div class="edward_box d-none d-xxl-block position-absolute">
                             <div class="d-flex gap-2 align-items-center justify-content-center">
                                 <div class="d-flex align-items-center gap-1">
@@ -475,7 +475,8 @@ Connect electricity, gas, internet, and insurance effortlessly.">
     <!-- ================================================== SERVICES-SLIDER SECTION ========================================== -->
     <div class="overflow-hidden common_padding_slider">
         <div class="slider_container">
-            <div class="slider_parent d-flex" id="sliderParent"></div>
+            <div class="slider_parent d-flex" id="sliderParent">
+            </div>
         </div>
     </div>
 
@@ -530,7 +531,8 @@ Connect electricity, gas, internet, and insurance effortlessly.">
                                             <div
                                                 class="d-flex align-items-center gap_6 flex-column justify-content-center flex-sm-row justify-content-sm-start">
                                                 <div class="review_img">
-                                                    <img src="./assets/images/webp/google-reviews.webp" class="w-100" alt="google-reviews-img"></div>
+                                                    <img src="./assets/images/webp/google-reviews.webp" class="w-100" alt="google-reviews-img">
+                                                </div>
                                                 <div class="fw-semibold text_light_black lh_21 text_md">Google Reviews
                                                 </div>
                                             </div>
@@ -892,7 +894,7 @@ Connect electricity, gas, internet, and insurance effortlessly.">
                 <div class="row">
                     <div class="col-xl-4 mt-xl-0 mt-4 col-md-5 col-sm-6 col-12">
                         <a href="/">
-                        <img src="./assets/images/webp/logo-transparency.webp" alt="Logo" class="page_logo w-100">
+                        <img src="./assets/images/webp/logo-transparency.webp" alt="Logo" class="page_logo w-100 object-fit-contain">
                         </a>
                         <p
                             class="fw-normal opacity_70 text_sm lh_24 text_lite_black footer_paragraph mt-sm-4 mt-0 mb-0">
