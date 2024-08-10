@@ -7,6 +7,9 @@ ul {
 .navlist_padding{
   padding: 10px;
 }
+.page_logo{
+  max-width: 200px;
+}
 .home:hover {
   -webkit-text-stroke-width: 1px;
   opacity: 1 !important;
