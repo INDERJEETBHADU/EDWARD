@@ -59,7 +59,7 @@ ul {
   width: 100%;
   padding: 4px 16px;
   border-radius: 42px;
-  border: 1px solid #9bc2a0;
+  border: 1px solid var( --color-green);
   background: #9bc2a059;
   border-radius: 42px;
 }
@@ -190,7 +190,7 @@ ul {
 }
 
 .step_box {
-  border-bottom: 0.5px solid #62aaa7;
+  border-bottom: 0.5px solid var(--color-lite-blue);
   background: #62aaa70a;
   padding: 10px 40px;
   border-radius: 36px;
@@ -250,7 +250,7 @@ ul {
   width: 100%;
   height: 266px;
   border-radius: 36px;
-  background: #62aaa7;
+  background: var(--color-lite-blue);
 }
 
 .custom_container {
@@ -660,7 +660,7 @@ ul {
   width: 30.57px;
   height: 30.57px;
   border-radius: 50%;
-  background: #214635;
+  background: var(--color-secondary-green);
   transition: all linear 300ms;
 }
 
@@ -911,7 +911,7 @@ ul {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #62AAA7;
+  background-color: var(--color-lite-blue);
   color: white;
   cursor: pointer;
   width: 56px;
@@ -1453,7 +1453,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .clients_slider .slick-dots {
   gap: 5px;
-  border: 0.3px solid #f1c045;
+  border: 0.3px solid var(--color-yellow);
   width: 270px;
   height: 46px;
   display: flex;
