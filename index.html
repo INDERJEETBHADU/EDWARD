@@ -312,38 +312,40 @@ Connect electricity, gas, internet, and insurance effortlessly.">
 
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="row mt-lg-5 mt-3 align-items-center align-items-center gap-35 gap-sm-5 gap-lg-0">
+                    <div class="row mt-lg-5 mt-3 align-items-center align-items-xl-end gap-35 gap-sm-5 gap-lg-0">
                         <div class="col-lg-6 d-flex justify-content-center d-lg-inline-block">
-                            <form class="address_form w-100" id="address_form">
-                                <div class="d-flex flex-column">
+                            <form class="address_form w-100" id="address_form" onsubmit="handleSubmit(event)">
+                                <div class="d-flex flex-column position-relative">
                                     <div class="fw-semibold text_md lh_27 text_light_black pb-2">
                                         Full Name*
                                     </div>
-                                    <input type="text" name="full-name" class="text_input w-100 px-lg-3 px-2" required>
+                                    <input type="text" onchange="handleChange(event)" name="full-name"
+                                        class="text_input w-100 px-lg-3 px-2" id="full-name" required>
                                 </div>
-                                <div class="pt-3">
+                                <div class="pt-3 position-relative">
                                     <div class="fw-semibold text_md lh_27 text_light_black pb-2">
                                         Active Email*
                                     </div>
-                                    <input type="email" name="active-email" class="text_input w-100 px-lg-3 px-2"
-                                        required>
+                                    <input type="email" onchange="handleChange(event)" name="active-email"
+                                        class="text_input w-100 px-lg-3 px-2" id="active-email" required>
                                 </div>
-                                <div class="pt-3">
+                                <div class="pt-3 position-relative">
                                     <div class="fw-semibold text_md lh_27 text_light_black pb-2">
                                         Phone Number*
                                     </div>
-                                    <input type="number" name="phone-number" class="text_input w-100 px-lg-3 px-2"
-                                        required>
+                                    <input type="number" onchange="handleChange(event)" name="phone-number"
+                                        class="text_input w-100 px-lg-3 px-2" id="phone-number" required>
                                 </div>
-                                <div class="pt-3">
+                                <div class="pt-3 position-relative">
                                     <div class="fw-semibold text_md lh_27 text_light_black pb-2">
                                         Connection Address*
                                     </div>
-                                    <input type="text" name="connection-address" class="text_input w-100 px-3" required>
+                                    <input type="text" onchange="handleChange(event)" name="connection-address"
+                                        class="text_input w-100 px-3" id="connection-address" required>
                                 </div>
-
                                 <div class="checkbox_part d-flex align-items-center gap-2 mt-20 mx-auto mx-lg-0">
-                                    <div class="checkbox d-flex justify-content-center align-items-center">
+                                    <div class="checkbox d-flex justify-content-center align-items-center"
+                                        onclick="toggleCheckbox()">
                                         <img src="./assets/images/svg/right.svg" alt="right" class="check-img d-none">
                                     </div>
                                     <div class="checkbox_txt fw-normal text_md lh_24">
@@ -1088,133 +1090,14 @@ Connect electricity, gas, internet, and insurance effortlessly.">
 
     <!-- =============================== Custom JS File =============================== -->
     <script src="./app.js"></script>
-    <!-- POPUP -->
-    <script>
-        document
-            .getElementById("newsletterForm")
-            .addEventListener("submit", function (event) {
-                event.preventDefault();
-                Swal.fire({
-                    title: "Email Submit",
-                    icon: "success",
-                    timer: 3000,
-                    showConfirmButton: false,
-                });
-
-                event.target.reset();
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "uB-8ne7sYvN4Q072d",
             });
-
-        // address section code add
-        document
-            .getElementById("address_form")
-            .addEventListener("submit", function (event) {
-                event.preventDefault();
-                Swal.fire({
-                    title: "Form Submitted",
-                    icon: "success",
-                    timer: 3000,
-                    showConfirmButton: false,
-                });
-
-                event.target.reset();
-            });
-        let display = document.querySelector("#display");
-        let days = document.querySelector("#days");
-        let previous = document.querySelector(".left");
-        let next = document.querySelector(".right");
-
-        let date = new Date();
-        let year = date.getFullYear();
-        let month = date.getMonth();
-        let selectedDate = null;
-
-        function calendar() {
-            const firstDay = new Date(year, month, 1);
-            const lastDay = new Date(year, month + 1, 0);
-            let firstDayIndex = firstDay.getDay();
-            let numberOfDays = lastDay.getDate();
-            let nextDays = new Date(year, month, numberOfDays).getDay();
-
-            display.textContent = `${date.getDate()} ${date.toLocaleString("en-US", { month: "long" })}, ${year}`;
-
-            selectedDate = null;
-
-            days.innerHTML = "";
-
-            for (let i = 0; i < firstDayIndex; i++) {
-                const div = document.createElement("div");
-                div.className = "inactive";
-                days.appendChild(div);
-            }
-
-            for (let j = 1; j <= numberOfDays; j++) {
-                let div = document.createElement("div");
-                let currDate = new Date(year, month, j);
-                div.dataset.date = currDate.toDateString();
-                div.textContent = j;
-                div.classList.add("day");
-                days.appendChild(div);
-
-                if (
-                    currDate.getFullYear() === new Date().getFullYear() &&
-                    currDate.getMonth() === new Date().getMonth() &&
-                    currDate.getDate() === new Date().getDate()
-                ) {
-                    div.classList.add("current-date");
-                }
-
-                if (selectedDate && selectedDate.dataset.date === div.dataset.date) {
-                    div.classList.add("selected-date");
-                }
-
-                div.addEventListener("click", function () {
-                    if (selectedDate) {
-                        selectedDate.classList.remove("selected-date");
-                    }
-
-                    this.classList.add("selected-date");
-                    selectedDate = this;
-
-                    let selectedDateObject = new Date(this.dataset.date);
-                    display.textContent = `${selectedDateObject.getDate()} ${selectedDateObject.toLocaleString("en-US", { month: "long" })}, ${selectedDateObject.getFullYear()}`;
-
-                    console.log("Selected date:", this.dataset.date);
-                });
-            }
-
-            for (let i = nextDays; i < 6; i++) {
-                const div = document.createElement("div");
-                div.textContent = i - nextDays + 1;
-                div.className = "inactive";
-                days.appendChild(div);
-            }
-        }
-
-        calendar();
-
-        previous.addEventListener("click", () => {
-            days.innerHTML = "";
-            if (month === 0) {
-                month = 11;
-                year--;
-            } else {
-                month--;
-            }
-            date.setMonth(month);
-            calendar();
-        });
-
-        next.addEventListener("click", () => {
-            days.innerHTML = "";
-            if (month === 11) {
-                month = 0;
-                year++;
-            } else {
-                month++;
-            }
-            date.setMonth(month);
-            calendar();
-        });
+        })();
     </script>
 </body>
 
