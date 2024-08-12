@@ -125,6 +125,7 @@ const formValue = {
   email: "",
   contact: "",
   address: "",
+  date: "",
   condition: false,
 };
 
