@@ -76,7 +76,7 @@ video.forEach((e) => {
 });
 
 // =========== back to top ================================================
-let backToTopBtn = document.getElementById("backToTop");
+let back_to_topBtn = document.getElementById("back_to_top");
 
 window.onscroll = function () {
   scrollFunction();
@@ -84,13 +84,13 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    backToTopBtn.style.display = "block";
+    back_to_topBtn.style.display = "block";
   } else {
-    backToTopBtn.style.display = "none";
+    back_to_topBtn.style.display = "none";
   }
 }
 
-backToTopBtn.onclick = function () {
+back_to_topBtn.onclick = function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
