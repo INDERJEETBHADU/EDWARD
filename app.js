@@ -190,20 +190,6 @@ document
     event.target.reset();
   });
 
-// address section code add
-document
-  .getElementById("address_form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-    Swal.fire({
-      title: "Form Submitted",
-      icon: "success",
-      timer: 3000,
-      showConfirmButton: false,
-    });
-
-    event.target.reset();
-  });
 let display = document.querySelector("#display");
 let days = document.querySelector("#days");
 let previous = document.querySelector(".left");
@@ -263,10 +249,11 @@ function calendar() {
 
       let selectedDateObject = new Date(this.dataset.date);
       display.textContent = `${selectedDateObject.getDate()} ${selectedDateObject.toLocaleString("en-US", { month: "long" })}, ${selectedDateObject.getFullYear()}`;
-
+      formValue.date = this.dataset.date;
       console.log("Selected date:", this.dataset.date);
     });
   }
+  // formValue.date = selectedDateObject.toISOString().split('T')[0];
 
   for (let i = nextDays; i < 6; i++) {
     const div = document.createElement("div");
