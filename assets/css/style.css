@@ -1083,7 +1083,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1199.98px) {
   .custom_container {
     max-width: 1164px !important;
   }
@@ -1099,13 +1099,13 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
-@media (min-width:1200px) and (max-width:1536px) {
+@media (min-width:1199.98px) and (max-width:1536px) {
   .footer_custom_container {
     max-width: 1164px !important;
   }
 }
 
-@media (min-width:1620px) {
+@media (min-width:1599.98px) {
   .custom_container {
     max-width: 1320px !important;
   }
@@ -1125,7 +1125,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* =========================================================== Max Width  =========================================================== */
-@media (max-width:1620px) {
+@media (max-width:1599.98px) {
   .nav_height {
     height: 82px;
   }
