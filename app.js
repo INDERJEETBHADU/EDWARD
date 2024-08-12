@@ -43,28 +43,28 @@ $(".clients_slider").slick({
 
 // ===================================== CHECKBOX ========================================//
 const check = document.querySelector(".checkbox_part");
-const check_img = document.querySelector(".check-img");
+const checkImg = document.querySelector(".check-img");
 
-check.addEventListener("click", () => {
-  check_img.classList.toggle("d-none");
-});
+// check.addEventListener("click", () => {
+//   check_img.classList.toggle("d-none");
+// });
 function openNav() {
   document.getElementById("navbar").classList.toggle("start-0");
   document.body.classList.toggle("overflow_hidden");
   document.querySelector(".menu").classList.toggle("cross");
 }
-document.querySelectorAll('#navbar a').forEach(link => {
-  link.addEventListener('click', () => {
-      if (document.getElementById("navbar").classList.contains("start-0")) {
-          openNav();
-      }
+document.querySelectorAll("#navbar a").forEach((link) => {
+  link.addEventListener("click", () => {
+    if (document.getElementById("navbar").classList.contains("start-0")) {
+      openNav();
+    }
   });
 });
-document.querySelectorAll('.common_button').forEach(button => {
-  button.addEventListener('click', () => {
-      if (document.getElementById("navbar").classList.contains("start-0")) {
-          openNav();
-      }
+document.querySelectorAll(".common_button").forEach((button) => {
+  button.addEventListener("click", () => {
+    if (document.getElementById("navbar").classList.contains("start-0")) {
+      openNav();
+    }
   });
 });
 // ===================================== Video Play ========================================//
@@ -118,3 +118,58 @@ for (let i = 0; i < 50; i++) {
   slideImageBox.appendChild(img);
   sliderParent.appendChild(slideImageBox);
 }
+// =========================== form
+
+const formValue = {
+  name: "",
+  email: "",
+  contact: "",
+  address: "",
+  condition: false,
+};
+
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  if (name === "full-name") {
+    formValue.name = value;
+  } else if (name === "active-email") {
+    formValue.email = value;
+  } else if (name === "phone-number") {
+    formValue.contact = value;
+  } else if (name === "connection-address") {
+    formValue.address = value;
+  }
+};
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  console.log(formValue);
+  const SERVICE_ID = "service_azdfcfh";
+  const TEMPLATE_ID = "template_7awzlvh";
+
+  if (formValue.condition) {
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, formValue).then(
+      () => {
+        alert("Sent Successfully");
+        checkImg.classList.add("d-none");
+        e.target.reset();
+      },
+      (error) => {
+        console.log("Failed To Send", error.text);
+        alert("Failed To Send");
+      }
+    );
+  }
+};
+
+check.addEventListener("click", () => {
+  const isChecked = !checkImg.classList.contains("d-none");
+
+  if (isChecked) {
+    checkImg.classList.add("d-none");
+    formValue.condition = false;
+  } else {
+    checkImg.classList.remove("d-none");
+    formValue.condition = true;
+  }
+});
