@@ -10,7 +10,9 @@ ul {
 .navlist_padding {
   padding: 10px;
 }
-
+.video_border{
+  border-radius: 20px;
+}
 .page_logo {
   max-width: 147px;
   height: 64px;

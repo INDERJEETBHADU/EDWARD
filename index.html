@@ -309,25 +309,25 @@ Connect electricity, gas, internet, and insurance effortlessly.">
                   <div class="fw-semibold text_md lh_27 text_light_black pb-2">
                     Full Name*
                   </div>
-                  <input type="text" class="text_input w-100 px-lg-3 px-2" required>
+                  <input type="text" name="full-name" class="text_input w-100 px-lg-3 px-2" required>
                 </div>
                 <div class="pt-3">
                   <div class="fw-semibold text_md lh_27 text_light_black pb-2">
                     Active Email*
                   </div>
-                  <input type="email" class="text_input w-100 px-lg-3 px-2" required>
+                  <input type="email" name="active-email" class="text_input w-100 px-lg-3 px-2" required>
                 </div>
                 <div class="pt-3">
                   <div class="fw-semibold text_md lh_27 text_light_black pb-2">
                     Phone Number*
                   </div>
-                  <input type="number" class="text_input w-100 px-lg-3 px-2" required>
+                  <input type="number" name="phone-number" class="text_input w-100 px-lg-3 px-2" required>
                 </div>
                 <div class="pt-3">
                   <div class="fw-semibold text_md lh_27 text_light_black pb-2">
                     Connection Address*
                   </div>
-                  <input type="text" class="text_input w-100 px-3" required>
+                  <input type="text" name="connection-address" class="text_input w-100 px-3" required>
                 </div>
 
                 <div class="checkbox_part d-flex align-items-center gap-2 mt-20 mx-auto mx-lg-0">
@@ -498,13 +498,7 @@ Connect electricity, gas, internet, and insurance effortlessly.">
                                     <img src="./assets/images/webp/clients-video.webp" alt="about-us-col-img" class="w-100 img_scale_hover">
                                 </div>
                                 <div class="position-absolute top-0 start-0 w-100 h-100 rounded-4 change_z_ind z-n1">
-                                    <iframe class="w-100 h-100 rounded_16"
-                                        src="https://www.youtube.com/embed/UNHccpZgKQs?si=yKQBtmxPdO7djrCt"
-                                        title="YouTube video player" frameborder="0"
-                                        loading="lazy"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                                    </iframe>
+                              <video src="./assets/videos/css-made-easey.mp4" type="video/mp4" class="w-100 video_border" controls></video>
                                 </div>
                             </div>
                         </div>
@@ -882,7 +876,7 @@ Connect electricity, gas, internet, and insurance effortlessly.">
             <form id="newsletterForm"
                 class="d-flex gap-md-2 gap-3 flex-wrap justify-content-center newsletter_input_top_spacing">
                 <div class="newsletter_input_box w-100">
-                    <input class="newsletter_input" required type="email" placeholder="Enter your email address">
+                    <input class="newsletter_input" name="email-input" required type="email" placeholder="Enter your email address">
                 </div>
                 <button aria-label="submit" type="submit" class="common_button submit_btn">Submit</button>
             </form>
