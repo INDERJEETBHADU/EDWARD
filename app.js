@@ -177,19 +177,6 @@ check.addEventListener("click", () => {
 
 // popup + calender code
 
-document
-  .getElementById("newsletterForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-    Swal.fire({
-      title: "Email Submit",
-      icon: "success",
-      timer: 3000,
-      showConfirmButton: false,
-    });
-    event.target.reset();
-  });
-
 let display = document.querySelector("#display");
 let days = document.querySelector("#days");
 let previous = document.querySelector(".left");
@@ -288,3 +275,29 @@ next.addEventListener("click", () => {
   date.setMonth(month);
   calendar();
 });
+
+// toggle calender
+
+document.addEventListener("DOMContentLoaded", function () {
+  const homeTab = document.getElementById("home-tab");
+  const profileTab = document.getElementById("profile-tab");
+  const calendarSectionHome = document.getElementById("calendarSectionHome");
+  const calendarSectionProfile = document.getElementById("calendarSectionProfile");
+  const calendarBox = document.querySelector(".calender_box");
+
+  function toggleCalendarVisibility() {
+    if (homeTab.classList.contains("active")) {
+      calendarSectionProfile.innerHTML = '';
+      calendarSectionHome.appendChild(calendarBox);
+    } else if (profileTab.classList.contains("active")) {
+      calendarSectionHome.innerHTML = '';
+      calendarSectionProfile.appendChild(calendarBox);
+    }
+  }
+
+  homeTab.addEventListener("click", toggleCalendarVisibility);
+  profileTab.addEventListener("click", toggleCalendarVisibility);
+
+  toggleCalendarVisibility();
+});
+
