@@ -183,7 +183,7 @@ check.addEventListener("click", () => {
   }
 });
 
-// popup + calender code
+// popup + calender
 
 let display = document.querySelector("#display");
 let days = document.querySelector("#days");
@@ -202,7 +202,9 @@ function calendar() {
   let numberOfDays = lastDay.getDate();
   let nextDays = new Date(year, month, numberOfDays).getDay();
 
-  display.textContent = `${date.getDate()} ${date.toLocaleString("en-US", { month: "long" })}, ${year}`;
+  display.textContent = `${date.getDate()} ${date.toLocaleString("en-US", {
+    month: "long",
+  })}, ${year}`;
 
   selectedDate = null;
 
@@ -243,13 +245,14 @@ function calendar() {
       selectedDate = this;
 
       let selectedDateObject = new Date(this.dataset.date);
-      display.textContent = `${selectedDateObject.getDate()} ${selectedDateObject.toLocaleString("en-US", { month: "long" })}, ${selectedDateObject.getFullYear()}`;
+      display.textContent = `${selectedDateObject.getDate()} ${selectedDateObject.toLocaleString(
+        "en-US",
+        { month: "long" }
+      )}, ${selectedDateObject.getFullYear()}`;
+      // console.log("Selected date:", this.dataset.date);
       formValue.date = this.dataset.date;
-      console.log("Selected date:", this.dataset.date);
     });
   }
-  // formValue.date = selectedDateObject.toISOString().split('T')[0];
-
   for (let i = nextDays; i < 6; i++) {
     const div = document.createElement("div");
     div.textContent = i - nextDays + 1;
