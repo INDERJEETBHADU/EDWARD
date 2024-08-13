@@ -144,22 +144,30 @@ const handleChange = (e) => {
 
 const handleSubmit = (e) => {
   e.preventDefault();
-  console.log(formValue);
-  const SERVICE_ID = "service_azdfcfh";
-  const TEMPLATE_ID = "template_7awzlvh";
+
+  if (!formValue.date) {
+    let currentDate = new Date();
+    formValue.date = currentDate.toDateString();
+  }
 
   if (formValue.condition) {
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, formValue).then(
-      () => {
-        alert("Sent Successfully");
-        checkImg.classList.add("d-none");
-        e.target.reset();
-      },
-      (error) => {
-        console.log("Failed To Send", error.text);
-        alert("Failed To Send");
-      }
-    );
+    console.log(formValue);
+    Swal.fire({
+      title: "Form Submitted",
+      icon: "success",
+      timer: 3000,
+      showConfirmButton: false,
+    });
+    checkImg.classList.add("d-none");
+    e.target.reset();
+    formValue.condition = false;
+  } else {
+    Swal.fire({
+      title: "Failed Submitted, accept the term & condition",
+      icon: "error",
+      timer: 3000,
+      showConfirmButton: true,
+    });
   }
 };
 
