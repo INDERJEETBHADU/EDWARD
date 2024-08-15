@@ -326,4 +326,12 @@ document.addEventListener("DOMContentLoaded", function () {
   profileTab.addEventListener("click", toggleCalendarVisibility);
 
   toggleCalendarVisibility();
+
+  const dateInput = document.getElementById("date-input");
+  if (dateInput) {
+    let currentDate = new Date();
+    let formattedDate = currentDate.toISOString().split("T")[0];
+    dateInput.value = formattedDate;
+    formValue.date = currentDate.toDateString();
+  }
 });
