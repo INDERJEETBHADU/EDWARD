@@ -120,13 +120,13 @@ for (let i = 0; i < 50; i++) {
 }
 // =========================== form
 
-const formValue = {
+let formValue = {
   name: "",
   email: "",
   contact: "",
   address: "",
   date: "",
-  condition: false,
+  condition: undefined,
 };
 
 const handleChange = (e) => {
@@ -143,47 +143,83 @@ const handleChange = (e) => {
     formValue.address = value;
   }
 };
-
-const handleSubmit = (e) => {
-  e.preventDefault();
-
-  if (!formValue.date) {
-    let currentDate = new Date();
-    formValue.date = currentDate.toDateString();
-  }
-
-  if (formValue.condition) {
-    console.log(formValue);
-    Swal.fire({
-      title: "Form Submitted",
-      icon: "success",
-      timer: 3000,
-      showConfirmButton: false,
-    });
-    checkImg.classList.add("d-none");
-    e.target.reset();
-    formValue.condition = false;
-  } else {
-    Swal.fire({
-      title: "Failed Submitted, accept the term & condition",
-      icon: "error",
-      timer: 3000,
-      showConfirmButton: true,
-    });
-  }
-};
-
 check.addEventListener("click", () => {
   const isChecked = !checkImg.classList.contains("d-none");
 
   if (isChecked) {
     checkImg.classList.add("d-none");
     formValue.condition = false;
+    console.log(formValue.condition);
   } else {
     checkImg.classList.remove("d-none");
     formValue.condition = true;
+    console.log(formValue.condition);
   }
 });
+
+const handleCheck = () => {
+  const isChecked = !checkImg.classList.contains("d-none");
+
+  if (isChecked) {
+    checkImg.classList.add("d-none");
+    formValue.condition = false;
+    console.log(formValue.condition);
+  } else {
+    checkImg.classList.remove("d-none");
+    formValue.condition = true;
+    console.log(formValue.condition);
+  }
+};
+document.addEventListener("DOMContentLoaded", () => {
+  const dateInput = document.getElementById("date-input");
+  const today = new Date().toISOString().split("T")[0];
+  dateInput.value = today;
+  formValue.date = today;
+});
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  const submitForm = new Promise((resolve, reject) => {
+    if (formValue.condition === true) {
+      resolve();
+    } else {
+      reject(new Error("Failed Submitted, accept the term & condition"));
+    }
+  });
+
+  submitForm
+    .then(() => {
+      formValue.condition = true;
+      console.log(formValue);
+    })
+    .then(() => {
+      return Swal.fire({
+        title: "Form Submitted",
+        icon: "success",
+        timer: 3000,
+        showConfirmButton: false,
+      });
+    })
+    .then(() => {
+      handleCheck();
+      e.target.reset();
+    })
+    .then(() => {
+      const dateInput = document.getElementById("date-input");
+      const today = new Date().toISOString().split("T")[0];
+      dateInput.value = today;
+      formValue.date = today;
+    })
+    .catch((error) => {
+      Swal.fire({
+        title: error.message,
+        icon: "error",
+        timer: 3000,
+        showConfirmButton: true,
+      });
+    });
+};
 
 // popup + calender
 
@@ -224,33 +260,7 @@ function calendar() {
     div.dataset.date = currDate.toDateString();
     div.textContent = j;
     div.classList.add("day");
-
-    if (currDate < new Date().setHours(0, 0, 0, 0)) {
-      div.classList.add("disabled_date");
-    } else {
-      div.addEventListener("click", function () {
-        if (selectedDate) {
-          selectedDate.classList.remove("selected-date");
-        }
-
-        this.classList.add("selected-date");
-        selectedDate = this;
-
-        let selectedDateObject = new Date(this.dataset.date);
-        selectedDateObject.setDate(selectedDateObject.getDate() + 1);
-        display.textContent = `${selectedDateObject.getDate()} ${selectedDateObject.toLocaleString(
-          "en-US",
-          { month: "long" }
-        )}, ${selectedDateObject.getFullYear()}`;
-
-        formValue.date = this.dataset.date;
-
-        const dateInput = document.getElementById("date-input");
-        if (dateInput) {
-          dateInput.value = selectedDateObject.toISOString().split("T")[0];
-        }
-      });
-    }
+    days.appendChild(div);
 
     if (
       currDate.getFullYear() === new Date().getFullYear() &&
@@ -263,16 +273,37 @@ function calendar() {
     if (selectedDate && selectedDate.dataset.date === div.dataset.date) {
       div.classList.add("selected-date");
     }
+    if (currDate < new Date().setHours(0, 0, 0, 0)) {
+      div.classList.add("disabled_date");
+    } else {
+      div.addEventListener("click", function () {
+        if (selectedDate) {
+          selectedDate.classList.remove("selected-date");
+        }
 
-    days.appendChild(div);
+        this.classList.add("selected-date");
+        selectedDate = this;
+
+        let selectedDateObject = new Date(this.dataset.date);
+        let selectedDateObject1 = new Date(this.dataset.date);
+        selectedDateObject1.setDate(selectedDateObject.getDate() + 1);
+        display.textContent = `${selectedDateObject.getDate()} ${selectedDateObject.toLocaleString(
+          "en-US",
+          { month: "long" }
+        )}, ${selectedDateObject.getFullYear()}`;
+        // console.log("Selected date:", this.dataset.date);
+        formValue.date = this.dataset.date;
+
+        const dateInput = document.getElementById("date-input");
+        if (dateInput) {
+          dateInput.value = selectedDateObject1.toISOString().split("T")[0];
+        }
+      });
+    }
   }
-
-  const totalDaysInCalendar = 32;
-  const totalDaysRendered = firstDayIndex + numberOfDays;
-  const emptyDivsToRender = totalDaysInCalendar - totalDaysRendered;
-
-  for (let i = 0; i < emptyDivsToRender; i++) {
+  for (let i = nextDays; i < 6; i++) {
     const div = document.createElement("div");
+    div.textContent = i - nextDays + 1;
     div.className = "inactive";
     days.appendChild(div);
   }
@@ -329,12 +360,4 @@ document.addEventListener("DOMContentLoaded", function () {
   profileTab.addEventListener("click", toggleCalendarVisibility);
 
   toggleCalendarVisibility();
-
-  const dateInput = document.getElementById("date-input");
-  if (dateInput) {
-    let currentDate = new Date();
-    let formattedDate = currentDate.toISOString().split("T")[0];
-    dateInput.value = formattedDate;
-    formValue.date = currentDate.toDateString();
-  }
 });
