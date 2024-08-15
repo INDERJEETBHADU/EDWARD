@@ -45,9 +45,6 @@ $(".clients_slider").slick({
 const check = document.querySelector(".checkbox_part");
 const checkImg = document.querySelector(".check-img");
 
-// check.addEventListener("click", () => {
-//   check_img.classList.toggle("d-none");
-// });
 function openNav() {
   document.getElementById("navbar").classList.toggle("start-0");
   document.body.classList.toggle("overflow_hidden");
@@ -137,6 +134,8 @@ const handleChange = (e) => {
     formValue.email = value;
   } else if (name === "phone-number") {
     formValue.contact = value;
+  } else if (name === "date") {
+    formValue.date = value;
   } else if (name === "connection-address") {
     formValue.address = value;
   }
@@ -147,8 +146,9 @@ const handleSubmit = (e) => {
 
   if (!formValue.date) {
     let currentDate = new Date();
-    formValue.date = currentDate.toDateString();
+    formValue.date = currentDate.toISOString().split("T")[0];
   }
+  console.log("Form Data Submitted:", formValue);
 
   if (formValue.condition) {
     console.log(formValue);
@@ -170,6 +170,12 @@ const handleSubmit = (e) => {
     });
   }
 };
+
+function updateDateInput(value) {
+  const dateInput = document.getElementById("date");
+  dateInput.value = value;
+  formValue.date = value;
+}
 
 check.addEventListener("click", () => {
   const isChecked = !checkImg.classList.contains("d-none");
@@ -245,12 +251,13 @@ function calendar() {
       selectedDate = this;
 
       let selectedDateObject = new Date(this.dataset.date);
+      let formattedDate = selectedDateObject.toISOString().split("T")[0];
+      updateDateInput(formattedDate);
       display.textContent = `${selectedDateObject.getDate()} ${selectedDateObject.toLocaleString(
         "en-US",
         { month: "long" }
       )}, ${selectedDateObject.getFullYear()}`;
       // console.log("Selected date:", this.dataset.date);
-      formValue.date = this.dataset.date;
     });
   }
   for (let i = nextDays; i < 6; i++) {
@@ -259,6 +266,12 @@ function calendar() {
     div.className = "inactive";
     days.appendChild(div);
   }
+}
+
+function setDefaultDate() {
+  let currentDate = new Date();
+  let formattedDate = currentDate.toISOString().split("T")[0];
+  updateDateInput(formattedDate);
 }
 
 calendar();
@@ -293,15 +306,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const homeTab = document.getElementById("home-tab");
   const profileTab = document.getElementById("profile-tab");
   const calendarSectionHome = document.getElementById("calendarSectionHome");
-  const calendarSectionProfile = document.getElementById("calendarSectionProfile");
+  const calendarSectionProfile = document.getElementById(
+    "calendarSectionProfile"
+  );
   const calendarBox = document.querySelector(".calender_box");
 
   function toggleCalendarVisibility() {
     if (homeTab.classList.contains("active")) {
-      calendarSectionProfile.innerHTML = '';
+      calendarSectionProfile.innerHTML = "";
       calendarSectionHome.appendChild(calendarBox);
     } else if (profileTab.classList.contains("active")) {
-      calendarSectionHome.innerHTML = '';
+      calendarSectionHome.innerHTML = "";
       calendarSectionProfile.appendChild(calendarBox);
     }
   }
@@ -311,4 +326,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
   toggleCalendarVisibility();
 });
-
