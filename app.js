@@ -45,6 +45,9 @@ $(".clients_slider").slick({
 const check = document.querySelector(".checkbox_part");
 const checkImg = document.querySelector(".check-img");
 
+// check.addEventListener("click", () => {
+//   check_img.classList.toggle("d-none");
+// });
 function openNav() {
   document.getElementById("navbar").classList.toggle("start-0");
   document.body.classList.toggle("overflow_hidden");
@@ -146,9 +149,8 @@ const handleSubmit = (e) => {
 
   if (!formValue.date) {
     let currentDate = new Date();
-    formValue.date = currentDate.toISOString().split("T")[0];
+    formValue.date = currentDate.toDateString();
   }
-  console.log("Form Data Submitted:", formValue);
 
   if (formValue.condition) {
     console.log(formValue);
@@ -170,12 +172,6 @@ const handleSubmit = (e) => {
     });
   }
 };
-
-function updateDateInput(value) {
-  const dateInput = document.getElementById("date");
-  dateInput.value = value;
-  formValue.date = value;
-}
 
 check.addEventListener("click", () => {
   const isChecked = !checkImg.classList.contains("d-none");
@@ -251,13 +247,18 @@ function calendar() {
       selectedDate = this;
 
       let selectedDateObject = new Date(this.dataset.date);
-      let formattedDate = selectedDateObject.toISOString().split("T")[0];
-      updateDateInput(formattedDate);
+      selectedDateObject.setDate(selectedDateObject.getDate() + 1);
       display.textContent = `${selectedDateObject.getDate()} ${selectedDateObject.toLocaleString(
         "en-US",
         { month: "long" }
       )}, ${selectedDateObject.getFullYear()}`;
       // console.log("Selected date:", this.dataset.date);
+      formValue.date = this.dataset.date;
+
+      const dateInput = document.getElementById("date-input");
+      if (dateInput) {
+        dateInput.value = selectedDateObject.toISOString().split("T")[0];
+      }
     });
   }
   for (let i = nextDays; i < 6; i++) {
@@ -266,12 +267,6 @@ function calendar() {
     div.className = "inactive";
     days.appendChild(div);
   }
-}
-
-function setDefaultDate() {
-  let currentDate = new Date();
-  let formattedDate = currentDate.toISOString().split("T")[0];
-  updateDateInput(formattedDate);
 }
 
 calendar();
