@@ -224,7 +224,33 @@ function calendar() {
     div.dataset.date = currDate.toDateString();
     div.textContent = j;
     div.classList.add("day");
-    days.appendChild(div);
+
+    if (currDate < new Date().setHours(0, 0, 0, 0)) {
+      div.classList.add("disabled_date");
+    } else {
+      div.addEventListener("click", function () {
+        if (selectedDate) {
+          selectedDate.classList.remove("selected-date");
+        }
+
+        this.classList.add("selected-date");
+        selectedDate = this;
+
+        let selectedDateObject = new Date(this.dataset.date);
+        selectedDateObject.setDate(selectedDateObject.getDate() + 1);
+        display.textContent = `${selectedDateObject.getDate()} ${selectedDateObject.toLocaleString(
+          "en-US",
+          { month: "long" }
+        )}, ${selectedDateObject.getFullYear()}`;
+
+        formValue.date = this.dataset.date;
+
+        const dateInput = document.getElementById("date-input");
+        if (dateInput) {
+          dateInput.value = selectedDateObject.toISOString().split("T")[0];
+        }
+      });
+    }
 
     if (
       currDate.getFullYear() === new Date().getFullYear() &&
@@ -238,29 +264,9 @@ function calendar() {
       div.classList.add("selected-date");
     }
 
-    div.addEventListener("click", function () {
-      if (selectedDate) {
-        selectedDate.classList.remove("selected-date");
-      }
-
-      this.classList.add("selected-date");
-      selectedDate = this;
-
-      let selectedDateObject = new Date(this.dataset.date);
-      selectedDateObject.setDate(selectedDateObject.getDate() + 1);
-      display.textContent = `${selectedDateObject.getDate()} ${selectedDateObject.toLocaleString(
-        "en-US",
-        { month: "long" }
-      )}, ${selectedDateObject.getFullYear()}`;
-      // console.log("Selected date:", this.dataset.date);
-      formValue.date = this.dataset.date;
-
-      const dateInput = document.getElementById("date-input");
-      if (dateInput) {
-        dateInput.value = selectedDateObject.toISOString().split("T")[0];
-      }
-    });
+    days.appendChild(div);
   }
+
   for (let i = nextDays; i < 6; i++) {
     const div = document.createElement("div");
     div.textContent = i - nextDays + 1;
