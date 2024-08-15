@@ -267,9 +267,12 @@ function calendar() {
     days.appendChild(div);
   }
 
-  for (let i = nextDays; i < 6; i++) {
+  const totalDaysInCalendar = 32;
+  const totalDaysRendered = firstDayIndex + numberOfDays;
+  const emptyDivsToRender = totalDaysInCalendar - totalDaysRendered;
+
+  for (let i = 0; i < emptyDivsToRender; i++) {
     const div = document.createElement("div");
-    div.textContent = i - nextDays + 1;
     div.className = "inactive";
     days.appendChild(div);
   }
